@@ -1,0 +1,180 @@
+---
+title: "R21시각화-배치"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(rmarkdown)
+library(knitr)
+
+
+
+# 그래프 작성시 다양한 옵션
+# par(그래프옵션) 로 설정
+
+# 여러개의 그래프를 한 화면에 배치
+
+# mfrow=c(행,열)   # 행 우선 배치
+# mfcol=c(행,열)   # 열 우선 배치
+
+# 현재 그래프 설정 저장
+.opar <- par(no.readonly=T)
+
+
+
+# 화면 분할 (1)
+par(mfrow=c(2,2))   # 2 x 2  행우선
+
+plot(mtcars$mpg)
+plot(mtcars$cyl)
+plot(mtcars$gear)
+plot(mtcars$hp)
+
+# 그래프 설정 초기화
+par(.opar)
+
+
+
+# 화면 분할 (2)
+
+par(mfcol=c(2,2))   # 2 x 2  열우선
+
+plot(mtcars$mpg)
+plot(mtcars$cyl)
+plot(mtcars$gear)
+plot(mtcars$hp)
+
+par(.opar)
+
+
+
+# 화면분할 (3)
+
+par(mfcol=c(3,1))   # 3 x 1  
+
+plot(mtcars$mpg)
+plot(mtcars$cyl)
+plot(mtcars$gear)
+plot(mtcars$hp)
+
+
+
+# 화면 분할 (4)
+
+par(mfcol=c(1,3))  # 1 x 3  
+
+plot(mtcars$mpg)
+plot(mtcars$cyl)
+plot(mtcars$gear)
+plot(mtcars$hp)
+
+par(.opar)
+
+
+
+
+# 좀 더 복잡한 레이아웃으로 지정하려면?
+# layout(matrix(c(영역번호), 행수, 열수))
+# layout.show() : 분할된 영역 미리보기
+
+layout(matrix(c(1,2,3,4), 2,2))
+
+layout.show(1)
+layout.show(2)
+layout.show(3)
+layout.show(4)
+
+
+
+layout(matrix(c(1,2,3,4), 2,2, byrow=T))
+
+layout.show(1)
+layout.show(2)
+layout.show(3)
+layout.show(4)
+
+par(.opar)
+
+
+
+# 영역번호가 같을 경우 해당영역은 합쳐서 출력됨
+# 1행 1열과 1행 2열을 합쳐서 출력
+
+layout(matrix(c(1,1,2,3), 2,2, byrow=T))
+
+# layout.show(1)
+# layout.show(2)
+# layout.show(3)
+
+plot(mtcars$mpg)
+plot(mtcars$cyl)
+plot(mtcars$gear)
+
+par(.opar)
+
+
+
+
+# 1행 1열과 2행 1열을 합쳐서 출력
+
+layout(matrix(c(1,1,2,3), 2,2))
+layout(matrix(c(1,2,1,3), 2,2, byrow=T))
+
+plot(mtcars$mpg)
+plot(mtcars$cyl)
+plot(mtcars$gear)
+
+par(.opar)
+
+
+
+
+
+
+# applewood 데이터셋을 이용해서 
+# 나이별 구매현황, 판매금액별 구매현황을 히스토그램으로 나타내시오
+# 단, 한 화면에 2개의 그래프를 작성한다
+
+ages <- apwd$Age
+
+profit <- apwd$Profit
+profit <- gsub('\\$','',profit)
+profit <- gsub(',','',profit)
+profit <- as.numeric(profit)
+
+.opar <- par(no.readonly=T)
+
+par(mfrow=c(1,2))   # 1행2열 레이아웃   
+
+layout(matrix(c(1,2)))
+
+hist(ages, col=rainbow(14))
+
+hist(profit, col=rainbow(7))
+
+
+par(.opar)
+
+# 타이타닉 탑승자의 나이대별 생존/사망 현황을
+# 히스토그램으로 나타내시오
+# 단, 한 화면에 2개의 그래프를 작성한다
+
+setwd('c:/Java/data')
+load('titanic.rdata')
+
+dead <- titanic$Age[titanic$Survived == 0]
+life <- titanic$Age[titanic$Survived == 1]
+
+.opar <- par(no.readonly=T)
+
+par(mfrow=c(1,2))   # 1행3열 레이아웃  
+
+hist(dead, col=rainbow(16))
+hist(life, col=rainbow(8))
+
+
+par(.opar)
+
+
+
+```

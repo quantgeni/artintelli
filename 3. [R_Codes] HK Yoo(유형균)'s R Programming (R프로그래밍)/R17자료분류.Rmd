@@ -1,0 +1,265 @@
+---
+title: "R17자료분류"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# R 마크다운 라이브러리 불러오기
+```{r}
+library(rmarkdown)
+library(knitr)
+
+setwd('c:/Java/data')
+data <- read.csv('descriptive.csv', header=T)
+save(data,file='c:/Java/data/descriptive.rdata')
+rm(data)
+load('c:/Java/data/descriptive.rdata')
+data
+str(data) #8개 변수, 300개 관측치
+
+#명목척도 : 범주형 => gender 성별
+#1 남자 2 여자
+
+summary(data$gender) #기술통계 확인 => 의미없음 (명목척도이니)
+
+#표로 확인 => 남/여 비율 확인
+table(data$gender) #0, 5가 보임 => 이상치
+
+data$gender[data$gender==1 | data$gender==2] #컴마를 안 씀 -_-;;
+#칼럼 단 이라면 그런 듯-_-;;
+
+subset(data$gender,data$gender==1 | data$gender==2)
+
+gender <- data$gender[data$gender==1 | data$gender==2]
+table(gender)
+
+#그래프로 확인 => 남/여 비율 확인
+x <- table(gender) #table() 먼저 쳐주는거 확인!!
+barplot(x)
+```
+
+```{r}
+library(sqldf)
+gender2 <- sqldf('select gender from data where gender in (1,2)')
+table(gender2)
+
+#빈도 별 비율 계산 : prop.table
+prop.table(x)
+y <- prop.table(x)
+round(y * 100) #백분율 환산
+round(y * 100,1)
+round(y * 100,2)
+
+#서열척도 : 범주형 + 순서 => level 학력수준
+#1 고졸 2 대졸 3 대학원졸
+data$level
+summary(data$level) #의미 없음
+
+#표로 확인
+sqldf("select level from data where level <> 'NA'")
+level <- data$level[!is.na(data$level)]
+x <- table(data$level)
+x
+y <- prop.table(x)
+round(y*100, 2)
+
+#그래프
+
+#빈도 별 비율 계산
+prop.table(x)
+```
+
+
+```{r}
+#ex28) descriptive 데이터셋의 pass 변수는 합격여부에 대한 자료.
+#pass 1 합격 2 불합격일때 기술 통계 실시
+#기술통계 => 의미 없음
+#표로 확인 => 합격 불합격 비율 확인 table() 함수
+
+setwd('c:/Java/data')
+descriptive <- read.csv('descriptive.csv',
+                        header=T)
+save(descriptive,file='c:/Java/data/descriptive.rdata')
+load('c:/Java/data/descriptive.rdata')
+descriptive
+
+pass <- sqldf("select pass from descriptive where pass<>'NA'")
+table(pass)
+x <- table(pass)
+barplot(x)      #barplot() vs. prop.table()
+prop.table(x)
+y <- prop.table(x)
+round(y*100,1)
+```
+
+```{r}
+#ex29) titanic 데이터셋 이용, 명목/서열 척도 구분. 기술통계 실시
+#명목척도: 생존여부, 성별, 승선위치(애매하긴 하지만)
+#서열척도: 승선권등급(Pclass), 위 승선위치도 어찌보면 서열척도
+
+setwd('c:/Java/data')
+load('titanic.rdata')
+titanic
+
+str(titanic)
+summary(titanic)
+table(titanic)
+
+#승선권등급(서열척도)
+head(titanic,n=2)
+pclass <- sqldf("select Pclass from titanic where Pclass<>'NA'")
+pclass
+table(pclass)
+x1 <- table(pclass)
+barplot(x1)
+y <- prop.table(x1)
+round(y*100,1)
+
+#생존여부(명목척도)
+x2 <- table(titanic$Survived)
+barplot(x2)
+y <- prop.table(x2)
+round(y*100,2)
+barplot(y)
+
+#승선위치(명목척도)
+x3 <- table(titanic$Embarked)
+barplot(x3)
+y <- prop.table(x3)
+round(y*100,2)
+barplot(y)
+```
+
+
+
+```{r}
+#---------------------------- 양적변수
+#등간척도: 범주형+정수형 => survey 설문
+#만족도 1 2 3 4 5
+
+#기술통계 확인 => 의미없음
+setwd('c:/Java/data')
+load('descriptive.rdata')
+summary(data$survey)
+
+
+#표로 확인
+table(data$survey)
+
+#그래프로 확인
+x <- table(data$survey)
+barplot(x)
+hist(data$survey, breaks=6) #-_-a...? 이상하게 나옴
+
+#====> NA가 너무 많아서 통계적 유의성은 없음 (평균/중앙값 등으로
+#대체해야..)
+
+#빈도 별 비율 확인
+x <- table(data$survey)
+y <- prop.table(x)
+round(y*100,1)
+
+#비율척도 : 정수형 => cost 비용
+
+#기술통계확인
+cost <- data$cost[!is.na(data$cost)]
+cost
+
+summary(cost) #이상치 포함 => 결과 왜곡
+
+range(cost)
+
+cost2 <- cost[cost >= 0 & cost <= 10]
+# 범위를 0 ~ 10 로 줄임 (이상치제거)
+
+range(cost2)
+
+summary(cost2)   # 최소 2, 최대 8
+
+
+# 표로 확인 => 등간척도로 변환해야 함
+
+cost3 <- cost2
+
+cost3[cost3 >= 2 & cost3 < 3] <- '2-'
+cost3[cost3 >= 3 & cost3 < 4] <- '3-'
+cost3[cost3 >= 4 & cost3 < 5] <- '4-'
+cost3[cost3 >= 5 & cost3 < 6] <- '5-'
+cost3[cost3 >= 6 & cost3 < 7] <- '6-'
+cost3[cost3 >= 7 & cost3 < 8] <- '7-'
+cost3[cost3 >= 8 & cost3 < 9] <- '8-'
+
+table(cost3)
+
+
+# 빈도 비율 확인 => 
+
+x <- table(cost3)
+y <- prop.table(x)
+round(y * 100, 1)
+
+
+#그래프로 확인 : 산점도, 상자수염 
+plot(cost)
+boxplot(cost)
+
+plot(cost2)
+boxplot(cost2)
+
+barplot(cost2)   
+# 연속형 변수 이므로 값이 빽빽하게 출력
+# 따라서, 등간척도로 변환해야 함
+
+hist(cost2)
+
+barplot(x)
+```
+
+
+
+
+
+# ex30) describtive 데이터셋의 age 컬럼에 대해 기술통계를 실시하시오
+
+data$age
+
+
+
+
+
+
+# ex31) iris 데이터셋을 이용해서 기술통계를 실시하시오
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+

@@ -1,0 +1,112 @@
+---
+title: "R22시각화-색상"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+library(rmarkdown)
+library(knitr)
+
+## 그래프 작성시 사용되는 색상 알아보기
+
+# 그래프에서 색상 지정시 col 속성 사용
+# R 에서 사용되는 색상 정보 : colors
+# 색상을 색이름으로 지정가능 (655개)
+
+colors()
+
+
+
+
+
+# 색상을 지정하는 또 다른  방법은 
+# RGB 형태의 16진수를 사용 
+# => FF FF FF / 255 255 255
+
+# red : FF0000 / green : 00FF00 / blue : 0000FF
+# red : 255 0 0 / green : 0 255 0 / blue : 0 0255
+
+.opar <- par(no.readonly = T)
+par(mfrow=c(1,2))
+
+plot(mtcars$mpg, col='#FF0000')
+
+rgbs <- rgb(0, 0, 255, maxColorValue=255)
+
+plot(mtcars$mpg, col=rgbs)
+
+par(.opar)
+
+
+
+# 또한, 색 숫자로도 지정 가능 : 0 ~ 8
+# 흰/ 검/ 빨/ 초/ 파/ 청록/ 자홍/ 노랑/ 회색
+
+barplot(seq(1:8), col=1:8)
+
+
+
+# 색상을 잘 다루지 못하는 분들 위해 
+# 용도별로 미리 정의해둔 색조가 있음
+# heat.colors / heat.colors  / cm.colors (기본)
+# RColorBrewer / virids / wesanderson / ggsci (추가)
+
+
+barplot(seq(1:10), col=rainbow(10))
+barplot(seq(1:10), col=heat.colors(10))
+barplot(seq(1:10), col=cm.colors(10))
+barplot(seq(1:10), col=terrain.colors(10))
+barplot(seq(1:10), col=topo.colors(10))
+
+
+
+# 그래프의 색조 표현은 크게 3가지가 있음
+
+# 순차적(sequential)
+# => 색상을 오름차순으로 나열 (밝음 -> 어둠)
+
+# 질적(정성적, qualitive)
+# => 다양한 색상을 이용해서 시각적 차이 구현
+
+# 분류적(diverging) 
+# => 중심에 주요색상을 두고 양끝으로 극단적인 색상을 나열
+
+
+install.packages('RColorBrewer')
+
+library(RColorBrewer)
+
+
+# 패키지에 포함된 색상 확인
+display.brewer.all()
+
+display.brewer.all(type='seq')
+display.brewer.all(type='qual')
+display.brewer.all(type='div')
+
+display.brewer.all(colorblindFriendly=T)
+
+
+
+# 색조 사용방법 
+# => brewer.pal(n= 단계수, 색조이름)
+
+plot(seq(1:10), col=brewer.pal(n=10, 'RdBu'))
+
+barplot(seq(1:10), col=brewer.pal(n=10, 'Dark2'))
+
+par(.opar)
+
+
+
+
+# 색상 팔레트를 이용한 계단식 색조
+display.brewer.pal(10, 'Reds')
+display.brewer.pal(10, 'Greens')
+display.brewer.pal(10, 'Blues')
+display.brewer.pal(10, 'Purples')
+
+
+```
+

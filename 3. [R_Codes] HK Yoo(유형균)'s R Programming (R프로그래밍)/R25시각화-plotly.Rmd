@@ -1,0 +1,21 @@
+---
+title: "R25시각화-plotly"
+output: html_document
+---
+
+```{r}
+library(plotly)
+
+p <- plot_ly(iris, x=~Sepal.Length, y=~Sepal.Width)
+p <- plot_ly(data=iris, x=~Sepal.Length, y=~Sepal.Width,
+             color=~Species, colors='Set2')
+
+p
+
+
+p <- plot_ly(mtcars, y=~mpg, type='box', color=~cyl)
+
+p
+
+```
+
