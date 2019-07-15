@@ -1,0 +1,2096 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+
+
+<meta property="og:author" content="Daum 뉴스" />
+<meta property="og:site_name" content="다음뉴스" />
+<meta property="og:title" content="언론사별 뉴스"/>
+<meta property="og:image" content="//t1.daumcdn.net/media/img-media/mobile/meta/news.png" />
+<meta property="og:description" content="다음뉴스" />
+<meta property="og:url" content="http://media.daum.net/cp/310?regDate=20190401&page=7"/>
+<meta name="referrer" content="always" />
+
+<meta name="svcdomain" content="media.daum.net" />
+
+<title>언론사별 뉴스 | 다음뉴스</title>
+
+
+<link rel="shortcut icon" href="//m2.daumcdn.net/img-media/2010ci/Daum_favicon.ico">
+
+<link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/media/static/media-1124/dist/news/css/common.min.css">
+<link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/media/static/media-1124/dist/news/css/news.min.css">
+
+<!--[if lte IE 7]>
+<script type="text/javascript" src="//t1.daumcdn.net/media/static/media-1124/dist/lib/json2.min.js"></script>
+<![endif]-->
+<script src="//s1.daumcdn.net/svc/original/U03/cssjs/jquery/jquery-1.9.1.min.js"></script>
+<!--[if lte IE 8]>
+<script src="//m2.daumcdn.net/svc/original/U0301/cssjs/JSON-js/fc535e9cc8/json2.min.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/media/static/media-1124/dist/news/css/ie8.min.css">
+<![endif]-->
+<script>
+    if(/(mac) os x ([\w._\-]+)/.test(navigator.userAgent.toLowerCase())) jQuery("html").addClass("os_mac");
+    var ENV = {
+        "TEMPLATE_PREFIX"	: "news",
+        "TEMPLATE_PATH"		: "/proxy/tenth2/media-1124/news/jst/",
+        "VERSION"			: "media-1124",
+        "LOCALENVIRONMENT"  : false,
+        "DEVENVIRONMENT"  : false
+    };
+    window.alexConfig = {
+        label : {
+            "emptyImage" : "//i1.daumcdn.net/img-section/enter2013/liveviewer/pc_emot_co.gif",
+            "emptyMessage" : "첫번째 댓글을 남겨주세요"
+        }
+    };
+    document.domain = 'daum.net';
+    var MiniDaum = {};
+</script>
+
+
+
+<script type="text/javascript" src="//t1.daumcdn.net/media/static/media-1124/dist/news/js/news.common.merge.min.js"></script>
+
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/media/static/media-1124/dist/media/ie6.min.css">
+<![endif]-->
+
+
+	<script type="text/javascript">
+    var _tiq = 'undefined' !== typeof _tiq ? _tiq : [];
+    _tiq.push(['__clickOn']);
+    _tiq.push(['__setPageName', 'newssection']);
+</script></head>
+<body class="bg_news">
+	<div id="kakaoIndex">
+		<a href="#kakaoBody">본문 바로가기</a>
+		<a href="#kakaoGnb">메뉴 바로가기</a>
+	</div>
+	<div id="kakaoWrap" class="news_type1">
+
+		<div id="kakaoHead" role="banner">
+						
+
+<div class="head_media">
+    <h1>
+        <a href="/" id="kakaoServiceLogo" class="#GNB#default#service_news"><span class="ir_wa">뉴스</span></a>
+    </h1>
+    <strong class="screen_out">관련서비스</strong>
+    <ul id="kakaoRelServices" class="#GNB#default">
+        <li><a href="/entertain" class="link_services link_services1 #service_enter"><span class="ir_wa">연예</span></a></li>
+        <li><a href="https://sports.media.daum.net/sports" class="link_services link_services2 #service_sports"><span class="ir_wa">스포츠</span></a></li>
+        <li><a href="/lab/keyword" class="link_services link_services3 #service_lab"><span class="ir_wa">미디어랩</span></a></li>
+    </ul>
+    <h2 class="screen_out">검색</h2>
+
+    <div class="search_news" id="search_news" onclick="_tiq.push(['__trackClick', 'GNB default search'])">
+        <form id="kakaoSearch" name="kakaoSearch" action="//search.daum.net/search" method="get">
+            <fieldset class="fld_inside"><!--  내부검색 fld_inside 추가 -->
+                <legend class="screen_out">검색어 입력폼</legend>
+                <div class="box_searchbar"><!-- 입력창 선택시 search_on 추가  -->
+                    <label for="qVal" class="lab_search">통합검색</label> <!-- 2017-05-10 추가 -->
+                    <input type="hidden" name="DA" value="23A" />
+                    <input type="hidden" name="rtmaxcoll" value="NNS">
+                    <input type="text" class="tf_keyword" id="qVal" name="q" value="" title="검색어 입력" autocomplete="off" spellcheck="false">
+                    <button id="kakaoBtnSearch" class="btn_search" type="submit"><span class="ir_wa">검색</span></button>
+                </div>
+            </fieldset>
+            <div id="wrap_suggestBox" class="wrap_suggestBox">
+                <!-- 서제스트 영역 -->
+                <div id="suggestBox" class="suggestBox box_sub">
+                    <div class="baseBox bg" style="display: none"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="//s1.daumcdn.net/svc/original/U03/cssjs/pcSuggest/suggest-1.2.10b.min.js"></script>
+    <script>
+        ;(function($){
+
+            var suggestInstance = new suggest.Suggest(document.getElementById("search_news"), {
+                inputEl: 'qVal',
+                suggestBoxEl: 'suggestBox',
+                autoFocus: 'NORMAL',
+                suggestLimit: 10,
+                isReverse: false,
+                searchURL: '//search.daum.net/search',
+                APIServer: {
+                    host: '//apihub.daum.net/suggest/v2/pc.json',
+                    queries: {
+                        'mod': 'json',
+                        'code': 'utf_in_out',
+                        'appkey' : '9c97934ebab4c7e024c3a6e450ec195c'
+                    }
+                }
+            });
+            $("#qVal").on("focus", function (e) {
+                e && e.preventDefault();
+                if ($("#qVal").val().length >= 0) {
+                    $("#qVal").parent().addClass("search_on");
+                }
+            });
+            $("#qVal").on("focusout", function(e) {
+                e && e.preventDefault();
+                if ($("#qVal").val().length == 0) {
+                    $("#qVal").parent().removeClass("search_on");
+                }
+            });
+
+            var restoreDaValue = function () {
+                var da = $("#kakaoSearch input[name=DA]");
+                da.val((da.val() || '').replace('B', 'A'));
+            }
+
+            $("#qVal").keydown(function (event) {
+                if (event.which === 13) {
+                    restoreDaValue();
+                }
+            });
+
+            $("#kakaoBtnSearch").on("click", function () {
+                restoreDaValue();
+            });
+
+            suggestInstance.on('click-item', function () {
+                var form = document.getElementById('kakaoSearch');
+                form.elements.namedItem("DA").value = '23B';
+                form.submit();
+            });
+        })(jQuery);
+
+    </script>
+</div>
+
+			
+<div id="kakaoGnb" role="navigation">
+    <div class="inner_gnb">
+        <h2 class="screen_out">뉴스 메인메뉴</h2>
+        <ul class="gnb_comm #GNB#default">
+            <li><a href="/" class="link_gnb link_gnb1 #media_home"><span class="ir_wa">홈</span><span class="bar_gnb"><span class="inner_bar"></span></span></a></li>
+            <li><a href="/society/" class="link_gnb link_gnb2 #media_society"><span class="ir_wa">사회</span><span class="bar_gnb"><span class="inner_bar"></span></span></a></li>
+            <li><a href="/politics/" class="link_gnb link_gnb3 #media_politics"><span class="ir_wa">정치</span><span class="bar_gnb"><span class="inner_bar"></span></span></a></li>
+            <li><a href="/economic/" class="link_gnb link_gnb4 #media_economic"><span class="ir_wa">경제</span><span class="bar_gnb"><span class="inner_bar"></span></span></a></li>
+            <li><a href="/foreign/" class="link_gnb link_gnb5 #media_foreign"><span class="ir_wa">국제</span><span class="bar_gnb"><span class="inner_bar"></span></span></a></li>
+            <li><a href="/culture/" class="link_gnb link_gnb6 #media_culture"><span class="ir_wa">문화</span><span class="bar_gnb"><span class="inner_bar"></span></span></a></li>
+            <li><a href="/digital/" class="link_gnb link_gnb7 #media_digital"><span class="ir_wa">IT</span><span class="bar_gnb"><span class="inner_bar"></span></span></a></li>
+            <li><a href="/ranking/popular/" class="link_gnb link_gnb8 #media_ranking"><span class="ir_wa">랭킹</span><span class="bar_gnb"><span class="inner_bar"></span></span></a></li>
+            <li><a href="/series/" class="link_gnb link_gnb9 #media_series"><span class="ir_wa">연재</span><span class="bar_gnb"><span class="inner_bar"></span></span></a></li>
+            <li><a href="/photo/" class="link_gnb link_gnb10 #media_photo"><span class="ir_wa">포토</span><span class="bar_gnb"><span class="inner_bar"></span></span></a></li>
+            <li><a href="/tv/" class="link_gnb link_gnb11 #media_tv"><span class="ir_wa">TV</span><span class="bar_gnb"><span class="inner_bar"></span></span><em class="ico_news ico_live">LIVE</em></a></li>
+        </ul>
+        <div class="gnb_etc">
+            <ul class="gnb_with #GNB#default">
+                <li><a href="/1boon/" class="link_gnb link_gnb1 #media_1boon"><span class="ir_wa">1boon</span></a></li>
+                <li><a href="/exhibition/" class="link_gnb link_gnb2 #media_exhibition"><span class="ir_wa">사진전</span><span class="bar_gnb"><span class="inner_bar"></span></span></a></li>
+            </ul>
+            <div class="gnb_weather">
+                
+                
+                                <strong class="screen_out">날씨 정보</strong>
+                <ul class="list_weather " > <!-- 69px씩 이동합니다 / 밤일 경우, type_night 클래스 추가 -->
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=서울특별시날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather3">구름많음</span>
+                                <span class="txt_weather">
+                                    서울
+                                    <span class="num_heat">22</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=수원시 권선구날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather3">구름많음</span>
+                                <span class="txt_weather">
+                                    수원
+                                    <span class="num_heat">22</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=인천광역시날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather3">구름많음</span>
+                                <span class="txt_weather">
+                                    인천
+                                    <span class="num_heat">22</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=대구광역시날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather3">구름많음</span>
+                                <span class="txt_weather">
+                                    대구
+                                    <span class="num_heat">24</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=대전광역시날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather3">구름많음</span>
+                                <span class="txt_weather">
+                                    대전
+                                    <span class="num_heat">23</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=광주광역시날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather4">흐림</span>
+                                <span class="txt_weather">
+                                    광주
+                                    <span class="num_heat">23</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=부산광역시날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather3">구름많음</span>
+                                <span class="txt_weather">
+                                    부산
+                                    <span class="num_heat">22</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=울산광역시날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather3">구름많음</span>
+                                <span class="txt_weather">
+                                    울산
+                                    <span class="num_heat">21</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=울릉군날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather3">구름많음</span>
+                                <span class="txt_weather">
+                                    울릉/독도
+                                    <span class="num_heat">18</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=춘천시날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather3">구름많음</span>
+                                <span class="txt_weather">
+                                    춘천
+                                    <span class="num_heat">22</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=강릉시날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather3">구름많음</span>
+                                <span class="txt_weather">
+                                    강릉
+                                    <span class="num_heat">24</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=백령면날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather4">흐림</span>
+                                <span class="txt_weather">
+                                    백령
+                                    <span class="num_heat">10</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=청주시 상당구날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather3">구름많음</span>
+                                <span class="txt_weather">
+                                    청주
+                                    <span class="num_heat">22</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=전주시 완산구날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather3">구름많음</span>
+                                <span class="txt_weather">
+                                    전주
+                                    <span class="num_heat">22</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=목포시날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather3">구름많음</span>
+                                <span class="txt_weather">
+                                    목포
+                                    <span class="num_heat">22</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=여수시날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather4">흐림</span>
+                                <span class="txt_weather">
+                                    여수
+                                    <span class="num_heat">20</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=제주특별자치도날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather3">구름많음</span>
+                                <span class="txt_weather">
+                                    제주
+                                    <span class="num_heat">20</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=안동시날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather3">구름많음</span>
+                                <span class="txt_weather">
+                                    안동
+                                    <span class="num_heat">24</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="http://search.daum.net/search?w=tot&DA=23W&rtmaxcoll=Z8T&q=창원시 의창구날씨" class="link_cont #GNB#default#widget_weather" >
+                                <span class="ico_weather ico_weather3">구름많음</span>
+                                <span class="txt_weather">
+                                    창원
+                                    <span class="num_heat">22</span> ℃
+                                </span>
+                            </a>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    (function($){
+        $(".list_weather").rolling({
+            rollingTime : 3000,
+            durationTime : 1000
+        });
+
+        $(".gnb_comm li:not('.on') .link_gnb")
+            .mouseenter(function() {
+                $(this).find(".inner_bar").width(0).animate({
+                    width : $(this).width()
+                }, 300);
+            }).mouseleave(function() {
+                $(this).find(".inner_bar").animate({
+                    width : 0
+                }, 300, function(){
+                });
+            });
+
+    })(jQuery);
+</script>
+
+<style>
+    .gnb_comm .link_gnb .bar_gnb .inner_bar {width:0;background-color:#1e88e5}
+    .gnb_comm .on .link_gnb .bar_gnb .inner_bar {width:100%}
+</style>
+
+		</div>
+		<!-- // kakaoHead -->
+		<hr class="hide">
+		<div id="kakaoContent" class="cont_etc" role="main">
+
+
+						<h2 id="kakaoBody" class="screen_out">언론사별 뉴스</h2> <!-- 각 섹션 타이틀에 맞게 변경 -->
+			
+			
+			<div id="cMain">
+								
+<script type="text/javascript" src="/resources/dist/news/js/modules/calendar.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/resources/dist/news/css/calendar.min.css">
+
+
+
+    
+
+
+
+
+<div id="mArticle" role="main">
+    <div class="head_etc head_etc2"><!-- 언론사별 뉴스, 전체기사, 언론사별 전체기사에만 head_etc2 클래스 추가 -->
+        <h2 id="kakaoBody" class="tit_broadcast">JTBC 전체기사</h2>
+        <div class="wrap_calendar">
+            <strong class="screen_out">날짜선택</strong>
+            <div class="box_calendar">
+                                    <span class="screen_out">2019년 04월 01일</span><!-- 현재 날짜 텍스트 변경 처리 필요 -->
+                    <span class="num_news num2">2</span>
+                    <span class="num_news num0">0</span>
+                    <span class="num_news num1">1</span>
+                    <span class="num_news num9">9</span>
+                    <span class="txt_point">년</span>
+                    <span class="num_news num0">0</span>
+                    <span class="num_news num4">4</span>
+                    <span class="txt_point">년</span>
+                    <span class="num_news num0">0</span>
+                    <span class="num_news num1">1</span>
+                
+                <a href="#none" class="btn_calendar">
+                    <span class="ico_news">달력에서 선택하기</span>
+                </a>
+
+                
+                
+
+                <a href="/cp/310?regDate=20190331" class="btn_date btn_prev "><!-- 마지막 리스트일 때 btn_off 클래스 추가 -->
+                    <span class="ico_news ico_prev">이전 날짜</span>
+                </a>
+
+                                    <a href="/cp/310?regDate=20190402" class="btn_date btn_next"><!-- 마지막 리스트일 때 btn_off 클래스 추가 -->
+                        <span class="ico_news ico_next">다음 날짜</span>
+                    </a>
+                            </div>
+            <a href="/cp/310" class="btn_today">오늘</a>
+            <div id="JESMCalender" class="" style="top: 41px; left: -79px;"></div>
+        </div>
+
+        <script type="text/javascript">
+            var Calendar = namespace("CALENDAR");
+
+            var mcalendar = new Calendar( jQuery("#JESMCalender"), jQuery(".btn_calendar"), {
+                year:'2019',
+                month:'04',
+                day : '01',
+                position : {
+                    left : "-79", top: 41
+                },
+                onChange:function(){
+                    var date = this.getYMD().replace(/\./g,"");
+                    var cDate = new Date().format('yyyymmdd');
+                    if(date != cDate){
+                        location.href = '/cp/310?regDate='+date;
+                    }
+                    return;
+                }
+            })
+        </script>
+    </div>
+
+    
+
+    <ul class="tab_nav tab_nav2">
+                                        
+            <li class="on"><!-- 클릭시 on 클래스 추가 -->
+                                                                                                        <a href="/cp/310?regDate=20190401" class="link_tab">
+                    <span class="ico_news ico_checks"></span>최신
+                </a>
+            </li>
+                    
+            <li ><!-- 클릭시 on 클래스 추가 -->
+                                                                <a href="/cp/310?cateId=1001&regDate=20190401" class="link_tab">
+                    <span class="ico_news ico_checks"></span>사회
+                </a>
+            </li>
+                    
+            <li ><!-- 클릭시 on 클래스 추가 -->
+                                                                <a href="/cp/310?cateId=1002&regDate=20190401" class="link_tab">
+                    <span class="ico_news ico_checks"></span>정치
+                </a>
+            </li>
+                    
+            <li ><!-- 클릭시 on 클래스 추가 -->
+                                                                <a href="/cp/310?cateId=1006&regDate=20190401" class="link_tab">
+                    <span class="ico_news ico_checks"></span>경제
+                </a>
+            </li>
+                    
+            <li ><!-- 클릭시 on 클래스 추가 -->
+                                                                <a href="/cp/310?cateId=1007&regDate=20190401" class="link_tab">
+                    <span class="ico_news ico_checks"></span>국제
+                </a>
+            </li>
+                    
+            <li ><!-- 클릭시 on 클래스 추가 -->
+                                                                <a href="/cp/310?cateId=1003&regDate=20190401" class="link_tab">
+                    <span class="ico_news ico_checks"></span>문화
+                </a>
+            </li>
+                    
+            <li ><!-- 클릭시 on 클래스 추가 -->
+                                                                <a href="/cp/310?cateId=1005&regDate=20190401" class="link_tab">
+                    <span class="ico_news ico_checks"></span>연예
+                </a>
+            </li>
+                    
+            <li ><!-- 클릭시 on 클래스 추가 -->
+                                                                <a href="/cp/310?cateId=1004&regDate=20190401" class="link_tab">
+                    <span class="ico_news ico_checks"></span>스포츠
+                </a>
+            </li>
+                    
+            <li ><!-- 클릭시 on 클래스 추가 -->
+                                                                <a href="/cp/310?cateId=1008&regDate=20190401" class="link_tab">
+                    <span class="ico_news ico_checks"></span>IT
+                </a>
+            </li>
+                    
+            <li ><!-- 클릭시 on 클래스 추가 -->
+                                                                <a href="/cp/310?cateId=1009&regDate=20190401" class="link_tab">
+                    <span class="ico_news ico_checks"></span>컬럼
+                </a>
+            </li>
+                    
+            <li ><!-- 클릭시 on 클래스 추가 -->
+                                                                <a href="/cp/310?cateId=1065&regDate=20190401" class="link_tab">
+                    <span class="ico_news ico_checks"></span>보도자료
+                </a>
+            </li>
+                    
+            <li ><!-- 클릭시 on 클래스 추가 -->
+                                                                <a href="/cp/310?cateId=100000&regDate=20190401" class="link_tab">
+                    <span class="ico_news ico_checks"></span>속보
+                </a>
+            </li>
+            </ul>
+
+    <div class="box_etc">
+        <strong class="screen_out">최신</strong><!-- 선택된 탭의 텍스트를 넣어주세요 -->
+                    <p class="txt_none">해당 일자에 데이터가 없습니다.</p>
+        
+    </div>
+</div>
+
+
+
+								<div id="mAside" role="complementary">
+													<div class="aside_g aside_ad" style="height:250px">
+    <h3 class="screen_out">광고</h3>
+    <ins class="daum_ddn_area" style="display:block"
+         data-ad-param-channel="media"
+         data-ad-param-cp="pc_media_news"
+         data-ad-frame-id = "AMS_250exp"
+         data-ad-frame-name = "AMS_250exp"
+         data-ad-unit = "05d22"
+         data-ad-type = "D"
+         data-ad-width = "250"
+         data-ad-height = "250"></ins>
+    <script async type="text/javascript" src="//t1.daumcdn.net/adfit/static/ad.min.js"></script>
+</div>
+									<div class="aside_g aside_issue">
+    <h3 class="tit_news">지금뜨는이슈</h3>
+    <span class="info_aside">2019.04.16. 16:00 기준</span>
+    <div class="cont_aside">
+        <ul class="list_issue">
+                                        <li class="item_main">
+                <a href="/issue/168501" class="link_cont">
+                    <img src="//img1.daumcdn.net/thumb/S266x120ht.u/?fname=https%3A%2F%2Fimg1.daumcdn.net%2Fnews%2F201904%2F16%2Fmoneytoday%2F20190416153722919vhfi.jpg&scode=media" class="thumb_g" alt="">
+                    <span class="dimmed_g"></span>
+                    <strong class="tit_g">
+                        <span class="inner_tit"><span class="txt_g">세월호 5주기</span>
+                                                </span>
+                    </strong>
+                </a>
+            </li>
+                                                                                <li>
+                <a href="/issue/1476447" class="link_cont">
+                    <strong class="tit_g">파리 노트르담 대성당 화재</strong>
+                                            <span class="ico_news2 ico_new">NEW </span>
+                                    </a>
+            </li>
+                                                                        <li>
+                <a href="/issue/1459379" class="link_cont">
+                    <strong class="tit_g">조양호 한진 회장 별세</strong>
+                                    </a>
+            </li>
+                                                                        <li>
+                <a href="/issue/579208" class="link_cont">
+                    <strong class="tit_g">고 장자연 사건 재조사</strong>
+                                    </a>
+            </li>
+                                                                        <li>
+                <a href="/issue/1436001" class="link_cont">
+                    <strong class="tit_g">아시아나 매각 초읽기</strong>
+                                    </a>
+            </li>
+                                                 </ul>
+        <div class="util_aside">
+            <a href="/issue/" class="link_all"><span class="txt_news">전체이슈</span><span class="ico_news"></span></a>
+        </div>
+    </div>
+</div>
+
+									
+
+<div class="aside_g aside_series">
+    <h3 class="tit_news">추천연재</h3>
+    <div class="cont_aside">
+        <ul class="list_thumb">
+                            <li>
+                                            <a href="http://v.media.daum.net/v/20190416155647781" class="link_thumb">
+                            <img src="//img1.daumcdn.net/thumb/S62x62ht.u/?fname=https%3A%2F%2Fimg1.daumcdn.net%2Fnews%2F201904%2F16%2FBabynews%2F20190416155647780vbep.png&scode=media", "S62x62")" class="thumb_g" alt="아이와 함께 식사 준비하며 &#39;동료애&#39; 키워보세요" width="62" height="62" aria-hidden="true">
+                        </a>
+                                        <div class="cont_thumb">
+                        <em class="emph_g tit_series"><a href="/series/1362129" class="link_txt">스마트폰 없는 행복한 몰입육아</a></em> <!-- 연재페이지로 이동필요 -->
+                        <strong class="tit_thumb"><a href="http://v.media.daum.net/v/20190416155647781" class="link_txt">아이와 함께 식사 준비하며 '동료애' 키워보세요</a></strong>
+                    </div>
+                </li>
+                            <li>
+                                            <a href="http://v.media.daum.net/v/20190416155127548" class="link_thumb">
+                            <img src="//img1.daumcdn.net/thumb/S62x62ht.u/?fname=https%3A%2F%2Fimg1.daumcdn.net%2Fnews%2F201904%2F16%2Fsegye%2F20190416155127942riym.jpg&scode=media", "S62x62")" class="thumb_g" alt="&quot;안전불감증&quot; 스타벅스, 보행로 점거 &#39;배짱 공사&#39; 안하무인 [김기자의 현장+]" width="62" height="62" aria-hidden="true">
+                        </a>
+                                        <div class="cont_thumb">
+                        <em class="emph_g tit_series"><a href="/series/216680" class="link_txt">김기자의 현장+</a></em> <!-- 연재페이지로 이동필요 -->
+                        <strong class="tit_thumb"><a href="http://v.media.daum.net/v/20190416155127548" class="link_txt">"안전불감증" 스타벅스, 보행로 점거 '배짱 공사' 안하무인 </a></strong>
+                    </div>
+                </li>
+                    </ul>
+    </div>
+</div>									<div class="aside_g aside_ranking">
+    <h3 class="tit_news">많이 본 뉴스</h3>
+    <ul class="tab_aside tab_media">
+                
+            
+            <li  class="on"  data-index="0">
+                <a href="#none" class="link_tab link_tab2 #RIGHT#popular_tab#news">뉴스</a>
+                <div class="cont_aside" data-totalpage="3" data-index="0" >
+                    <strong class="screen_out">뉴스</strong> <!-- 선택된 탭의 메뉴 명이 들어갑니다. -->
+                                                                    <ol class="list_ranking" data-page="1" >
+                        
+                        <li>
+                            <em class="num_news num1">1위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416140109989" class="link_txt #RIGHT#popular_news#news_list @1">
+                                    찜질방 여자 화장실서 성폭행 시도 20대 구속
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num2">2위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416115548998" class="link_txt #RIGHT#popular_news#news_list @2">
+                                    첨탑 무너지자 비명..눈물·기도로 뒤덮인 노트르담 화재 현장
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num3">3위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416142216657" class="link_txt #RIGHT#popular_news#news_list @3">
+                                    한국당 '세월호 징글징글' 발언 논란..黃 "진심어린 사죄"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num4">4위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416112913002" class="link_txt #RIGHT#popular_news#news_list @4">
+                                    '강간 무죄'에 동반자살 부부 사건..1년만에 대법 유죄 확정
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num5">5위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416123649860" class="link_txt #RIGHT#popular_news#news_list @5">
+                                    "공중에서 물 뿌리지" 트럼프 훈수에 프랑스 '발끈'
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num6">6위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416114558705" class="link_txt #RIGHT#popular_news#news_list @6">
+                                    송진 채취해 전투기 날렸다..패배 인정 못한 日의 발악
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num7">7위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416140538133" class="link_txt #RIGHT#popular_news#news_list @7">
+                                    "서울 직장인, 월 358만원 받아 246만원 쓴다..퇴근시간 당겨져" 
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num8">8위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416100146430" class="link_txt #RIGHT#popular_news#news_list @8">
+                                    '세월호 유가족 막말' 차명진, 9년전엔 "황제의 식사"로 빈축
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num9">9위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416133804291" class="link_txt #RIGHT#popular_news#news_list @9">
+                                    차명진 막말에 황교안 대표 "사죄..절차따라 징계"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num10">10위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416133931328" class="link_txt #RIGHT#popular_news#news_list @10">
+                                    갈색 맥주 페트병 없어진다..환경부, 색 있는 페트병 퇴출
+                                </a>
+                            </strong>
+                        </li>
+
+                                                </ol>
+                                                                                            <ol class="list_ranking" data-page="2" style="display:none">
+                        
+                        <li>
+                            <em class="num_news num11">11위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416101737096" class="link_txt #RIGHT#popular_news#news_list @11">
+                                    삼풍백화점 생존자 "세월호 지겹다 할 수 있는 건 당사자뿐"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num12">12위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416140734200" class="link_txt #RIGHT#popular_news#news_list @12">
+                                    日국민 62% "망언 관료 사임 너무 늦었다"..아베 지지율은 상승
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num13">13위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416133536226" class="link_txt #RIGHT#popular_news#news_list @13">
+                                    현대重, 중동머니 통해 대우조선해양 인수 '바짝'
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num14">14위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416111657533" class="link_txt #RIGHT#popular_news#news_list @14">
+                                    '하늘로 돌아간 조양호 회장'..영결식 마치고 선친 곁에 영면
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num15">15위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416140404085" class="link_txt #RIGHT#popular_news#news_list @15">
+                                    "전북 축협 조합장, 술 안 따랐다고 사직서 요구 '갑질'"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num16">16위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416135017637" class="link_txt #RIGHT#popular_news#news_list @16">
+                                    "우윤근에 1천만원 준 것 맞다"..건설업자, '무혐의' 처분 불복
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num17">17위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416141247361" class="link_txt #RIGHT#popular_news#news_list @17">
+                                    이총리 "세월호 진실규명 방해하는 움직임 있다..방해 멈춰야"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num18">18위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416113549296" class="link_txt #RIGHT#popular_news#news_list @18">
+                                    '이언주 불륜설' 영상 유튜버 벌금형.."허위사실 적시"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num19">19위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416101135853" class="link_txt #RIGHT#popular_news#news_list @19">
+                                    美최대 쇼핑몰서 20대 남성이 5세 소년 발코니 아래로 던져
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num20">20위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416120122287" class="link_txt #RIGHT#popular_news#news_list @20">
+                                    노트르담 화재서 '가시면류관'은 구했는데..남은 유물은?
+                                </a>
+                            </strong>
+                        </li>
+
+                                                </ol>
+                                                                                            <ol class="list_ranking" data-page="3" style="display:none">
+                        
+                        <li>
+                            <em class="num_news num21">21위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416102849556" class="link_txt #RIGHT#popular_news#news_list @21">
+                                    세월호 이준석 선장 "유가족에게 죄송, 잊어본 적 없다" 옥중편지
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num22">22위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416152328115" class="link_txt #RIGHT#popular_news#news_list @22">
+                                    노트르담 8시간만에 화마 물리쳐..가슴 쓸어내린 프랑스
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num23">23위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416120335354" class="link_txt #RIGHT#popular_news#news_list @23">
+                                    차명진 "징하게 해처먹는다" 막말 후폭풍..민주당 '제명' 요구
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num24">24위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416105004479" class="link_txt #RIGHT#popular_news#news_list @24">
+                                    차명진, "뼈 발라" 세월호 막말 논란에 사과..나경원 "유감"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num25">25위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416074450034" class="link_txt #RIGHT#popular_news#news_list @25">
+                                     "윤지오 꽃배달, 내가 보냈다" 머니투데이 기자 해명
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num26">26위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416105554721" class="link_txt #RIGHT#popular_news#news_list @26">
+                                    짜증 방지.. 비행기 좌석 '덜 젖혀지게' 한 항공사
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num27">27위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416135100668" class="link_txt #RIGHT#popular_news#news_list @27">
+                                    이 죽의 유통기한은 25년입니다
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num28">28위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416135007629" class="link_txt #RIGHT#popular_news#news_list @28">
+                                    세월호 법정 선 이병기 "유가족에 위로 말씀..인양 주장하다 질책"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num29">29위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416114606715" class="link_txt #RIGHT#popular_news#news_list @29">
+                                    해안서 220km 떨어진 바다 한가운데서 구조된 개
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num30">30위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416140103984" class="link_txt #RIGHT#popular_news#news_list @30">
+                                    '창업주 김재철도 사퇴'..그룹총수 퇴진, 재벌해체 신호탄 될까
+                                </a>
+                            </strong>
+                        </li>
+
+                                                </ol>
+                                                            </div>
+            </li> <!-- 선택시, on클래스 추가 -->
+        
+            
+            <li  data-index="1">
+                <a href="#none" class="link_tab link_tab3 #RIGHT#popular_tab#enter">연예</a>
+                <div class="cont_aside" data-totalpage="3" data-index="1"  style="display: none" >
+                    <strong class="screen_out">연예</strong> <!-- 선택된 탭의 메뉴 명이 들어갑니다. -->
+                                                                    <ol class="list_ranking" data-page="1" >
+                        
+                        <li>
+                            <em class="num_news num1">1위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416105537714?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @1">
+                                    이청아 "'전참시' 매니저 논란, 배울건 배우고 넘어가야"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num2">2위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416130632440?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @2">
+                                    박유천 측 "마약한 적 없다, 내일 오전 10시 자진 출석"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num3">3위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416121601543?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @3">
+                                     경찰 "승리, 일본 투자자 크리스마스 파티서도 성접대" 진술 확보
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num4">4위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416110458084?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @4">
+                                    민경훈 폭로에 진땀..홍진영 "게임만 하면 성격 겁나 더러워져"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num5">5위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416084636429?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @5">
+                                    '안녕하세요' 이영자→ "선배님" 부른 그녀의 정체..아들자랑녀는 누구
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num6">6위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416113118103?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @6">
+                                    방탄소년단, 또 1위..K팝으로는 설명 못할 독립현상
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num7">7위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416150139211?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @7">
+                                    한채영 세무조사, 소속사 "고소득자 대상, 특별한 사유 無"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num8">8위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416105802780?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @8">
+                                    이청아, '전지적참견시점' 후폭풍 언급 "받아들여야 할 부분" 
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num9">9위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190415233716059?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @9">
+                                    '안녕하세요', 잘때만 찾는 남편이 고민 아내..'폭로전'
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num10">10위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416143130994?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @10">
+                                    이청아, '정준영 몰카' 루머에 "최초 유포글 쓰러지는 줄, 선처 NO" 
+                                </a>
+                            </strong>
+                        </li>
+
+                                                </ol>
+                                                                                            <ol class="list_ranking" data-page="2" style="display:none">
+                        
+                        <li>
+                            <em class="num_news num11">11위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416081301620?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @11">
+                                    '라스' 강주은 "홈쇼핑 생방송 중 최민수 서프라이즈 등장, 현장 초토화"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num12">12위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416122233633?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @12">
+                                    MBC 'PD수첩', 김기덕 감독 상대로 18일 기자회견 개최 "사과나 성찰 없어"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num13">13위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416141018299?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @13">
+                                    박호산 "'정글의 법칙' 가느니 군대 한 번 더 간다"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num14">14위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416110447077?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @14">
+                                    이청아 "6년 연인 이기우와 결혼? 아직까진 일이 좋아"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num15">15위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416064201093?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @15">
+                                    '안녕하세요' 광희, 사연 주인공에 "남자 친구와 헤어져라" 권유 
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num16">16위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416060036683?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @16">
+                                    '냉부해' 김성주, 子 민국과 복붙 사진공개 "내 유전자 확실"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num17">17위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416084640431?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @17">
+                                    "메이비 힘드니까"..'동상이몽2' 윤상현, 나무 600그루 심기→딸들·반려견 목욕까지
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num18">18위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416114331643?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @18">
+                                    방탄소년단, 美·英 양대 팝차트 석권..K팝 신기원 열었다
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num19">19위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416090340973?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @19">
+                                    '아내의 맛' 김상혁︎송다예 결혼식 공개 '눈물샘 폭발 모녀'
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num20">20위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416142418726?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @20">
+                                    '컬투쇼' 유민상 "PC방 1시간 이용료 2천원, 음식 탓 15만원 냈다"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                </ol>
+                                                                                            <ol class="list_ranking" data-page="3" style="display:none">
+                        
+                        <li>
+                            <em class="num_news num21">21위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416112319767?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @21">
+                                    이지애 아나운서, 세월호 5주기 추모 "지겨운 분도 오늘만큼은 기억해달라" 
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num22">22위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190415233816063?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @22">
+                                    오정연, 갑자기 11kg 증량 '화제'.."당시 살 찐 줄 몰랐어" 
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num23">23위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416104315178?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @23">
+                                    '랜선라이프' 이영자채널, 진재영 '제주 하우스' 최초 공개
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num24">24위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416125028088?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @24">
+                                    '언니네' 민경훈 "테이, 군대에서 내 초콜릿 100개 한 번에 먹어"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num25">25위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416083716191?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @25">
+                                    주시은 아나운서 "김영철과 안 맞아, 오늘 다시 느꼈다"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num26">26위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416123454827?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @26">
+                                    경찰, '마약투약 혐의' 박유천 자택 압수수색..내일 소환조사
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num27">27위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416104126087?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @27">
+                                    '1박2일' 빈자리→'당나귀귀' 정규편성·'슈돌' 시간대 이동
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num28">28위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416085611697?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @28">
+                                    잠깐 바람인 줄 알았는데..방탄소년단은 '태풍'이었다
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num29">29위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416111406420?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @29">
+                                    이청아 "정준영 루머에 충격, 유포자 선처 없다"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num30">30위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416094628757?s=eRIGHT_MANY_TOT=R" class="link_txt #RIGHT#popular_news#enter_list @30">
+                                    "빌보드 1위→유튜브 신기록→?"..방탄소년단 열풍, 어디까지 갈까
+                                </a>
+                            </strong>
+                        </li>
+
+                                                </ol>
+                                                            </div>
+            </li> <!-- 선택시, on클래스 추가 -->
+        
+            
+            <li  data-index="2">
+                <a href="#none" class="link_tab link_tab4 #RIGHT#popular_tab#sports">스포츠</a>
+                <div class="cont_aside" data-totalpage="3" data-index="2"  style="display: none" >
+                    <strong class="screen_out">스포츠</strong> <!-- 선택된 탭의 메뉴 명이 들어갑니다. -->
+                                                                    <ol class="list_ranking" data-page="1" >
+                        
+                        <li>
+                            <em class="num_news num1">1위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416140717193" class="link_txt #RIGHT#popular_news#sports_list @1">
+                                    '커쇼 복귀+피더슨 끝내기 홈런' 다저스, 푸이그 활약한 신시내티에 역전승
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num2">2위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416123244804" class="link_txt #RIGHT#popular_news#sports_list @2">
+                                    '추신수 홈런+3안타+4출루' TEX, LAA 꺾고 2연승
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num3">3위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416133154105" class="link_txt #RIGHT#popular_news#sports_list @3">
+                                    BBC, "승률-득점-실점까지.. 토트넘, 어쩌면 無케인이 낫다"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num4">4위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416111008281" class="link_txt #RIGHT#popular_news#sports_list @4">
+                                    우즈 우승 예측해 14억원 번 사나이 "내 생애 첫 스포츠 베팅"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num5">5위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416142924896" class="link_txt #RIGHT#popular_news#sports_list @5">
+                                     '트리플킬' 다르빗슈 99마일, 타자-주심-포수 차례로 강타
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num6">6위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416121102480" class="link_txt #RIGHT#popular_news#sports_list @6">
+                                    화난다고 관중석으로 뻥! 얼굴에 피멍든 관중
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num7">7위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416122740706" class="link_txt #RIGHT#popular_news#sports_list @7">
+                                    전 맨유 코치 증언..호날두, 퍼거슨 부탁에 맨유에서 1년 더 뛰었다
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num8">8위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416150037152" class="link_txt #RIGHT#popular_news#sports_list @8">
+                                    손흥민, 유럽 5대 리그 전체 평점 '97위'..메시 1위-케인 35위
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num9">9위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416135507768" class="link_txt #RIGHT#popular_news#sports_list @9">
+                                    '산불피해 기부' 손흥민 "조국의 참사, 나도 도와야 한다고 생각"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num10">10위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416090510021" class="link_txt #RIGHT#popular_news#sports_list @10">
+                                    2군서도 헤매고 있는 KIA 해즐베이커, 6년 만에 시즌 도중 방출 외인타자 될까?
+                                </a>
+                            </strong>
+                        </li>
+
+                                                </ol>
+                                                                                            <ol class="list_ranking" data-page="2" style="display:none">
+                        
+                        <li>
+                            <em class="num_news num11">11위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416132852991" class="link_txt #RIGHT#popular_news#sports_list @11">
+                                    前 LAD 멤버들 향한 박수, MLB.com "가장 큰 함성은 푸이그 향한 것"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num12">12위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416114127562" class="link_txt #RIGHT#popular_news#sports_list @12">
+                                    다르빗슈, 330일 만에 승리 감격..최고 구속 159km!
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num13">13위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416132237797" class="link_txt #RIGHT#popular_news#sports_list @13">
+                                    역시 커쇼, 복귀전 7이닝 6K 2실점..'푸이그 홈런' 빼고 완벽
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num14">14위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416145535915" class="link_txt #RIGHT#popular_news#sports_list @14">
+                                    OK저축은행 "김호철 감독이 먼저 제안..석진욱 코치가 적임자"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num15">15위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416140207021" class="link_txt #RIGHT#popular_news#sports_list @15">
+                                    '명불허전' LAD 커쇼, 느려진 구속 불구 복귀전 'QS+ 호투'
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num16">16위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416135325724" class="link_txt #RIGHT#popular_news#sports_list @16">
+                                     오심 인정한 프로축구연맹, 심판 징계수위 안 밝히는 이유
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num17">17위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416144215402" class="link_txt #RIGHT#popular_news#sports_list @17">
+                                    로버츠 감독 "류현진, 불펜 피칭 성공적"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num18">18위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416133602247" class="link_txt #RIGHT#popular_news#sports_list @18">
+                                     "확실히 안 나간다" 공인구를 보는 현장의 시선과 반론
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num19">19위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416130350355" class="link_txt #RIGHT#popular_news#sports_list @19">
+                                    1승 투수가 역대 최고 투구? 삼성 헤일리의 놀라운 기록
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num20">20위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416133027056" class="link_txt #RIGHT#popular_news#sports_list @20">
+                                     포이리에, 할로웨이에게 "미안하다 사랑한다"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                </ol>
+                                                                                            <ol class="list_ranking" data-page="3" style="display:none">
+                        
+                        <li>
+                            <em class="num_news num21">21위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416093006058" class="link_txt #RIGHT#popular_news#sports_list @21">
+                                    배영수의 헌신은 두산의 숨은 동력이다
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num22">22위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190415215051106" class="link_txt #RIGHT#popular_news#sports_list @22">
+                                    英 언론까지 감동.."손흥민, 한국 산불에 10만 파운드 기부"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num23">23위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416133838306" class="link_txt #RIGHT#popular_news#sports_list @23">
+                                     입이 귀에 걸린 로버츠 감독, '역시 커쇼'
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num24">24위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416142914892" class="link_txt #RIGHT#popular_news#sports_list @24">
+                                    '윌리엄스 36점' LAC, GSW에 31점 차 대역전승
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num25">25위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416094113534" class="link_txt #RIGHT#popular_news#sports_list @25">
+                                    벤치 앉아 있는 강정호를 향한 시선.."포기하기엔 이르다"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num26">26위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416053002375" class="link_txt #RIGHT#popular_news#sports_list @26">
+                                    한국 그립다던 최지만, 연봉 대비 거액 기부로 진심 담았다
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num27">27위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416050602236" class="link_txt #RIGHT#popular_news#sports_list @27">
+                                    日 매체 한탄 "우리도 손흥민 같은 선수 나와야"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num28">28위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416112343778" class="link_txt #RIGHT#popular_news#sports_list @28">
+                                    지단, 고급진 마네 원한다.. 몸값 '1,925억' 걸림돌
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num29">29위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416112233748" class="link_txt #RIGHT#popular_news#sports_list @29">
+                                     다저스타디움에 선 푸이그, '홈런 날리고, 배트도 날리고'
+                                </a>
+                            </strong>
+                        </li>
+
+                                                                    
+                        <li>
+                            <em class="num_news num30">30위</em>
+                            <strong class="tit_g">
+                                <a href="http://v.media.daum.net/v/20190416151500593" class="link_txt #RIGHT#popular_news#sports_list @30">
+                                    손흥민, "4강 마지막 단계.. 우리 자신을 믿어야 한다"
+                                </a>
+                            </strong>
+                        </li>
+
+                                                </ol>
+                                                            </div>
+            </li> <!-- 선택시, on클래스 추가 -->
+            </ul>
+
+    <div class="util_aside #RIGHT#popular_news">
+        <button class="btn_slide btn_prev" data-direction="prev" style="outline: 0px;"><span class="ico_news">이전</span></button>
+        <button class="btn_slide btn_next #btn_after" data-direction="next" style="outline: 0px;"><span class="ico_news">다음</span></button>
+        <a href="/ranking/" class="link_all #more"><span class="txt_news">전체보기</span><span class="ico_news"></span></a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    (function($){
+        var tab = namespace("TAB");
+        new tab({
+            container : ".aside_ranking",
+            tabHandler : ".tab_media li .link_tab",
+            tabContents : ".cont_aside"
+//            tabButtons : ".util_aside button"
+        });
+
+
+        // paging
+        $(".util_aside .btn_slide").on("click",function(e){
+            e.preventDefault();
+            var btn = $(e.currentTarget);
+            var direction = btn.data("direction");
+            var currentTab = $(".aside_ranking .cont_aside").filter(":visible");
+            var totalPage = currentTab.data("totalpage");
+            var page = currentTab.find("ol:visible").data("page");
+            var destPage = 0;
+
+            if(direction == "next"){
+                destPage = page+1;
+
+                if(destPage  > totalPage){
+                    destPage = 1
+                }
+                _tiq.push(['__trackClick', 'RIGHT popular_news btn_after']);
+            }else{
+                destPage = page-1;
+                if(destPage  <= 0){
+                    destPage = totalPage
+                }
+                _tiq.push(['__trackClick', 'RIGHT popular_news btn_before']);
+            }
+
+            currentTab.find("ol").each(function(idx,el){
+                if(idx+1 == destPage){
+                    $(el).show()
+                }else{
+                    $(el).hide()
+                }
+            })
+        })
+
+    })(window.jQuery)
+</script>									
+<!-- 실시간 검색어 -->
+
+<div class="aside_g aside_search">
+    <h3 class="tit_news">실시간 이슈</h3> <!-- 2017-05-10 텍스트 수정 -->
+    <ul class="tab_aside tab_media">
+                    <li  class="on"  data-index="0">
+                <a href="#none" class="link_tab link_tab1">전체</a>
+                <div class="cont_aside">
+                    <strong class="screen_out">전체</strong> <!-- 선택된 탭의 메뉴 명이 들어갑니다. -->
+                    <ol class="list_ranking">
+                                                                                                                                                    <li>
+                                    <em class="num_news num1">1</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%B0%A8%EB%AA%85%EC%A7%84&DA=23H&rtmaxcoll=1TH" target="_blank" class="link_txt">차명진</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">214<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num2">2</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EB%8C%80%EC%A0%84+%EC%82%B0%EB%B6%88&DA=23H&rtmaxcoll=1TH" target="_blank" class="link_txt">대전 산불</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">182<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num3">3</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%97%90%EC%9D%B4%EB%AF%B8&DA=23H&rtmaxcoll=1TH" target="_blank" class="link_txt">에이미</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">170<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num4">4</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EB%85%B8%ED%8A%B8%EB%A5%B4%EB%8B%B4+%EC%84%B1%EB%8B%B9&DA=23H&rtmaxcoll=1TH" target="_blank" class="link_txt">노트르담 성당</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">163<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num5">5</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%A0%95%EC%A7%84%EC%84%9D&DA=23H&rtmaxcoll=1TH" target="_blank" class="link_txt">정진석</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">122<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num6">6</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EB%8C%80%EC%A0%95%EB%8F%99&DA=23H&rtmaxcoll=1TH" target="_blank" class="link_txt">대정동</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_new">새로진입</span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num7">7</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EB%B3%B4%EC%A2%8C%EA%B4%80&DA=23H&rtmaxcoll=1TH" target="_blank" class="link_txt">보좌관</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">80<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num8">8</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%84%B8%EC%9B%94%ED%98%B8&DA=23H&rtmaxcoll=1TH" target="_blank" class="link_txt">세월호</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">40<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                        </ol>
+                </div>
+            </li> <!-- 선택시, on클래스 추가 -->
+                    <li  data-index="1">
+                <a href="#none" class="link_tab link_tab2">뉴스</a>
+                <div class="cont_aside">
+                    <strong class="screen_out">뉴스</strong> <!-- 선택된 탭의 메뉴 명이 들어갑니다. -->
+                    <ol class="list_ranking">
+                                                                                                                                                    <li>
+                                    <em class="num_news num1">1</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EB%8C%80%EC%A0%95%EB%8F%99+%ED%99%94%EC%9E%AC&DA=23I&rtmaxcoll=EOA,1TH" target="_blank" class="link_txt">대정동 화재</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">999<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num2">2</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%A0%95%EC%A7%84%EC%84%9D+%EC%9D%98%EC%9B%90&DA=23I&rtmaxcoll=EOA,1TH" target="_blank" class="link_txt">정진석 의원</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">19<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num3">3</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%B0%A8%EB%AA%85%EC%A7%84+%EC%84%B8%EC%9B%94%ED%98%B8&DA=23I&rtmaxcoll=EOA,1TH" target="_blank" class="link_txt">차명진 세월호</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">210<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num4">4</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%96%91%EC%82%B0%EC%8B%9C%EC%9E%A5&DA=23I&rtmaxcoll=EOA,1TH" target="_blank" class="link_txt">양산시장</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">125<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num5">5</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EA%B4%91%EC%A3%BC+%EC%84%9C%EA%B5%AC+%EC%B0%9C%EC%A7%88%EB%B0%A9&DA=23I&rtmaxcoll=EOA,1TH" target="_blank" class="link_txt">광주 서구 찜질방</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_new">새로진입</span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num6">6</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%95%84%EC%BF%A0%EC%95%84%EC%95%84%ED%8A%B8&DA=23I&rtmaxcoll=EOA,1TH" target="_blank" class="link_txt">아쿠아아트</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_new">새로진입</span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num7">7</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EA%B9%80%EC%9D%BC%EA%B6%8C&DA=23I&rtmaxcoll=EOA,1TH" target="_blank" class="link_txt">김일권</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">69<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num8">8</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EB%85%B8%ED%8A%B8%EB%A5%B4%EB%8B%B4+%EC%84%B1%EB%8B%B9+%ED%99%94%EC%9E%AC&DA=23I&rtmaxcoll=EOA,1TH" target="_blank" class="link_txt">노트르담 성당 화재</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_new">새로진입</span>
+                                                                            </span>
+                                </li>
+                                                                        </ol>
+                </div>
+            </li> <!-- 선택시, on클래스 추가 -->
+                    <li  data-index="2">
+                <a href="#none" class="link_tab link_tab3">연예</a>
+                <div class="cont_aside">
+                    <strong class="screen_out">연예</strong> <!-- 선택된 탭의 메뉴 명이 들어갑니다. -->
+                    <ol class="list_ranking">
+                                                                                                                                                    <li>
+                                    <em class="num_news num1">1</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%9D%B4%EC%8A%B9%ED%99%98&DA=23K&rtmaxcoll=DRU,1TH" target="_blank" class="link_txt">이승환</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">87<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num2">2</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%96%B4%EB%B2%A4%EC%A0%B8%EC%8A%A4+%EC%97%94%EB%93%9C%EA%B2%8C%EC%9E%84+%EC%98%88%EB%A7%A4&DA=23K&rtmaxcoll=DRU,1TH" target="_blank" class="link_txt">어벤져스 엔드게임 예매</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">70<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num3">3</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EB%B3%B4%EC%A2%8C%EA%B4%80+%EB%93%9C%EB%9D%BC%EB%A7%88&DA=23K&rtmaxcoll=DRU,1TH" target="_blank" class="link_txt">보좌관 드라마</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">43<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num4">4</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%A0%84%EB%B2%94%EC%84%A0&DA=23K&rtmaxcoll=DRU,1TH" target="_blank" class="link_txt">전범선</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">45<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num5">5</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EB%8C%80%EB%8F%84%EC%84%9C%EA%B4%80&DA=23K&rtmaxcoll=DRU,1TH" target="_blank" class="link_txt">대도서관</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">72<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num6">6</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%9D%B4%EC%88%98%EA%B2%BD&DA=23K&rtmaxcoll=DRU,1TH" target="_blank" class="link_txt">이수경</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">66<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num7">7</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%88%98%EB%A6%AC+%ED%81%AC%EB%A3%A8%EC%A6%88&DA=23K&rtmaxcoll=DRU,1TH" target="_blank" class="link_txt">수리 크루즈</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">57<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num8">8</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%A1%B0%EC%9E%A5%ED%92%8D&DA=23K&rtmaxcoll=DRU,1TH" target="_blank" class="link_txt">조장풍</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">42<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                        </ol>
+                </div>
+            </li> <!-- 선택시, on클래스 추가 -->
+                    <li  data-index="3">
+                <a href="#none" class="link_tab link_tab4">스포츠</a>
+                <div class="cont_aside">
+                    <strong class="screen_out">스포츠</strong> <!-- 선택된 탭의 메뉴 명이 들어갑니다. -->
+                    <ol class="list_ranking">
+                                                                                                                                                    <li>
+                                    <em class="num_news num1">1</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%9C%A0%EB%B2%A4%ED%88%AC%EC%8A%A4+%EC%95%84%EC%95%BD%EC%8A%A4&DA=23J&rtmaxcoll=MBK,1TH" target="_blank" class="link_txt">유벤투스 아약스</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">199<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num2">2</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%BD%94%EB%94%94+%EB%B2%A8%EB%A6%B0%EC%A0%80&DA=23J&rtmaxcoll=MBK,1TH" target="_blank" class="link_txt">코디 벨린저</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">46<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num3">3</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%B6%94%EC%8B%A0%EC%88%98+%ED%83%80%EC%9C%A8&DA=23J&rtmaxcoll=MBK,1TH" target="_blank" class="link_txt">추신수 타율</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">159<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num4">4</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EB%8B%A4%EB%A5%B4%EB%B9%97%EC%8A%88&DA=23J&rtmaxcoll=MBK,1TH" target="_blank" class="link_txt">다르빗슈</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">94<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num5">5</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%A0%84%EC%9E%90%EB%9E%9C%EB%93%9C+%EC%9D%B4%EB%8C%80%ED%97%8C&DA=23J&rtmaxcoll=MBK,1TH" target="_blank" class="link_txt">전자랜드 이대헌</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">63<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num6">6</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%EC%BB%A4%EC%87%BC+%EA%B5%AC%EC%86%8D&DA=23J&rtmaxcoll=MBK,1TH" target="_blank" class="link_txt">커쇼 구속</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">114<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num7">7</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=%ED%83%81%EA%B5%AC&DA=23J&rtmaxcoll=MBK,1TH" target="_blank" class="link_txt">탁구</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">96<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                                                                                                                                <li>
+                                    <em class="num_news num8">8</em><span class="screen_out">위</span>
+                                    <strong class="tit_g"><a href="https://search.daum.net/search?w=tot&q=FC+%EB%B0%94%EB%A5%B4%EC%85%80%EB%A1%9C%EB%82%98&DA=23J&rtmaxcoll=MBK,1TH" target="_blank" class="link_txt">FC 바르셀로나</a></strong>
+                                    <span class="info_status">
+                                    <span class="screen_out">순위</span>
+                                                                                    <span class="ico_news2 ico_up">122<span class="screen_out">상승</span></span>
+                                                                            </span>
+                                </li>
+                                                                        </ol>
+                </div>
+            </li> <!-- 선택시, on클래스 추가 -->
+            </ul>
+</div>
+
+<script type="text/javascript">
+    (function() {
+        var tab = namespace("TAB");
+        new tab({
+            container: ".aside_search",
+            tabHandler: ".tab_aside li .link_tab",
+            tabContents: ".cont_aside"
+        })
+    })()
+</script>
+
+									
+<div class="aside_g aside_shopping">
+    <h3 class="screen_out">쇼핑</h3>
+    <div id="daum-sfocus-root"></div>
+</div>
+
+<script>
+            daum_sfocus_adunit = "DAU-1a02215e2";
+    daum_sfocus_cp = "pc_media_news";
+    daum_sfocus_channel = "media";
+
+    (function (d) {
+        var a = d.createElement('script');
+        a.type = 'text/javascript';
+        a.async = true;
+        a.src = 'https://keyword.ad.daum.net/script/load_sfocus.js';
+        var s = d.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(a, s);
+    })(self.document);
+</script>
+								</div><!--//mAside-->
+							</div><!--//cMain-->
+
+			<hr class="hide">
+
+		</div><!--//daumCountent-->
+
+		<div id="wrapMinidaum" class="#GNB#default#logo"></div>
+
+        <div id="kakaoFoot" class="footer_comm" role="contentinfo">
+			<div class="inner_foot #FOOTER">
+    <div class="direct_link #direct"> <!-- btn_fold 눌러서 펼쳐지면 direct_open 클래스 추가 -->
+        <h2 class="tit_direct">바로가기</h2>
+        <div class="item_bundle">
+            <a href="/" class="link_txt #direct_newshome">뉴스홈</a>
+            <a href="/society/" class="link_txt #direct_society">사회</a>
+            <a href="/politics/" class="link_txt #direct_politics">정치</a>
+            <a href="/economic/" class="link_txt #direct_economic">경제</a>
+            <a href="/foreign/" class="link_txt #direct_foreign">국제</a>
+            <a href="/culture/" class="link_txt #direct_culture">문화</a>
+            <a href="/digital/" class="link_txt #direct_digital">IT</a>
+            <a href="/photo/" class="link_txt #direct_photo">포토</a>
+            <a href="/tv/" class="link_txt #direct_tv">TV</a>
+        </div>
+        <div class="item_bundle">
+            <a href="/issue/" class="link_txt #direct_issue">이슈</a>
+        </div>
+        <div class="item_bundle">
+            <a href="/lab/" class="link_txt #direct_lab">미디어랩</a>
+            <a href="/lab/keyword/" class="link_txt #direct_keyword">키워드</a>
+            <a href="/lab/quote/" class="link_txt #direct_quote">쿼트</a>
+        </div>
+        <div class="item_bundle">
+            <a href="/cp/" class="link_txt #direct_media">언론사별 뉴스</a>
+        </div>
+        <div class="item_bundle">
+            <a href="/newsbox/" class="link_txt #direct_history">배열이력</a>
+        </div>
+        <div class="item_bundle">
+            <a href="/breakingnews/" class="link_txt #direct_all">전체뉴스</a>
+            <a href="/ranking/popular/" class="link_txt #direct_rank">랭킹</a>
+            <a href="/series/" class="link_txt #direct_series">연재</a>
+            <a href="/1boon/" class="link_txt #direct_1boon">1boon</a>
+        </div>
+        <button type="button" class="btn_fold" style="outline: 0px;"><span class="ico_news">바로가기 링크 더보기/접기</span></button>
+
+    </div>
+    <h2 class="screen_out">서비스 이용정보</h2>
+    <div class="footer_link">
+        <a href="/info/intro.html" class="link_info #info_daumnews">다음뉴스 소개</a> <span class="txt_dot"> ・ </span>
+        <a href="/info/notice/" class="link_info #notice">공지사항</a> <span class="txt_dot"> ・ </span>
+        <a href="/info/bbsrule.html" class="link_info #bbsrule">게시판 운영원칙</a> <span class="txt_dot"> ・ </span>
+        <a href="http://policy.daum.net/info/info" class="link_info #policy">서비스 약관/정책</a> <span class="txt_dot"> ・ </span>
+        <a href="https://with.kakao.com/daum/media" class="link_info #harmony">뉴스제휴</a> <span class="txt_dot"> ・ </span>
+        <a href="https://business.kakao.com/" class="link_info #adinfo">비즈니스</a> <span class="txt_dot"> ・ </span>
+        <a href="https://cs.daum.net/redbell/top.html" class="link_info #redbell">권리침해신고</a> <span class="txt_dot"> ・ </span>
+        <a href="http://cs.daum.net/faq/63.html" class="link_info #consumer">다음뉴스 고객센터</a>
+    </div>
+    <div class="footer_link">
+        <a href="/info/newscenter24.html" class="link_info #newscenter">24시간 뉴스센터</a> <span class="txt_dot"> ・ </span>
+        <a href="/info/edit.html" class="link_info #edit">서비스원칙</a> <span class="txt_dot"> ・ </span>
+        <a href="/info/correct/" class="link_info #correct">바로잡습니다</a> <span class="txt_dot"> ・ </span>
+        <span class="link_info">기사배열책임자 : 임선영</span> <span class="txt_dot"> ・ </span>
+        <span class="link_info">청소년보호책임자 : 이병선</span>
+    </div>
+    <div class="info_copyright">
+        <strong class="info_warn">뉴스 기사에 대한 저작권 및 법적 책임은 자료제공사 또는 <br>글쓴이에 있으며, Kakao의 입장과 다를 수 있습니다.</strong>
+        <small class="txt_copyright">Copyright © <strong class="txt_kakao"><a href="http://www.kakaocorp.com/" class="link_kakao">Kakao Corp.</a></strong> All rights reserved.</small>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+var disableTracker = (MiniDaum && MiniDaum.tracker == "off") ? true : false;
+var minidaum_options = {
+	bgType				: "white",
+	enableLogoutRetun	: true,
+	disableTracker		: disableTracker, // false일 경우 사용, true일 경우 미사용
+	enableShield		: false
+};
+(function(){
+    jQuery('.direct_link .item_bundle').each(function(){
+        jQuery(this).find("a").not("a:first").hide();
+    });
+
+    jQuery(".inner_foot .btn_fold").on("click",function(e){
+        e.preventDefault();
+        var btn = jQuery(".inner_foot .direct_link");
+        var btlCLass = "direct_open";
+        btn.hasClass(btlCLass) ? btn.removeClass(btlCLass) : btn.addClass(btlCLass);
+
+        jQuery('.direct_link .item_bundle').each(function(){
+            btn.hasClass(btlCLass) ? jQuery(this).find("a").not("a:first").show() : jQuery(this).find("a").not("a:first").hide();
+        });
+
+        _tiq.push(['__trackClick', 'FOOTER direct btn_open']);
+    });
+
+//    if(ua_result.os.mac) jQuery("html").addClass("os_mac");
+
+//    var getMobileUrl = function() {
+//        return "/m/media" + location.pathname + location.search + location.hash;
+//    };
+//
+//    if(ua_result.platform == "mobile") {
+//        if(confirm("모바일 페이지로 확인하시겠습니까?"))
+//            location.href = getMobileUrl(location);
+//    }
+})();
+</script>
+
+<script src="//go.daum.net/jsa_minidaum_pc.daum" charset="utf-8" type="text/javascript"></script>
+		</div>	<!-- // kakaoFoot -->
+
+	</div><!--//kakaoWrap-->
+</body>
+
+</html>

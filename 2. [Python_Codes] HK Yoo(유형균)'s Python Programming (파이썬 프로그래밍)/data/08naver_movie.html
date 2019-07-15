@@ -1,0 +1,1448 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="imagetoolbar" content="no">
+<meta property="og:title" content="네이버 영화"/>
+<meta property="og:description" content="영화에 대한 모든 것"/>
+<meta property="og:image" content="https://ssl.pstatic.net/static/m/movie/icons/OG_270_270.png"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://movie.naver.com"/>
+<title>네이버 영화</title>
+
+
+
+	
+	
+	
+	
+		<link rel="shortcut icon" href="https://ssl.pstatic.net/static/m/movie/icons/naver_movie_favicon.ico" type="image/x-icon">
+			
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/deploy/movie.all.css?20190403140233" />
+
+<script type="text/javascript" src="/js/deploy/movie.home.js?20190403140233"></script>
+</head>
+
+<body >
+<div id="wrap" class="basic">
+
+	<!-- GNB -->
+	
+
+
+
+<script type="text/javascript">
+function delayed_submit(object) {
+	if (navigator.userAgent.indexOf('MSIE') == -1) {
+		var b = c = new Date();
+      	while ((b.getTime() - c.getTime()) < 100) {
+			b = new Date();
+      	}
+	} 
+}
+</script>
+
+<script type="text/javascript">
+	var gnb_service = "movie";
+	var gnb_logout = "http://movie.naver.com/index.nhn";
+	var gnb_template = "gnb_utf8";
+	var gnb_brightness=3;
+	var gnb_response = true;
+	
+	jindo.$Fn(function(){
+		getGNB();
+	}).attach(window, "load");
+	
+	jindo.$Fn(function(oEvent){ var welSource = jindo.$Element(oEvent.element);
+			if (!welSource.isChildOf(jindo.$Element("gnb"))) {
+				gnbAllLayerClose();
+			}
+	}).attach(document, 'click');
+</script>
+ <!-- skip navigation -->
+<div id="u_skip">
+         <a href="#header" onclick="document.getElementById('header').tabIndex=-1;document.getElementById('header').focus();return false;"><span>메인 메뉴로 바로가기</span></a>
+         <a href="#content" id="gnb_goContent" onclick="document.getElementById('content').tabIndex=-1;document.getElementById('content').focus();return false;"><span>본문으로 바로가기</span></a>
+</div>
+<!-- //skip navigation -->
+<div class="gnb_container">
+	<div class="gnb_content">
+		<div class="gnb_box">
+			<div class="gnb_wrap">
+				<div id="gnb">
+				    <script type="text/javascript" charset="utf-8" src="https://ssl.pstatic.net/static.gn/templates/gnb_utf8.nhn"></script>
+				</div>
+			</div>
+			<!-- 검색창 -->
+			<form id="jSearchForm" action="/movie/search/result.nhn" method="get" style="margin:0;display:none;">
+				<input type="text" name="query" maxlength="100" title="영화검색" />
+				<input type="hidden" name="section" value="all"/>
+				<input type="hidden" name="ie" value="utf8"/>
+			</form>
+			<fieldset id="jSearchArea" class="srch_area">
+				<legend><span class="blind">영화검색 영역</span></legend>
+				<div class="srch_field_on _view">
+					<span class="ipt_srch">
+						<label for="ipt_tx_srch" id="search_placeholder">영화검색</label>
+						<input type="text" id="ipt_tx_srch" class="ipt_tx_srch" name="query" maxlength="100" accesskey="s" style="ime-mode:active;" autocomplete="off" />
+						<span class="align"></span>
+						<span class="auto_tx"><a href="#" title="자동완성 펼치기"><img src="https://ssl.pstatic.net/static/movie/2012/06/srch_arrow_down.gif" width="7" height="4" title="자동완성 펼치기" alt="자동완성 펼치기" /></a></span>
+					</span>
+					<button type="submit" title="검색" class="btn_srch" onClick="clickcr(this,'GNB.search','','',event); delayed_submit(this);"><span class="blind">검색</span></button>
+					 <!-- 자동 완성 영역임 #autocomplate_template-->
+				</div>
+			</fieldset>
+			<!-- //검색창 -->
+		</div>
+	</div>
+</div>
+
+	<!-- //GNB -->
+
+	<!-- header -->
+	
+
+
+
+
+
+	<div id="header">
+		<a href="#content" title="본문으로 이동" class="blind">본문 바로가기</a>
+		<h1 class="svc_name">
+			<a href="http://www.naver.com/" title="naver로 바로가기" class="ci_logo" id="lnb_gonaver"><img src="https://ssl.pstatic.net/static/movie/2013/07/logo_ci.png" width="62" height="13" alt="NAVER" /></a><!-- N=a:LNB.naver -->
+			<a href="/" title="영화서비스홈으로 바로가기" class="svc_logo"><img src="https://ssl.pstatic.net/static/movie/2012/06/logo_svc.png" width="34" height="19" alt="영화" /></a><!-- N=a:LNB.movie -->
+		</h1>
+		<div id="scrollbar" class="scrollbar scrollbar-noscript">
+			<div class="scrollbar-box">
+				<div class="scrollbar-content">
+                    <div class="in_scroll">
+                        <ul class="navi">
+                        <li>
+                            <a href="/" title="영화홈" class="menu01_on"><strong>영화홈</strong></a><!-- N=a:LNB.home -->
+                        </li>
+                        <li>
+                            <a href="/movie/running/current.nhn" title="상영작·예정작" class="menu02"><strong>상영작·예정작</strong></a><!-- N=a:LNB.movies -->
+                            <ul class="navi_sub" id="navi_movie" style="display:none">
+                            <li><a href="/movie/running/current.nhn" title="현재 상영영화" class="sub2_1"><em>현재 상영영화</em></a><!-- N=a:LNB.now --></li>
+                            <li><a href="/movie/running/premovie.nhn" title="개봉 예정영화" class="sub2_2"><em>개봉 예정영화</em></a><!-- N=a:LNB.soon --></li>
+                            
+                            <li><a href="/movie/running/movieclip.nhn" title="예고편" class="sub2_4"><em>예고편</em></a><!-- N=a:LNB.tailer --></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/movie/sdb/rank/rmovie.nhn" title="영화랭킹" class="menu03"><strong>영화랭킹</strong></a><!-- N=a:LNB.db -->
+                        </li>
+                        <li>
+                            <a href="/movie/bi/mi/reserve.nhn" title="예매" class="menu05"><strong>예매</strong></a><!-- N=a:LNB.ticket -->
+                        </li>
+
+                        <li>
+                            <a href="/movie/point/af/list.nhn" title="평점&middot리뷰" class="menu07"><strong>평점&middot리뷰</strong></a><!-- N=a:LNB.comm -->
+                        </li>
+                        <li>
+                            <a href="https://series.naver.com/movie/home.nhn" title="다운로드" class="menu08" target="_blank"><strong>다운로드</strong></a><!-- N=a:LNB.download -->
+                        </li>
+						<li class="nav_indi">
+						        <a href="http://tv.naver.com/indiecinema" title="인디극장 UP" target="_blank"><strong>인디극장 UP</strong></a><!-- N=a:LNB.indie -->
+						</li>                        
+                        </ul>
+                        
+                    </div>
+				</div>
+			</div>
+			<div class="scrollbar-v">
+				<div class="scrollbar-button-up"></div>
+				<div class="scrollbar-track">
+					<div class="scrollbar-thumb"></div>
+				</div>
+				<div class="scrollbar-button-down"></div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+	if ("영화홈" == "상영작·예정작"
+			|| "영화홈" == "현재 상영영화"
+			|| "영화홈" == "개봉 예정영화"
+			|| "영화홈" == "TV 방영영화"
+			|| "영화홈" == "예고편") {
+		jindo.$Element("navi_movie").show();
+	}
+	</script>
+	<!-- //header -->
+	
+	<!-- container -->
+	<div id="container">
+			<!-- content -->
+<div id="content">
+
+	
+	<div class="article hh">
+		<h2 class="blind">영화홈</h2>
+		<!-- 무비차트 -->
+		<div class="mv_main" onmouseover="oTimer.abort();" onmouseout="movieChart.restartTimer();">
+			<div class="flick_nav">
+				<a href="#" id="flick_prev" class="btn_prev" onclick="clickcr(this, 'run.pre', '', '', event);" onfocus="oTimer.abort();" onblur="movieChart.restartTimer();" title="이전"><em>이전</em></a><!-- N=a:run.pre -->
+			</div>
+			<div class="running_tab">
+				<ul>
+					<li id="RESERVE_tab" class="item0 on"><a href="#" onclick="movieChart.fullSettingMovieChart(0);" onfocus="oTimer.abort();" onblur="movieChart.restartTimer();" class="flickingTab"><em>예매순</em></a><!-- N=a:run.ticket --></li>
+					<li id="CURRENT_tab" class="item1"><a href="#" onclick="movieChart.fullSettingMovieChart(1);" onfocus="oTimer.abort();" onblur="movieChart.restartTimer();" class="flickingTab"><em>현재상영작</em></a><!-- N=a:run.now --></li>
+					<li id="COMMING_tab" class="item2"><a href="#" onclick="movieChart.fullSettingMovieChart(2);" onfocus="oTimer.abort();" onblur="movieChart.restartTimer();" class="flickingTab"><em>개봉예정작</em></a><!-- N=a:run.coming --></li>
+					<li id="POINT_tab" class="item3"><a href="#" onclick="movieChart.fullSettingMovieChart(3);" onfocus="oTimer.abort();" onblur="movieChart.restartTimer();" class="flickingTab"><em>평점순</em></a><!-- N=a:run.bystar --></li>
+					<li id="BOXOFFICE_tab" class="item4"><a href="#" onclick="movieChart.fullSettingMovieChart(4);" onfocus="oTimer.abort();" onblur="movieChart.restartTimer();" class="flickingTab"><em>박스오피스</em></a><!-- N=a:run.box --></li>
+					<li id="DOWNLOAD_tab" class="item5"><a href="#" onclick="movieChart.fullSettingMovieChart(5);" onfocus="oTimer.abort();" onblur="movieChart.restartTimer();" class="flickingTab"><em>다운로드순</em></a><!-- N=a:run.down --></li>
+				</ul>
+				<p href="#" class="all_view_go"><a id="movieChartAllView" href="#" onclick="clickcr(this, 'run.all', '', '', event);" onfocus="oTimer.abort();" onblur="movieChart.restartTimer();" title="전체보기">전체보기</a><!-- N=a:run.all --></p>
+			</div>
+			<!-- flick area -->
+			<div id="mflick" class="flick_view_area flick-view">
+				<div class="flick-container" style="left: 0px; ">
+					<strong id="pannel0" class="blind"></strong>
+					<ul id="flick0" class="flick-ct home_list page0 flick-panel"></ul>
+					<strong id="pannel1" class="blind"></strong>
+					<ul id="flick1" class="flick-ct home_list page1 flick-panel blind"></ul>
+					<strong id="pannel2" class="blind"></strong>
+					<ul id="flick2" class="flick-ct home_list page2 flick-panel blind"></ul>
+				</div>
+			</div>
+			<!-- //flick area -->
+			<div class="flick_nav">
+				<a href="#" id="flick_next" class="btn_next" onclick="clickcr(this, 'run.next', '', '', event);" onfocus="oTimer.abort();" onblur="movieChart.restartTimer();" title="다음"><em>다음</em></a><!-- N=a:run.next -->
+			</div>
+		</div>
+		<!-- //무비차트  -->
+		<div class="section_group" id="homeReview">
+			<div class="obj_section">
+				<div class="main_review">
+					
+					<div class="title_area">
+						<h4 class="hh_review"><strong class="blind">평점/리뷰</strong></h4>
+					</div>
+					<div class="hh_review_area">
+						<div id="movieReview" class="hh_review_ct">
+							<ul class="lst_con first" data-index=0 style="display:block">
+							<!-- [D] 선택된 경우 li에 class="on" 추가 -->
+							
+							<li id="review1" data-index=0 class="_select_title">
+								<a href="/movie/bi/mi/basic.nhn?code=140649" class="thmb" onclick="clickcr(this, 'tvw.img', '140649', '1', event);"><img src="https://movie-phinf.pstatic.net/20190322_198/1553220632606va06v_JPEG/movie_image.jpg?type=f64_91" width="64" height="91" alt="샤잠!" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img64x91.png'"></a>
+								<div class="detail">
+									<a href="/movie/bi/mi/basic.nhn?code=140649" onclick="clickcr(this, 'tvw.title', '140649', '1', event);" data-index=0 class="_select_title_anchor"><strong>샤잠!</strong>
+										<div class="star_score">
+											
+											
+											
+												
+												
+													
+													
+													
+													<span class="st_off"><span class="st_on" style="width:60.2%">평점 - 총 10점 중</span></span>
+													<span class="score">
+													<span class="char sc_num6"><em>6</em></span><span class="char sc_dot"><em>.</em></span><span class="char sc_num0"><em>0</em></span><span class="char sc_num2"><em>2</em></span>
+												
+											
+											</span>
+										</div>
+									</a>
+									<ul class="info">
+										
+											
+												<li><a href="/movie/bi/mi/reviewread.nhn?nid=4696251&code=140649" onclick="clickcr(this, 'tvw.list', '4696251', '1', event);"><span class="tit">영화 &lt;샤잠!&gt; 후기, 새로운 DC 히어로 등장!</span></a></li>
+											
+										
+											
+												<li><a href="/movie/bi/mi/reviewread.nhn?nid=4696692&code=140649" onclick="clickcr(this, 'tvw.list', '4696692', '2', event);"><span class="tit">[영화리뷰] 샤잠!</span></a></li>
+											
+										
+											
+												<li class="last"><a href="/movie/bi/mi/reviewread.nhn?nid=4696662&code=140649" onclick="clickcr(this, 'tvw.list', '4696662', '3', event);"><span class="tit">[백서른여섯] 샤잠!</span></a></li>
+											
+										
+									</ul>
+								</div>
+							</li>
+							
+							<li id="review2" data-index=1 class="_select_title">
+								<a href="/movie/bi/mi/basic.nhn?code=181414" class="thmb" onclick="clickcr(this, 'tvw.img', '181414', '2', event);"><img src="https://movie-phinf.pstatic.net/20190329_232/1553849027701K0DBy_JPEG/movie_image.jpg?type=f64_91" width="64" height="91" alt="어스" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img64x91.png'"></a>
+								<div class="detail">
+									<a href="/movie/bi/mi/basic.nhn?code=181414" onclick="clickcr(this, 'tvw.title', '181414', '2', event);" data-index=1 class="_select_title_anchor"><strong>어스</strong>
+										<div class="star_score">
+											
+											
+											
+												
+												
+													
+													
+													
+													<span class="st_off"><span class="st_on" style="width:70.5%">평점 - 총 10점 중</span></span>
+													<span class="score">
+													<span class="char sc_num7"><em>7</em></span><span class="char sc_dot"><em>.</em></span><span class="char sc_num0"><em>0</em></span><span class="char sc_num5"><em>5</em></span>
+												
+											
+											</span>
+										</div>
+									</a>
+									<ul class="info">
+										
+											
+												<li><a href="/movie/bi/mi/reviewread.nhn?nid=4696422&code=181414" onclick="clickcr(this, 'tvw.list', '4696422', '1', event);"><span class="tit">어스(Us)</span></a></li>
+											
+										
+											
+												<li><a href="/movie/bi/mi/reviewread.nhn?nid=4694824&code=181414" onclick="clickcr(this, 'tvw.list', '4694824', '2', event);"><span class="tit">[영화정보, 영화리뷰] 어스, '우리'와 '저들'을 구분 짓는 기준</span></a></li>
+											
+										
+											
+												<li class="last"><a href="/movie/bi/mi/reviewread.nhn?nid=4696173&code=181414" onclick="clickcr(this, 'tvw.list', '4696173', '3', event);"><span class="tit">[달묘]영화 어스(Us) - 사람의 이중성이란...</span></a></li>
+											
+										
+									</ul>
+								</div>
+							</li>
+							
+							<li id="review3" data-index=2 class="_select_title">
+								<a href="/movie/bi/mi/basic.nhn?code=163787" class="thmb" onclick="clickcr(this, 'tvw.img', '163787', '3', event);"><img src="https://movie-phinf.pstatic.net/20190328_112/1553762886182QHDpG_JPEG/movie_image.jpg?type=f64_91" width="64" height="91" alt="덤보" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img64x91.png'"></a>
+								<div class="detail">
+									<a href="/movie/bi/mi/basic.nhn?code=163787" onclick="clickcr(this, 'tvw.title', '163787', '3', event);" data-index=2 class="_select_title_anchor"><strong>덤보</strong>
+										<div class="star_score">
+											
+											
+											
+												
+												
+													
+													
+													
+													<span class="st_off"><span class="st_on" style="width:90.4%">평점 - 총 10점 중</span></span>
+													<span class="score">
+													<span class="char sc_num9"><em>9</em></span><span class="char sc_dot"><em>.</em></span><span class="char sc_num0"><em>0</em></span><span class="char sc_num4"><em>4</em></span>
+												
+											
+											</span>
+										</div>
+									</a>
+									<ul class="info">
+										
+											
+												<li><a href="/movie/bi/mi/reviewread.nhn?nid=4695296&code=163787" onclick="clickcr(this, 'tvw.list', '4695296', '1', event);"><span class="tit">&lt; 2019. 04. 01 &gt; 영화_ 덤보</span></a></li>
+											
+										
+											
+												<li><a href="/movie/bi/mi/reviewread.nhn?nid=4695429&code=163787" onclick="clickcr(this, 'tvw.list', '4695429', '2', event);"><span class="tit">&#39;편견을 깨트린 코끼리&#39; - 덤보</span></a></li>
+											
+										
+											
+												<li class="last"><a href="/movie/bi/mi/reviewread.nhn?nid=4696210&code=163787" onclick="clickcr(this, 'tvw.list', '4696210', '3', event);"><span class="tit">너무나 사랑스러운 아기 코끼리 덤보가 주는 메시지</span></a></li>
+											
+										
+									</ul>
+								</div>
+							</li>
+							
+							<li id="review4" data-index=3 class="_select_title">
+								<a href="/movie/bi/mi/basic.nhn?code=163608" class="thmb" onclick="clickcr(this, 'tvw.img', '163608', '4', event);"><img src="https://movie-phinf.pstatic.net/20190306_280/1551849045570X4iac_JPEG/movie_image.jpg?type=f64_91" width="64" height="91" alt="돈" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img64x91.png'"></a>
+								<div class="detail">
+									<a href="/movie/bi/mi/basic.nhn?code=163608" onclick="clickcr(this, 'tvw.title', '163608', '4', event);" data-index=3 class="_select_title_anchor"><strong>돈</strong>
+										<div class="star_score">
+											
+											
+											
+												
+												
+													
+													
+													
+													<span class="st_off"><span class="st_on" style="width:76.0%">평점 - 총 10점 중</span></span>
+													<span class="score">
+													<span class="char sc_num7"><em>7</em></span><span class="char sc_dot"><em>.</em></span><span class="char sc_num6"><em>6</em></span><span class="char sc_num0"><em>0</em></span>
+												
+											
+											</span>
+										</div>
+									</a>
+									<ul class="info">
+										
+											
+												<li><a href="/movie/bi/mi/reviewread.nhn?nid=4696687&code=163608" onclick="clickcr(this, 'tvw.list', '4696687', '1', event);"><span class="tit">영화 &lt;돈&gt; 참된리뷰!</span></a></li>
+											
+										
+											
+												<li><a href="/movie/bi/mi/reviewread.nhn?nid=4696610&code=163608" onclick="clickcr(this, 'tvw.list', '4696610', '2', event);"><span class="tit">돈</span></a></li>
+											
+										
+											
+												<li class="last"><a href="/movie/bi/mi/reviewread.nhn?nid=4696830&code=163608" onclick="clickcr(this, 'tvw.list', '4696830', '3', event);"><span class="tit">영화 돈</span></a></li>
+											
+										
+									</ul>
+								</div>
+							</li>
+							
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="main_spot" id="homeSpotlight">
+					
+					<div class="section">
+						<div class="title_area">
+							<h4 class="hh_spotlight">
+								<strong class="blind">스포트라이트</strong>
+							</h4>
+						</div>
+						<div class="hh_spot_area">
+							<a href="https://series.naver.com/event/details.nhn?eventNo=12106&productType=MOVIE">
+								
+								
+									
+								
+								<img src="https://movie-phinf.pstatic.net/20190411_254/1554966745195lOdC6_PNG/%BD%BA%C6%F7%C6%AE%B6%F3%C0%CC%C6%AE210X196_5.png" width="210" height="196" title="스포트라이트 배너" alt="시리즈 영화 봄맞이 공포영화 할인이벤트" border="0">
+							</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+			
+			<div class="obj_section" id="homeTrailer">
+				<div class="main_prv">
+					<div class="title_area">
+						<h4 class="hh_preview"><strong class="blind">예고편</strong></h4>
+					</div>
+					<ul class="video_thumb">
+					
+					<li>
+						<a href="/movie/bi/mi/mediaView.nhn?code=171336&mid=42147#tab" title="메인 예고편" class="video_obj">
+							<span class="mask">동영상</span>
+							
+							<span class="video_ico first"><span class="blind">최초</span></span>
+							<img src="https://ssl.pstatic.net/imgmovie/multimedia/MOVIECLIP/TRAILER/42147_20190412021220.jpg" width="164" height="114" alt="메인 예고편" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img164x114.png'">
+						</a><!-- N=a:cms.img,r:1,i:42147 -->
+						<p class="tx_video ico_hd"><span class="blind">HD</span><a href="/movie/bi/mi/mediaView.nhn?code=171336&mid=42147#tab" title="숨바꼭질">숨바꼭질</a><!-- N=a:cms.title,r:1,i:42147 --></p>
+						<p class="tx_brief"><a href="/movie/bi/mi/mediaView.nhn?code=171336&mid=42147#tab" title="메인 예고편">메인 예고편</a><!-- N=a:cms.desc,r:1,i:42147 --></p>
+					</li>
+					
+					<li>
+						<a href="/movie/bi/mi/mediaView.nhn?code=174322&mid=42148#tab" title="메인 예고편" class="video_obj">
+							<span class="mask">동영상</span>
+							
+							<span class="video_ico first"><span class="blind">최초</span></span>
+							<img src="https://ssl.pstatic.net/imgmovie/multimedia/MOVIECLIP/TRAILER/42148_20190412021337.jpg" width="164" height="114" alt="메인 예고편" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img164x114.png'">
+						</a><!-- N=a:cms.img,r:2,i:42148 -->
+						<p class="tx_video ico_hd"><span class="blind">HD</span><a href="/movie/bi/mi/mediaView.nhn?code=174322&mid=42148#tab" title="그 아이의, 포로">그 아이의, 포로</a><!-- N=a:cms.title,r:2,i:42148 --></p>
+						<p class="tx_brief"><a href="/movie/bi/mi/mediaView.nhn?code=174322&mid=42148#tab" title="메인 예고편">메인 예고편</a><!-- N=a:cms.desc,r:2,i:42148 --></p>
+					</li>
+					
+					<li>
+						<a href="/movie/bi/mi/mediaView.nhn?code=183121&mid=42149#tab" title="메인 예고편" class="video_obj">
+							<span class="mask">동영상</span>
+							
+							<span class="video_ico first"><span class="blind">최초</span></span>
+							<img src="https://ssl.pstatic.net/imgmovie/multimedia/MOVIECLIP/TRAILER/42149_20190412021623.jpg" width="164" height="114" alt="메인 예고편" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img164x114.png'">
+						</a><!-- N=a:cms.img,r:3,i:42149 -->
+						<p class="tx_video ico_hd"><span class="blind">HD</span><a href="/movie/bi/mi/mediaView.nhn?code=183121&mid=42149#tab" title="베카신!">베카신!</a><!-- N=a:cms.title,r:3,i:42149 --></p>
+						<p class="tx_brief"><a href="/movie/bi/mi/mediaView.nhn?code=183121&mid=42149#tab" title="메인 예고편">메인 예고편</a><!-- N=a:cms.desc,r:3,i:42149 --></p>
+					</li>
+					
+					<li>
+						<a href="/movie/bi/mi/mediaView.nhn?code=177483&mid=42150#tab" title="전격 분석 영상" class="video_obj">
+							<span class="mask">동영상</span>
+							
+							<span class="video_ico first"><span class="blind">최초</span></span>
+							<img src="https://ssl.pstatic.net/imgmovie/multimedia/MOVIECLIP/MAKING/42150_20190412021743.jpg" width="164" height="114" alt="전격 분석 영상" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img164x114.png'">
+						</a><!-- N=a:cms.img,r:4,i:42150 -->
+						<p class="tx_video ico_hd"><span class="blind">HD</span><a href="/movie/bi/mi/mediaView.nhn?code=177483&mid=42150#tab" title="배심원들">배심원들</a><!-- N=a:cms.title,r:4,i:42150 --></p>
+						<p class="tx_brief"><a href="/movie/bi/mi/mediaView.nhn?code=177483&mid=42150#tab" title="전격 분석 영상">전격 분석 영상</a><!-- N=a:cms.desc,r:4,i:42150 --></p>
+					</li>
+					
+					</ul>
+					<div class="title_area type_btn_box">
+						<a href="/movie/running/movieclip.nhn">
+							<span class="more"><span class="blind">더보기</span></span>
+						</a><!-- N=a:cms.more -->
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<div class="section_group" id="homePhoto">
+			<div class="obj_section">
+				<div class="main_photo">
+					<div class="title_area">
+						<h4 class="hh_photo"><strong class="blind">포토</strong></h4>
+					</div>
+					<ul>
+					
+					<li class="">
+						<p class="thmb">
+							<a href="/movie/bi/mi/photoView.nhn?code=159807&imageNid=6647042#tab">
+								<img src="https://movie-phinf.pstatic.net/20190321_141/1553129387738KkY4j_JPEG/movie_image.jpg?type=n108_108_2" width="108" height="108" alt="기도로 털어놓다" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img108x108.png'">
+								
+								
+							</a><!-- N=a:pho.img,r:1,i:6647042 -->
+						</p>
+						<a href="/movie/bi/mi/photoView.nhn?code=159807&imageNid=6647042#tab"><strong class="tit">퍼스트 리폼드</strong></a><!-- N=a:pho.list,r:1,i:6647042 -->
+						<p class="tx_brief"><a href="/movie/bi/mi/photoView.nhn?code=159807&imageNid=6647042#tab">기도로 털어놓다</a><!-- N=a:pho.tlist,r:1,i:6647042 --></p>
+					</li>
+					
+					<li class="">
+						<p class="thmb">
+							<a href="/movie/bi/mi/photoView.nhn?code=148000&imageNid=6646472#tab">
+								<img src="https://movie-phinf.pstatic.net/20190318_37/1552872352246GcVPI_JPEG/movie_image.jpg?type=n108_108_2" width="108" height="108" alt="레이스 시합" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img108x108.png'">
+								
+								
+							</a><!-- N=a:pho.img,r:2,i:6646472 -->
+						</p>
+						<a href="/movie/bi/mi/photoView.nhn?code=148000&imageNid=6646472#tab"><strong class="tit">고릴라와 슈퍼레이스</strong></a><!-- N=a:pho.list,r:2,i:6646472 -->
+						<p class="tx_brief"><a href="/movie/bi/mi/photoView.nhn?code=148000&imageNid=6646472#tab">레이스 시합</a><!-- N=a:pho.tlist,r:2,i:6646472 --></p>
+					</li>
+					
+					<li class="">
+						<p class="thmb">
+							<a href="/movie/bi/mi/photoView.nhn?code=171490&imageNid=6647388#tab">
+								<img src="https://movie-phinf.pstatic.net/20190326_139/1553561689734BQCyG_JPEG/movie_image.jpg?type=n108_108_2" width="108" height="108" alt="예술적 욕망" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img108x108.png'">
+								
+								
+							</a><!-- N=a:pho.img,r:3,i:6647388 -->
+						</p>
+						<a href="/movie/bi/mi/photoView.nhn?code=171490&imageNid=6647388#tab"><strong class="tit">나의 작은 시인에게</strong></a><!-- N=a:pho.list,r:3,i:6647388 -->
+						<p class="tx_brief"><a href="/movie/bi/mi/photoView.nhn?code=171490&imageNid=6647388#tab">예술적 욕망</a><!-- N=a:pho.tlist,r:3,i:6647388 --></p>
+					</li>
+					
+					<li class="">
+						<p class="thmb">
+							<a href="/movie/bi/mi/photoView.nhn?code=175366&imageNid=6648669#tab">
+								<img src="https://movie-phinf.pstatic.net/20190408_257/155468680874141vi2_JPEG/movie_image.jpg?type=n108_108_2" width="108" height="108" alt="특별한 우정" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img108x108.png'">
+								
+								
+							</a><!-- N=a:pho.img,r:4,i:6648669 -->
+						</p>
+						<a href="/movie/bi/mi/photoView.nhn?code=175366&imageNid=6648669#tab"><strong class="tit">나의 특별한 형제</strong></a><!-- N=a:pho.list,r:4,i:6648669 -->
+						<p class="tx_brief"><a href="/movie/bi/mi/photoView.nhn?code=175366&imageNid=6648669#tab">특별한 우정</a><!-- N=a:pho.tlist,r:4,i:6648669 --></p>
+					</li>
+					
+					<li class="">
+						<p class="thmb">
+							<a href="/movie/bi/mi/photoView.nhn?code=159854&imageNid=6648936#tab">
+								<img src="https://movie-phinf.pstatic.net/20190409_28/1554773535796THn6K_JPEG/movie_image.jpg?type=n108_108_2" width="108" height="108" alt="목소리의 힘" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img108x108.png'">
+								
+								
+							</a><!-- N=a:pho.img,r:5,i:6648936 -->
+						</p>
+						<a href="/movie/bi/mi/photoView.nhn?code=159854&imageNid=6648936#tab"><strong class="tit">너의 목소리</strong></a><!-- N=a:pho.list,r:5,i:6648936 -->
+						<p class="tx_brief"><a href="/movie/bi/mi/photoView.nhn?code=159854&imageNid=6648936#tab">목소리의 힘</a><!-- N=a:pho.tlist,r:5,i:6648936 --></p>
+					</li>
+					
+					<li class="last">
+						<p class="thmb">
+							<a href="/movie/bi/mi/photoView.nhn?code=159863&imageNid=6648914#tab">
+								<img src="https://movie-phinf.pstatic.net/20190409_187/1554771761830avOhL_JPEG/movie_image.jpg?type=n108_108_2" width="108" height="108" alt="살인을 증명하다" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img108x108.png'">
+								
+								
+							</a><!-- N=a:pho.img,r:6,i:6648914 -->
+						</p>
+						<a href="/movie/bi/mi/photoView.nhn?code=159863&imageNid=6648914#tab"><strong class="tit">라플라스의 마녀</strong></a><!-- N=a:pho.list,r:6,i:6648914 -->
+						<p class="tx_brief"><a href="/movie/bi/mi/photoView.nhn?code=159863&imageNid=6648914#tab">살인을 증명하다</a><!-- N=a:pho.tlist,r:6,i:6648914 --></p>
+					</li>
+					
+					</ul>
+				</div>
+			</div>
+			<div class="obj_section">
+				<div class="main_event">
+					<div class="notice">
+						<a href="/movie/other/gonggi.nhn" class="notice_more">공지사항 더보기</a><!-- N=a:bnt.more -->
+						<div class="info"><a href="/movie/other/gonggi.nhn?docID=10000000000030664864"><em>[공지]</em>&nbsp; 네이버영화 일부 메뉴 운영 종료 안내</a><!-- N=a:bnt.list --></div>
+						<p><span class="page_info">정보</span>본 페이지는 나눔글꼴에 최적화 되어있습니다. <a href="http://hangeul.naver.com/font" target="_blank" class="font_inst">나눔글꼴설치<em class="arr"></em></a><!-- N=a:btm.nanumfont --></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- [D] 맨위로 버튼 div id="content" 기준 top:342px 이상 -->
+	
+<div class="staticbanner" id="floatingTopAnchor" style="bottom:40px">
+    <a href="#" title="맨위로"><img alt="맨위로" src="https://ssl.pstatic.net/static/movie/2012/08/btn_top.png" width="33" height="35"></a><!-- N=a:btm.top -->
+</div>
+<script type="text/javascript">
+jindo.$Fn(function () {
+    var welTopAnchor = jindo.$Element('floatingTopAnchor');
+    var welContent = jindo.$Element('content');
+    var nTopMargin = 342 + welTopAnchor.height();
+    var nMaxY;
+    var nMinY = 61;
+    var oFloatingLayer = new jindo.FloatingLayer(welTopAnchor).attach({
+        beforeMove: function (oEvent) {
+            // 상단 limit
+            nMaxY = welContent.height() - nTopMargin;
+            if (oEvent.nY > nMaxY) {
+                oEvent.nY = nMaxY;
+            }
+
+             // 하단 limit
+            if (oEvent.nY < nMinY) {
+                oEvent.nY = nMinY;
+            }
+        }
+    });
+}).attach(window, 'load');
+</script>
+	<!-- //맨위로 -->
+
+</div>
+<!-- //content -->
+
+<script type="text/template" id="RESERVE_template">
+{for index:movie in RESERVE}
+	<li class="item{=index +1}" data-id="{=movie.movieCode}" data-detail="{=movie.movieCode}" data-reserve="{=movie.movieCode}" onmouseover="jindo.$Element('reserveTooltip{=index+1}').show();" onmouseout="jindo.$Element('reserveTooltip{=index+1}').hide();">
+		<div class="obj_off tab4">
+			<a href="/movie/bi/mi/basic.nhn?code={=movie.movieCode}" onfocus="jindo.$Element('reserveTooltip{=index+1}').show();oTimer.abort();" onblur="jindo.$Element('reserveTooltip{=index+1}').hide();movieChart.restartTimer();"><span class="rank"><em>{=index +1}위</em></span>
+				{if movie.adult}
+					<span class="ico_rating_19">청소년 유해물</span>
+				{elseif movie.lastKoreanGrade != null}
+					{js movieChart.getGradeIcon(=movie.lastKoreanGrade.code)}
+				{/if}
+				<span class="mask"></span>
+				<img src="https://movie-phinf.pstatic.net{=movie.posterImageUrl}?type=f125" alt="{js movieChart.replaceDoubleQuotationForHTML(=movie.movieTitle)}" width="125" height="179" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img125x179.png'">
+				<span class="baseplate r">
+					<span class="spr stic_rate l"><em>예매율</em></span>
+					<strong class="l">{js movieChart.numberFont(=movie.formattedReserveRatio, 'rate')}<span class="char rate_pct"><em>%</em></span></strong>
+				</span>
+			</a><!-- N=a:run.da,r:{=index + 1},i:{=movie.movieCode} -->
+		</div>
+		<div  id="reserveTooltip{=index+1}" class="obj_con" style="display:none">
+			<div class="obj_on{js movieChart.tooltipLengthOver(=movie.movieTitle)} {if (index+1)%5 == 0}rt{/if}">
+				<div class="tooltip">
+					<span class="top"></span>
+					<p class="mv_title">{=movie.movieTitle}</p>
+					<span class="bottom"></span><span class="bottom_r"></span>
+				</div>
+			</div>
+		</div>
+	</li>
+{/for}
+</script>
+
+<script type="text/template" id="CURRENT_template">
+{for index:movie in CURRENT}
+	<li class="item{=index +1}" data-id="{=movie.movieCode}" data-detail="{=movie.movieCode}" data-reserve="{=movie.movieCode}" onmouseover="jindo.$Element('currentTooltip{=index+1}').show();" onmouseout="jindo.$Element('currentTooltip{=index+1}').hide();">
+		<div class="obj_off tab4">
+			<a href="/movie/bi/mi/basic.nhn?code={=movie.movieCode}" onfocus="jindo.$Element('currentTooltip{=index+1}').show();oTimer.abort();" onblur="jindo.$Element('currentTooltip{=index+1}').hide();movieChart.restartTimer();">
+				{if movie.adult}
+					<span class="ico_rating_19">청소년 유해물</span>
+				{elseif movie.lastKoreanGrade != null}
+					{js movieChart.getGradeIcon(=movie.lastKoreanGrade.code)}
+				{/if}
+				<span class="mask"></span>
+				<img src="https://movie-phinf.pstatic.net{=movie.posterImageUrl}?type=f125" alt="{js movieChart.replaceDoubleQuotationForHTML(=movie.movieTitle)}" width="125" height="179" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img125x179.png'">
+				<span class="baseplate r">
+					<span class="rank_star l"><span class="star_off"><em>별점 - 총 10점 중</em></span><span class="star_on" style="width:{=movie.point*10}%"><em>{=movie.point} 점</em></span></span>
+					<strong class="l">{js movieChart.numberFont(=movie.point, 'sc')}</strong>
+				</span>
+			</a><!-- N=a:run.da,r:{=index + 1},i:{=movie.movieCode} -->
+		</div>
+		<div id="currentTooltip{=index+1}" class="obj_con" style="display:none">
+			<div class="obj_on{js movieChart.tooltipLengthOver(=movie.movieTitle)} {if (index+1)%5 == 0}rt{/if}">
+				<div class="tooltip">
+					<span class="top"></span>
+					<p class="mv_title">{=movie.movieTitle}</p>
+					<span class="bottom"></span><span class="bottom_r"></span>
+				</div>
+			</div>
+		</div>
+	</li>
+{/for}
+</script>
+
+<script type="text/template" id="COMMING_template">
+{for index:movie in COMMING}
+	<li class="item{=index +1}" data-id="{=movie.movieCode}" data-detail="{=movie.movieCode}" data-reserve="{=movie.movieCode}" onmouseover="jindo.$Element('commingTooltip{=index+1}').show();" onmouseout="jindo.$Element('commingTooltip{=index+1}').hide();">
+		<div class="obj_off tab4">
+			<a href="/movie/bi/mi/basic.nhn?code={=movie.movieCode}" onfocus="jindo.$Element('commingTooltip{=index+1}').show();oTimer.abort();" onblur="jindo.$Element('commingTooltip{=index+1}').hide();movieChart.restartTimer();">
+				{if movie.adult}
+					<span class="ico_rating_19">청소년 유해물</span>
+				{elseif movie.lastKoreanGrade != null}
+					{js movieChart.getGradeIcon(=movie.lastKoreanGrade.code)}
+				{/if}
+				<span class="mask"></span>
+				<img src="https://movie-phinf.pstatic.net{=movie.posterImageUrl}?type=f125" alt="{js movieChart.replaceDoubleQuotationForHTML(=movie.movieTitle)}" width="125" height="179" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img125x179.png'">
+				<span class="baseplate r">
+					<strong class="l">{js movieChart.numberFont(=movie.openDate, 'rate')}</strong>{if movie.openDate != ''}<span class="spr stic_open l"><em>개봉</em>{/if}</span>
+				</span>
+			</a><!-- N=a:run.da,r:{=index + 1},i:{=movie.movieCode} -->
+		</div>
+		<div id="commingTooltip{=index+1}" class="obj_con" style="display:none">
+			<div class="obj_on{js movieChart.tooltipLengthOver(=movie.movieTitle)} {if (index+1)%5 == 0}rt{/if}">
+				<div class="tooltip">
+					<span class="top"></span>
+					<p class="mv_title">{=movie.movieTitle}</p>
+					<span class="bottom"></span><span class="bottom_r"></span>
+				</div>
+			</div>
+		</div>
+	</li>
+{/for}
+</script>
+
+<script type="text/template" id="POINT_template">
+{for index:movie in POINT}
+	<li class="item{=index +1}" data-id="{=movie.movieCode}" data-detail="{=movie.movieCode}" data-reserve="{=movie.movieCode}" onmouseover="jindo.$Element('pointTooltip{=index+1}').show();" onmouseout="jindo.$Element('pointTooltip{=index+1}').hide();">
+		<div class="obj_off tab4">
+			<a href="/movie/bi/mi/basic.nhn?code={=movie.movieCode}" onfocus="jindo.$Element('pointTooltip{=index+1}').show();oTimer.abort();" onblur="jindo.$Element('pointTooltip{=index+1}').hide();movieChart.restartTimer();"><span class="rank"><em>{=index +1}위</em></span>
+				{if movie.adult}
+					<span class="ico_rating_19">청소년 유해물</span>
+				{elseif movie.lastKoreanGrade != null}
+					{js movieChart.getGradeIcon(=movie.lastKoreanGrade.code)}
+				{/if}
+				<span class="mask"></span>
+				<img src="https://movie-phinf.pstatic.net{=movie.posterImageUrl}?type=f125" alt="{js movieChart.replaceDoubleQuotationForHTML(=movie.movieTitle)}" width="125" height="179" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img125x179.png'">
+				<span class="baseplate r">
+					<span class="rank_star l"><span class="star_off"><em>별점 - 총 10점 중</em></span><span class="star_on" style="width:{=movie.point*10}%"><em>{=movie.point} 점</em></span></span>
+					<strong class="l">{js movieChart.numberFont(=movie.point, 'sc')}</strong>
+				</span>
+			</a><!-- N=a:run.da,r:{=index + 1},i:{=movie.movieCode} -->
+		</div>
+		<div id="pointTooltip{=index+1}" class="obj_con" style="display:none">
+			<div class="obj_on{js movieChart.tooltipLengthOver(=movie.movieTitle)} {if (index+1)%5 == 0}rt{/if}">
+				<div class="tooltip">
+					<span class="top"></span>
+					<p class="mv_title">{=movie.movieTitle}</p>
+					<span class="bottom"></span><span class="bottom_r"></span>
+				</div>
+			</div>
+		</div>
+	</li>
+{/for}
+</script>
+
+<script type="text/template" id="BOXOFFICE_template">
+{for index:movie in BOXOFFICE}
+	<li class="item{=index +1}" data-id="{=movie.movieCode}" data-detail="{=movie.movieCode}" data-reserve="{=movie.movieCode}" onmouseover="jindo.$Element('boxofficeTooltip{=index+1}').show();" onmouseout="jindo.$Element('boxofficeTooltip{=index+1}').hide();">
+		<div class="obj_off tab4">
+			<a href="/movie/bi/mi/basic.nhn?code={=movie.movieCode}" onfocus="jindo.$Element('boxofficeTooltip{=index+1}').show();oTimer.abort();" onblur="jindo.$Element('boxofficeTooltip{=index+1}').hide();movieChart.restartTimer();"><span class="rank"><em>{=index +1}위</em></span>
+				{if movie.adult}
+					<span class="ico_rating_19">청소년 유해물</span>
+				{elseif movie.lastKoreanGrade != null}
+					{js movieChart.getGradeIcon(=movie.lastKoreanGrade.code)}
+				{/if}
+				<span class="mask"></span>
+				<img src="https://movie-phinf.pstatic.net{=movie.posterImageUrl}?type=f125" alt="{js movieChart.replaceDoubleQuotationForHTML(=movie.movieTitle)}" width="125" height="179" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img125x179.png'">
+				<span class="baseplate r">
+					<span class="spr stic_box l"><em>주말관객</em></span>
+					<strong class="l">{js movieChart.numberFont(=movie.formattedWeekendAudience, 'cnt')}<span class="char cnt_per"><em>명</em></span></strong>
+				</span>
+			</a><!-- N=a:run.da,r:{=index + 1},i:{=movie.movieCode} -->
+		</div>
+		<div id="boxofficeTooltip{=index+1}" class="obj_con" style="display:none">
+			<div class="obj_on{js movieChart.tooltipLengthOver(=movie.movieTitle)} {if (index+1)%5 == 0}rt{/if}">
+				<div class="tooltip">
+					<span class="top"></span>
+					<p class="mv_title">{=movie.movieTitle}</p>
+					<span class="bottom"></span><span class="bottom_r"></span>
+				</div>
+			<div>
+		</div>
+	</li>
+{/for}
+</script>
+
+<script type="text/template" id="DOWNLOAD_template">
+{if DOWNLOAD ==  ""}
+	<li class="error_area">
+         <div class="error_msg"></div>
+    </li>
+{else}
+	{for index:movie in DOWNLOAD}
+		<li class="item{=index +1}" data-id="{=movie.movieCode}" data-detail="{=movie.movieCode}" data-reserve="{=movie.movieCode}" onmouseover="jindo.$Element('downloadTooltip{=index+1}').show();" onmouseout="jindo.$Element('downloadTooltip{=index+1}').hide();">
+			<div class="obj_off tab4">
+				<a href="https://series.naver.com/tvstore/detail.nhn?mcode={=movie.movieCode}" target="_blank"  onfocus="jindo.$Element('downloadTooltip{=index+1}').show();oTimer.abort();" onblur="jindo.$Element('downloadTooltip{=index+1}').hide();movieChart.restartTimer();"><span class="rank"><em>{=index +1}위</em></span>
+					{if movie.adult}
+						<span class="ico_rating_19">청소년 유해물</span>
+					{elseif movie.lastKoreanGrade != null}
+						{js movieChart.getGradeIcon(=movie.lastKoreanGrade.code)}
+					{/if}
+					<span class="mask"></span> {if movie.salePossibleYn == true}<span class="purchase">구매</span>{/if} {if movie.lendingPossibleYn == true}<span class="rental">대여</span>{/if}
+					<img src="https://movie-phinf.pstatic.net{=movie.posterImageUrl}?type=f125" alt="{js movieChart.replaceDoubleQuotationForHTML(=movie.movieTitle)}" width="125" height="179" onerror="this.src='https://ssl.pstatic.net/static/movie/2012/06/dft_img125x179.png'">
+					<span class="baseplate r">
+						<span class="spr stic_down l"><em>판매율</em></span>
+						<strong class="l">{js movieChart.numberFont(=movie.formattedSaleRate, 'rate')}<span class="char rate_pct"><em>%</em></span></strong>
+					</span>
+				</a><!-- N=a:run.da,r:{=index + 1},i:{=movie.movieCode} -->
+			</div>
+			<div id="downloadTooltip{=index+1}" class="obj_con" style="display:none">
+				<div class="obj_on{js movieChart.tooltipLengthOver(=movie.movieTitle)} {if (index+1)%5 == 0}rt{/if}">
+					<div class="tooltip">
+						<span class="top"></span>
+						<p class="mv_title">{=movie.movieTitle}</p>
+						<span class="bottom"></span><span class="bottom_r"></span>
+					</div>
+				</div>
+			</div>
+		</li>
+	{/for}
+{/if}
+</script>
+
+
+<script type="text/javascript">
+
+
+
+
+
+var flickContents = new Array(6);
+
+
+var htInfo = jindo.m.getDeviceInfo(); 
+var bUseCss3d = jindo.m._isUseCss3d() || (htInfo.galaxyS2 && (htInfo.version >= "4.0.3"));
+var oFlicking = new jindo.m.CircularFlicking(jindo.$('mflick'),{
+	nDuration : 100,
+	bHorizontal : true,
+    sClassPrefix : 'flick-',
+    nFlickThreshold : 40,
+    nTotalContents : 6,
+    bUseCss3d : bUseCss3d
+}).attach({
+
+	// 타이머 정지 및 메뉴 하이라이팅
+	'beforeFlicking' : function(oCustomEvt) {
+		oTimer.abort();
+
+		var index = oCustomEvt.nContentIndex;
+		var nextIndex = movieChart.getNextIndex(index);
+		var previousIndex = movieChart.getPreviousIndex(index);
+
+		if (oCustomEvt.bLeft) {
+			movieChart.setMenuHighlighting(nextIndex);
+		} else {
+			movieChart.setMenuHighlighting(previousIndex);
+		}
+		
+		
+		this.getPanelElement().removeClass('blind');
+		this.getRightPanelElement().removeClass('blind');
+		this.getLeftPanelElement().removeClass('blind');
+	},
+	
+	// 플리킹처리 및 타이머 재시작 및 캡션내용 변경
+	'afterFlicking' : function(oCustomEvt){
+		
+		if (oCustomEvt.bLeft) {
+			var type = movieChart.movieChartTab[oCustomEvt.nContentRightIndex];
+			
+			// 플리킹 저장변수에 이미 데이터가 있다면 저장변수 이용, 없으면 Ajax Call.
+			if (flickContents[oCustomEvt.nContentRightIndex]) {
+				movieChart.movieChartJsonCallBack(null, flickContents[oCustomEvt.nContentRightIndex], type, oCustomEvt.nContentRightIndex, oCustomEvt.nPanelRightIndex);
+			} else {
+				movieChart.ajaxCall(movieChart.movieChartJsonUrl, type, oCustomEvt.nContentRightIndex, oCustomEvt.nPanelRightIndex);
+			}
+			
+		} else {
+			var type = movieChart.movieChartTab[oCustomEvt.nContentLeftIndex];
+			
+			// 플리킹 저장변수에 이미 데이터가 있다면 저장변수 이용, 없으면 Ajax Call.
+			if (flickContents[oCustomEvt.nContentLeftIndex]) {
+				movieChart.movieChartJsonCallBack(null, flickContents[oCustomEvt.nContentLeftIndex], type, oCustomEvt.nContentLeftIndex, oCustomEvt.nPanelLeftIndex);
+			} else {
+				movieChart.ajaxCall(movieChart.movieChartJsonUrl, type, oCustomEvt.nContentLeftIndex, oCustomEvt.nPanelLeftIndex);
+			}
+		}
+
+		
+		this.getRightPanelElement().addClass('blind');
+		this.getLeftPanelElement().addClass('blind');
+		
+		movieChart.restartTimer();
+	}
+});
+
+//[MOVIEOP-5993] [모바일웹] Android 공통댓글 이전/다음 버튼 클릭시 포커싱 유지(PC 환경에서는 Flicking 되지 않도록 수정.)
+var osInfo = jindo.$Agent().os();
+if(osInfo.win || osInfo.mac || osInfo.linux) {
+	oFlicking.attach({
+		'touchStart' : function(oCustomEvt){
+			oCustomEvt.stop();
+			}
+	});
+}
+
+
+var oTimer = new jindo.Timer();
+
+
+var movieChart = {
+
+		movieChartDefaultJsonUrl : "/movieChartDefaultJson.nhn",
+		movieChartJsonUrl : "/movieChartJson.nhn",
+        eTabtoKoTab : {
+		    "RESERVE": "예매순",
+            "CURRENT": "현재상영작",
+            "COMMING": "개봉예정작",
+            "POINT": "평점순",
+            "BOXOFFICE": "박스오피스",
+            "DOWNLOAD": "다운로드순"
+        },
+		movieChartTab : new Array("RESERVE", "CURRENT", "COMMING", "POINT", "BOXOFFICE", "DOWNLOAD"),
+        extractTabName: function (obj) {
+            var keys = Object.keys(obj);
+            var i;
+		    for (i = 0; i < keys.length; i++) {
+		        if (keys[i] != "index") {
+		            return this.eTabtoKoTab[keys[i]];
+                }
+            }
+            return "";
+		},
+		movieChartAllViewUrl : new Array(
+				"/movie/running/current.nhn?order=reserve",
+				"/movie/running/current.nhn",
+				"/movie/running/premovie.nhn?order=reserve",
+				"/movie/running/current.nhn?order=point",
+				"/movie/sdb/rank/rboxoffice.nhn",
+				"https://series.naver.com/movie/top100List.nhn?rankingTypeCode=PC_D"
+		),
+
+		// 개봉예정작 목록의 마지막 영화의 상영관이 없다면, 예매율순 개봉예정작에서 데이터가 부족해서 상영관이 없는 데이터도 채워넣은 경우이기 때문에 더보기 링크 제공하지 않음
+		hasCommingMovieAllViewUrl : true,
+		
+		// domready시 수행
+		init : function() {
+			movieChart.ajaxCall(movieChart.movieChartJsonUrl, movieChart.movieChartTab[0], 0, 0);
+			movieChart.setMenuHighlighting(0);
+			movieChart.startTimer();
+		},
+		
+		// load시 수행
+		load : function() {
+			movieChart.ajaxCall(movieChart.movieChartJsonUrl, movieChart.movieChartTab[1], 1, 1);
+			movieChart.ajaxCall(movieChart.movieChartJsonUrl, movieChart.movieChartTab[movieChart.movieChartTab.length-1], movieChart.movieChartTab.length-1, 2);
+		},
+		
+		// 타이머 재시작
+		restartTimer : function() {
+			
+			if (oTimer.isRunning = true) {
+				oTimer.abort();
+			}
+			
+			oTimer = new jindo.Timer();
+			movieChart.startTimer();
+		},
+		
+		// 타이머 시작
+		startTimer : function() {
+			oTimer.start( function() {
+				oFlicking.moveNext();
+				return true;
+			}, 7000);
+		},
+		
+		// JSON API 호출
+		ajaxCall : function(url, type, index, targetAreaIndex) {
+			var ajax = new jindo.$Ajax(url, { 
+				method : "GET",
+				onload : function(response){
+					if (url == movieChart.movieChartDefaultJsonUrl) {
+						// 풀세팅 
+						movieChart.movieChartDefaultJsonCallBack(response, null, index);
+					} else {
+						// 개별세팅
+						movieChart.movieChartJsonCallBack(response, null, type, index, targetAreaIndex);
+					}
+				}
+			});
+			ajax.header("ajax", "true");
+		    ajax.request({"type":type});
+		},
+
+		// 무비차트 풀세팅 CallBack 함수
+		movieChartDefaultJsonCallBack : function(response, movieChartList, index) {
+
+			if (movieChartList == null) {
+				var jsonData = response.json();
+				movieChartList = jsonData.movieChartList;
+			}
+			
+			var nextIndex = movieChart.getNextIndex(index);
+			var previousIndex = movieChart.getPreviousIndex(index);
+
+			oFlicking.setContentIndex(index);
+			oFlicking.getPanelElement().html(jindo.$Template(movieChart.movieChartTab[index] + "_template").process(movieChartList[0]));
+			oFlicking.getRightPanelElement().html(jindo.$Template(movieChart.movieChartTab[nextIndex] + "_template").process(movieChartList[1]));
+			oFlicking.getLeftPanelElement().html(jindo.$Template(movieChart.movieChartTab[previousIndex] + "_template").process(movieChartList[2]));
+            this.setCaptionText(oFlicking.getPanelElement().attr('id'),  this.extractTabName(movieChartList[0]));
+            this.setCaptionText(oFlicking.getRightPanelElement().attr('id'), this.extractTabName(movieChartList[1]));
+            this.setCaptionText(oFlicking.getLeftPanelElement().attr('id'), this.extractTabName(movieChartList[2]));
+
+			flickContents[index] = movieChartList[0];
+			flickContents[nextIndex] = movieChartList[1];
+			flickContents[previousIndex] = movieChartList[2];
+			
+			if (index == 2) {
+				this.setHasCommingMovieAllViewUrl(movieChartList[0]);
+				movieChart.setMenuHighlighting(index);
+			}
+			
+			
+			oFlicking.getPanelElement().removeClass('blind');
+			oFlicking.getRightPanelElement().addClass('blind');
+			oFlicking.getLeftPanelElement().addClass('blind');
+		},
+		
+		// 플리킹 및 좌우 네비게이션 버튼 클릭에 따른 CallBack 함수
+		movieChartJsonCallBack : function(response, movieChartList, type, index, targetAreaIndex) {
+
+			if (movieChartList == null) {
+				var jsonData = response.json();
+				movieChartList = jsonData.movieChartList;
+			}
+
+			jindo.$Element("flick" + targetAreaIndex).html(jindo.$Template(type + "_template").process(movieChartList));
+            this.setCaptionText(jindo.$Element("flick" + targetAreaIndex).attr('id'), this.extractTabName(movieChartList));
+			flickContents[index] = movieChartList;
+			
+			if (index == 2) {
+				this.setHasCommingMovieAllViewUrl(movieChartList);
+			}
+
+			
+			oFlicking.getPanelElement().removeClass('blind');
+			oFlicking.getRightPanelElement().addClass('blind');
+			oFlicking.getLeftPanelElement().addClass('blind');
+		},
+		
+		// 무비차트 풀세팅 호출
+		fullSettingMovieChart : function(index) {
+			movieChart.setMenuHighlighting(index);
+			
+			var nextIndex = movieChart.getNextIndex(index);
+			var previousIndex = movieChart.getPreviousIndex(index);
+
+			// 저장변수에 데이터가 이미 있다면 저장변수 이용, 아니면 Ajax Call.
+			if (flickContents[index] && flickContents[nextIndex] && flickContents[previousIndex]) {
+				var movieChartList = new Array(flickContents[index], flickContents[nextIndex], flickContents[previousIndex]);
+				movieChart.movieChartDefaultJsonCallBack(null, movieChartList, index);
+			} else {
+				movieChart.ajaxCall(movieChart.movieChartDefaultJsonUrl, movieChart.movieChartTab[index], index);
+			}
+		},
+		
+		// 메뉴 하이라이팅 처리
+		setMenuHighlighting : function(index) {
+
+			// 탭메뉴 하이라이팅
+			for (i=0; i<movieChart.movieChartTab.length; i++) {
+				jindo.$Element(movieChart.movieChartTab[i] + "_tab").removeClass("on");
+			}
+			jindo.$Element(movieChart.movieChartTab[index] + "_tab").addClass("on");
+			
+			// 전체보기 URL 세팅
+			jindo.$("movieChartAllView").href = movieChart.movieChartAllViewUrl[index];
+			
+			// [다운로드순]일 경우, 전체보기 아이콘이 다르다. (새창)
+			if (movieChart.movieChartTab[index] == "DOWNLOAD") {
+				jindo.$Element(jindo.$$.getSingle(".all_view_go")).show();
+				jindo.$("movieChartAllView").target = "_blank";
+				jindo.$Element(jindo.$$.getSingle(".all_view_go")).addClass("dwn");
+			}
+			// [개봉예정작]일 경우 예매율순 개봉예정작에서 데이터가 부족해서 채워넣은 경우이면 전체 보기 링크를 보여주지 않는다. 
+			else if (movieChart.movieChartTab[index] == "COMMING" && !this.hasCommingMovieAllViewUrl) {
+				jindo.$Element(jindo.$$.getSingle(".all_view_go")).hide();
+			}
+			else {
+				jindo.$Element(jindo.$$.getSingle(".all_view_go")).show();
+				jindo.$("movieChartAllView").target = "_self";
+				jindo.$Element(jindo.$$.getSingle(".all_view_go")).removeClass("dwn");
+			}
+
+			// 최종상태(index)가 정해지는 부분에 추가
+
+			
+		},		
+
+		// 웹접근성을 위한 caption안내
+		setCaptionText: function(id, tabName) {
+            switch (id) {
+                case 'flick0':
+                    jindo.$Element(jindo.$$.getSingle("#pannel0")).text(tabName);
+                    break;
+                case 'flick1':
+                    jindo.$Element(jindo.$$.getSingle("#pannel1")).text(tabName);
+                    break;
+                case 'flick2':
+                    jindo.$Element(jindo.$$.getSingle("#pannel2")).text(tabName);
+                    break;
+            }
+		},
+		// 두개의 포토인프라도메인을 분산해서 제공 
+		getPhotoInfraImageDomain : function() {
+			var photoInfraImageDomains = new Array("http://movie.phinf.naver.net", "http://movie2.phinf.naver.net");
+			return photoInfraImageDomains[Math.floor((Math.random()*(2)))];
+		},
+		
+		// 따옴표 escape 처리
+		replaceDoubleQuotationForHTML : function(title) {
+			if (title == null) {
+				return null;
+			}
+
+			var result = "";
+			for (i=0; i<title.length; i++) {
+				var tmpChar = title.charAt(i);
+				if (tmpChar == "\"") {
+					result += "&quot;";
+				} else if (tmpChar == "\n" || tmpChar == "\r") {
+					result += "";
+				} else {
+					result += tmpChar;
+				}
+			}
+			return result;
+		},
+		
+		// 이미지폰트 정의
+		numberFont : function(value, charName) {
+			var result = "";
+
+			if (value == 'undefined') {
+				value = "0";
+			}
+			
+			for (i=0; i<value.length; i++) {
+				var tmpChar = value.charAt(i);
+
+				result += '<span class="char ' + charName + '_';
+				if (tmpChar == ".") {
+					result += "dot";
+				} else if (tmpChar == ",") {
+					result += "comma";
+				} else {
+					result += "num" + tmpChar;
+				}
+				result += '"><em>' + tmpChar + '</em></span>';
+			}
+
+			return result;
+		},
+		
+		// 포스터 툴팁 길이제한 확인
+		tooltipLengthOver : function(value) {
+			if (value != null && value.length > 18) {
+				return " br";
+			}
+			return "";
+		},
+		
+		// 플리킹영역 다음 index를 얻는다.
+		getNextIndex : function(index) {
+			var nextIndex = index + 1;
+			if (nextIndex > movieChart.movieChartTab.length - 1) {
+				nextIndex = 0;
+			}
+			return nextIndex;
+		},
+		
+		// 플리킹영역 이전 index를 얻는다.
+		getPreviousIndex : function(index) {
+			var previousIndex = index - 1;
+			if (previousIndex < 0) {
+				previousIndex = movieChart.movieChartTab.length - 1;
+			}
+			return previousIndex;
+		}, 
+		
+		// 개봉예정작의 전체보기 버튼 노출 여부
+		setHasCommingMovieAllViewUrl : function(movieList) {
+			if (movieList.COMMING[movieList.COMMING.length - 1].theater == 0) {
+				this.hasCommingMovieAllViewUrl = false;	
+			} else {
+				this.hasCommingMovieAllViewUrl = true;	
+			}
+		},
+
+		// 등급 아이콘 html을 얻는다.
+		getGradeIcon : function(gradeCode) {
+			var result = '<span class="ico_rating_';
+			if (gradeCode == "1001001") {
+				result += 'all">전체 관람가'
+			} else if (gradeCode == "1001002") {
+				result += '12">12세 관람가'
+			} else if (gradeCode == "1001003") {
+				result += '15">15세 관람가'
+			} else if (gradeCode == "1001004") {
+				result += '18">청소년 관람불가'
+			} else if (gradeCode == "1001005") {
+				result += 'restricted">제한 상영가'
+			} else {
+				return "";
+			}
+
+			result += '</span>'	;
+
+			return result;
+		}
+};
+
+
+var HomeMovieReviewAccordion = jindo.$Class({
+	$init : function(sClassName) {
+		_self = this;
+		this._wel = jindo.$Element("movieReview");
+		this._welList = this._wel.query ("ul.lst_con." + sClassName);
+		
+		this._wel.delegate(
+				"mouseover",
+				"._select_title",
+				jindo.$Fn(this._onMouseOverItem, this).bind()
+		);
+		
+		jindo.$A(jindo.$ElementList('._select_title_anchor').$value()).forEach(function(element, index, array) {
+			jindo.$Fn(_self._onMouseOverItem, _self).attach(element, "focus");
+		});
+	},
+	
+	_onMouseOverItem : function (we) {
+		we.stopDefault();
+		var nIndex = Number(jindo.$Element(we.element).data('index'));
+		
+		this.openReview(nIndex);
+	},
+	
+	openReview : function (nIndex) {
+		var aEls = this._welList.queryAll("li ! li");
+		
+		// 해당하는 항목만 <li class="on">
+		for (var i = 0; i < aEls.length; i++) {
+			aEls[i].cssClass("on", nIndex == i);
+		}
+	},
+	
+	showRandomMovie : function () {
+		var randNo = Math.floor(4 * Math.random());
+		this.openReview(randNo);
+	}
+});
+
+
+
+var oFirstHomeMovieReviewAccordion = new HomeMovieReviewAccordion("first");
+
+
+jindo.$Fn(function() {oFirstHomeMovieReviewAccordion.showRandomMovie();}).attach(document, "domready");
+
+jindo.$Fn(function() {movieChart.init();}).attach(document, "domready");
+jindo.$Fn(function() {movieChart.load();}).attach(window, "load");
+jindo.$Fn(function(evt){evt.stop(); oFlicking.movePrev();}, this).attach(jindo.$("flick_prev"),"click");
+jindo.$Fn(function(evt){evt.stop(); oFlicking.moveNext();} ,this).attach(jindo.$("flick_next"),"click");
+
+var nsc = "movie.home";
+</script>
+	</div>
+	<!-- //container -->
+	
+	<!-- footer -->
+	
+
+
+
+<div id="footer">
+	<div class="in_footer">
+		<div class="foot_con">
+				<ul>
+					<li class="first"><a href="http://www.naver.com/rules/service.html" target="_blank">이용약관</a><!-- N=a:fot.agreement --></li>
+					<li><a href="http://www.naver.com/rules/privacy.html" target="_blank"><strong>개인정보처리방침</strong></a><!-- N=a:fot.privacy --></li>
+					<li><a href="http://www.naver.com/rules/disclaimer.html" target="_blank">책임의 한계와 법적고지</a><!-- N=a:fot.disclaimer --></li>
+					<li><a href="https://help.naver.com/support/service/main.nhn?serviceNo=800" target="_blank">영화 고객센터</a><!-- N=a:fot.help --></li>
+				</ul>
+				<p class="info">본 콘텐츠의 저작권은 저작권자 또는 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.</p>
+				<p class="info">
+					사업자등록번호 : 220-81-62517<span>통신판매업 신고번호</span> : 경기성남 제 2006 - 692호<span>대표이사 : 한성숙</span><span><a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp">사업자등록정보 확인</a><!-- N=a:fot.bizinfo --></span><br>
+					주소 : 경기도 성남시 분당구 불정로 6 네이버 그린팩토리 <span>대표전화 : 1588-3820</span>
+				</p> 
+				<address>
+					<a href="http://www.navercorp.com/" target="_blank" class="logo"><img src="https://ssl.pstatic.net/static/movie/2013/07/logo_naver.png" width="63" height="11" alt="NAVER"></a><!-- N=a:fot.nhn -->
+					<em>Copyright ©</em>
+					<a href="http://www.navercorp.com/" target="_blank">NAVER Corp.</a><!-- N=a:fot.corp -->
+					<span>All Rights Reserved.</span>
+				</address>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+if (false) {
+	var alertType = "NONE";
+	var koreanTitle = "";
+	var movieCode = "0";
+	var userReserveCount = "0";
+	var todayDatetime = "20190415111058";
+	var endDatetimeAfterTwoDays = "00000000000000";
+	
+	
+	if (movieCode > 0) {
+		openWriteActualPointAlert (alertType, koreanTitle, movieCode, userReserveCount, todayDatetime, endDatetimeAfterTwoDays);
+	}
+}
+
+function openWriteActualPointAlert (alertType, koreanTitle, movieCode, count, today, endDate) {
+	if (alertType == "ONE") {
+		setCookieLastUserReserveDate(today, endDate);
+		if (confirm("관람하신 " + koreanTitle + "에\n평점 등록 시 네이버페이 포인트 500원 적립!\n지금 평점쓰기 메뉴로 이동하시겠습니까?")) {
+			top.location.href = "https://movie.naver.com/movie/bi/mi/point.nhn?code=" + movieCode;
+		}
+	} else if (alertType == "MORE") {
+		setCookieLastUserReserveDate(today, endDate);
+		if (confirm("관람하신 작품에 평점을 등록해주세요\n작품당 네이버페이 포인트 500원씩 적립!\n평점 미등록작 리스트를 확인하시겠습니까?")) {
+			top.location.href = "http://ticket.movie.naver.com/Order/OverdueList.aspx";
+		}
+	}
+}
+
+function setCookieLastUserReserveDate(today, endDate) {
+	var cookieForNotOpenActualPointPopup = jindo.$Cookie();
+	
+	
+	cookieForNotOpenActualPointPopup.remove("lastUserReserveDatetime");
+	cookieForNotOpenActualPointPopup.remove("lastUserReserveCheckDatetime");
+	
+	cookieForNotOpenActualPointPopup.set("lastUserReserveDatetime", endDate, 9999, "movie.naver.com");
+	cookieForNotOpenActualPointPopup.set("lastUserReserveCheckDatetime", today, 9999, "movie.naver.com");
+}
+
+</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	
+		
+		
+		
+		
+			var alertMessage = "지원되지 않는 브라우저로 서비스 이용에 제한이 있습니다.";
+		
+	
+
+	function getBrowser() {
+		var ua = navigator.userAgent;
+		if (/NAVER/.test(ua)) {
+			return "NAVER_APP";
+		} else if (/IEMobile/.test(ua)) {
+			return "INTERNET_EXPLORER_MOBILE";
+		} else if (/MSIE/.test(ua) || /Trident/.test(ua)) {
+			return "INTERNET_EXPLORER";
+		} else if (/Firefox/.test(ua)) {
+			return "FIREFOX";
+		} else if (/Opera\//.test(ua) || /OPR\//.test(ua)) {
+			return "OPERA";
+		}  else if (/Swing\//.test(ua)) {
+			return "SWING";
+		} else if (/Chrome\//.test(ua) || /CriOS\//.test(ua)) {
+			return "CHROME";
+		} else if (/BAND\//.test(ua)) {
+			return "BAND_APP";
+		} else if (/FBAN\/FBIOS/.test(ua)) {
+			return "FACEBOOK_APP";
+		} else if (/Twitter/.test(ua)) {
+			return "TWITTER_APP";
+		} else if (/KAKAOTALK/.test(ua)) {
+			return "KAKAOTALK_APP";
+		} else if (/Android/.test(ua) && /Safari/.test(ua)) {
+			return "ANDROID_INTERNET_APP";
+		} else if (/Safari/.test(ua)) {
+			return "SAFARI";
+		}
+
+		return "";
+	}
+
+	if (getBrowser() === "UNKNOWN" && jindo.$Cookie().get("notSupportBrowserAlert") != 'true') {
+		alert(alertMessage);
+		jindo.$Cookie().set("notSupportBrowserAlert", "true", "9999", "movie.naver.com");
+	}
+
+
+</script>
+
+
+	<!-- //footer -->
+</div>
+<script type="text/javascript">
+
+jindo.$Fn(function (we) {
+
+	// 상단 검색영역
+	var oSearch = new nhn.movie.Search({
+		area : "jSearchArea",
+		autosearch : "https://auto-movie.naver.com/ac?q_enc=UTF-8&st=1&r_lt=1&n_ext=1&t_koreng=1&r_format=json&r_enc=UTF-8&r_unicode=0&r_escape=1&q=",
+		movelink : "/movie/bi/mi/basic.nhn?code=",
+		peoplelink : "/movie/bi/pi/basic.nhn?code="
+	});
+
+    // 좌측 LNB
+    var oLNB = new nhn.movie.LNB();
+	if( typeof oViewMode != "undefined") {
+		oViewMode.attach('change', jindo.$Fn(oLNB.update, oLNB).bind());
+	}
+
+    //영화검색 결과에서 포커스 아웃될 경우, 검색 결과를 지우도록 변경.
+    jindo.$Element("lnb_gonaver").attach("focus",function(e){
+    	
+    	jindo.$Element('search_placeholder').attr({
+    		"style" : "display: inline;"
+    	})
+    	jindo.$Element('ipt_tx_srch').$value().value="";
+    	if(jindo.$Element("jAutoComplate") != null){
+    		jindo.$Element("jAutoComplate").hide();
+    	}
+    });
+}).attach(document, 'domready');
+
+//LCS
+jindo.$Fn(function() {
+    try{ lcs_do(); } catch(e){}
+}).attach(window, "pageshow");
+
+
+</script>
+<script type="text/javascript">
+	//nClick 초기화 영역
+	//클릭로그 집계 코드 추가
+	var ccsrv="cc.naver.com";
+	var nclk_evt = 1;
+	
+	nclk_do();
+	//nClick 초기화 영역 끝
+</script>
+</body>
+</html>

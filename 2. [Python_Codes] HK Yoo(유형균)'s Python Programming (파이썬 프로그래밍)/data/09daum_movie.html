@@ -1,0 +1,1644 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko" class="os_unknown none unknown version_0">
+<head>
+<meta charset="utf-8">
+<meta property="og:site_name" content="Daum 영화">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- <title>$tagfilter.filter($stringCutUtil.cutStringRealLength($tmp, $len, "..")) - Daum 영화</title> -->
+<title>Daum 영화</title>
+
+	<meta property="og:title" content="">
+	<meta property="og:image" content="http://t1.daumcdn.net/movie/common/og_default.png">
+	<meta property="og:description" content="Daum영화에서 자세한 내용을 확인하세요!">
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover">
+<meta name="referrer" content="always" />
+
+<meta name="format-detection" content="telephone=no"> <link href="//t1.daumcdn.net/movie/common/favicon.ico" rel="shortcut icon">
+
+
+
+<link href="//t1.daumcdn.net/movie/common/apple-icon-120x120.png" sizes="120x120" rel="apple-touch-icon-precomposed" /> <link href="//t1.daumcdn.net/movie/common/apple-icon-180x180.png" sizes="180x180" rel="apple-touch-icon-precomposed" /> 
+
+
+<!--[if lte IE 8]>
+<script src="http://m1.daumcdn.net/svc/original/U03/cssjs/sizzle/sizzle-1.10.7.min.js"></script>
+<script src="http://m1.daumcdn.net/svc/original/U0301/cssjs/JSON-js/fc535e9cc8/json2.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="http://s1.daumcdn.net/svc/original/U03/cssjs/es-shims/es5-shim-4.0.3.min.js"></script>
+<style>
+	.view_detail {display:none;position:absolute;top:0;left:0;width:100%;height:100%;background:url('//mk.kakaocdn.net/dn/emoticon/static/images/sdk/detail_view.png') no-repeat center center;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mk.kakaocdn.net/dn/emoticon/static/images/sdk/detail_view.png', sizingMethod='scale';text-indent:-9999px;}
+</style>
+<![endif]-->
+
+<script src="//t1.daumcdn.net/movie/cssjs/1553500805/common/web2app-standalone-1.0.11.js"></script>
+
+<script type="text/javascript" src="//t1.daumcdn.net/cssjs/jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="//t1.daumcdn.net/movie/cssjs/1553500805/common/m_jigu.js"></script> 
+<script src="//t1.daumcdn.net/cssjs/movie/v2/slide-2.0.5.standalone.min.js"></script>
+
+<script type="text/javascript" src="//t1.daumcdn.net/cssjs/suggest/suggest-1.3.16-nodep.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/movie/cssjs/1553500805/h.css">
+
+<script type="text/javascript" src="//t1.daumcdn.net/movie/cssjs/1553500805/jquery.visible.js"></script>
+<script>
+
+	// 반응형 웹의 모바일 최대 가로길이
+	var limitWidthOfMobile = 800;
+	
+			var isAndroidMobile = false;
+		
+	var resize = {
+		executeWhenWindowResize : function(execFunc) {
+			var curWidth = $(window).width();
+			$(window).resize(function() {
+				var nowWidth = $(window).width();
+				if (curWidth != nowWidth) {
+					execFunc();
+				}
+			});
+		},
+		executeResizeImmediately : function(execFunc) {
+			$(window).resize(function() {
+				execFunc();
+			});
+		}
+	};
+	
+</script>
+
+</head>
+<body class="movie">
+	                							
+
+        
+
+<script src="//t1.daumcdn.net/movie/cssjs/1553500805/util/photo_util.js"></script>
+
+<div id="dkIndex">
+	<a href="#dkBody">본문 바로가기</a>
+	<a href="#dkGnb">메뉴 바로가기</a>
+</div>
+
+
+<script type="text/javascript" src="//t1.daumcdn.net/cssjs/movie/v2/underscore-min.js"></script>
+
+
+<div id="dkWrap" class=""><!-- 독립영화관 indie 클래스 추가-->
+	<!-- 흰색 변경 GNB 클래스: head_white ,
+	GNB fixed 타입 클래스(상단 띠 배너 height 60px 스크롤된 다음에 클래스 추가) : gnb_fixed ,
+	모바일화면에서 스크롤이 223px 되면 클래스 추가 : mhead_fixed 추가 -->
+	<div id="dkHead" class="head_movie avoid_flicker " role="banner"><!-- 메뉴 오픈시 gnb_on 클래스 부과해주세요. -->
+		<div class="d_head">
+			<h1 class="tit_logo">
+				<a href="/main/new" class="link_logo #gnb #title #movie"><span class="ir_wa">영화</span></a>
+			</h1>
+			<strong class="screen_out">관련서비스</strong>
+			<ul class="list_relServices">
+				<li>
+					<a href="http://media.daum.net/entertain/" class="link_services link_services1 #gnb #title #entertain"><span class="ir_wa">연예</span></a>
+				</li>
+			</ul>
+			<!-- 2017-03-21 검색 추가 -->
+			<div class="wrap_searchbar rw_hide">
+				<form action="//search.daum.net/search" class="form_search" role="search">
+					<fieldset>
+						<legend class="screen_out">검색어 입력폼</legend>
+						<label for="tfSearch" class="lab_search ">통합 검색</label>
+                        <input type="text" id="tfSearch" class="tf_search" name="q" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                        <input name="w" type="hidden" value="tot">
+                        <input name="DA" type="hidden" value="S43">
+						<button type="submit" class="ico_popcorn">검색하기</button>
+					</fieldset>
+				</form>
+			</div>
+			<div class="pcsgt_layer">
+				<div class="cate_pcsgt" id="movie_suggest_pc">
+					<strong id="movie_suggest_title_pc" class="tit_pcsgt">영화</strong>
+					<ul id="movie_suggest_list_pc" class="list_pcsgt">
+					</ul>
+				</div>
+				<div class="cate_pcsgt cate_name" id="person_suggest_pc"> <!-- 영화인 cate_name클래스 -->
+					<strong id="person_suggest_title_pc" class="tit_pcsgt">영화인</strong>
+					<ul id="person_suggest_list_pc" class="list_pcsgt">
+					</ul>
+				</div>
+			</div>
+			<!-- 2016-09-05 추가 시작 : pc검색 서제스트 -->
+			<script type="text/template" id="pc_suggest_template">
+				<li>
+					<%
+						var tiaraClass = '#gnb #search #suggest';
+						var titleName = (title && title.replace(keyword, '<span class="emph_sgt">' + keyword + '</span>')) || '';
+						var imgAlt = title || '';
+						var titleEnName = '';
+					%>
+					<a href="<%=href%>" class="link_item <%=tiaraClass%> @<%=index%>">
+							<span class="thumb_g thumb_noimage bg_noimage">
+								<img src="<%=photoConvert(photoUrl || '', 100, 144, 'C')%>" width="35" height="49" class="thumb_img" alt="<%=imgAlt%>" onload="noImageOnLoad($(this))">
+							</span>
+							<div class="cont_item">
+								<strong class="tit_item"><%=titleName%></strong>
+								<span class="txt_year"><%=(year == 'null') ? '' : year%></span>
+							</div>
+					</a>
+				</li>
+			</script>
+		</div>
+
+				<div id="dkGnb" class="d_gnb" role="navigation">
+			<div class="inner_gnb">
+				<h2 class="screen_out">영화 메인메뉴</h2>
+				<ul class="gnb_comm">
+					<li class="on">
+						<a href="/main/new" class="link_gnb link_gnb1 #gnb #pc #home">
+															<span class="screen_out">선택됨</span>
+														<!--현재페이지 일때-->
+							<span class="ir_wa">홈</span>
+							<span class="bar_gnb"><span class="inner_bar" style="width:23px"></span></span>
+							<!--모션 뉴스 gnb참고-->
+						</a>
+					</li>
+					<li class="">
+						<a href="/premovie/released" class="link_gnb link_gnb2 #gnb #pc #released">
+														<span class="ir_wa">현재상영작</span>
+							<span class="bar_gnb"><span class="inner_bar" style="width:79px"></span></span>
+						</a>
+					</li>
+					<li class="">
+						<a href="/premovie/scheduled" class="link_gnb link_gnb3 #gnb #pc #scheduled">
+														<span class="ir_wa">개봉예정작</span>
+							<span class="bar_gnb"><span class="inner_bar" style="width:78px"></span></span>
+						</a>
+					</li>
+					<li class="">
+						<a href="/boxoffice/weekly" class="link_gnb link_gnb4 #gnb #pc #boxoffice">
+														<span class="ir_wa">박스오피스</span>
+							<span class="bar_gnb"><span class="inner_bar" style="width:78px"></span></span>
+						</a>
+					</li>
+					<li>
+						<a href="https://ticket2.movie.daum.net/Movie/MovieMain.aspx" class="link_gnb link_gnb5  #gnb #pc #reservation">
+							<span class="ir_wa">빠른예매</span>
+							<span class="bar_gnb"><span class="inner_bar" style="width:63px"></span></span>
+						</a>
+					</li>
+                    <li class="">
+						<a href="/magazine/new" class="link_gnb link_gnb6 #gnb #pc #magazine">
+														<span class="ir_wa">뉴스</span>
+							<span class="bar_gnb"><span class="inner_bar" style="width:49px"></span></span>
+						</a>
+					</li>
+                    <!-- 독립1차 추가 -->
+                    <li>
+                        <a href="#none" class="link_gnb link_gnb6 #gnb #pc #indie">
+                            <span class="ir_wa">독립영화관</span>
+                            <span class="bar_gnb"><span class="inner_bar" style="width:73px"></span></span>
+                        </a>
+                    </li>
+                    <!-- //독립1차 추가 -->
+					<script id="gnbCustomBtnTemplate" type="text/template">
+						<li>
+							<a href="<%=link%>" class="link_gnb7 #gnb #pc #special" target="gnb_btn_window"><span class="ico_new">new</span><%=text%></a><!-- 독립1차 수정 -->
+						</li>
+					</script>
+				</ul>
+				<div class="gnb_etc">
+					<ul class="gnb_with">
+						<li class="">
+							<a href="/profile/moviePoint" class="link_gnb link_gnb1 #gnb #pc #myrating">
+																<span class="ir_wa">내평점</span>
+							</a>
+						</li>
+						<li>
+							<a href="http://ticket2.movie.daum.net/MyMovie/orderList.aspx" class="link_gnb link_gnb2 #gnb #pc #mybooking">
+								<span class="ir_wa">예매내역</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- 내부 검색 -->
+		<div id="search_layer" class="keyword_on d_search"> <!-- 2016-11-09 키워드입력시작시 keyword_on클래스 추가 -->
+			<div class="inner_search">
+				<h2 class="screen_out">Daum영화 검색하기</h2>
+				<form action="//search.daum.net/search" class="inside_sch" name="search_name" role="search">
+					<fieldset>
+					<legend class="screen_out">Daum영화 검색 폼</legend>
+					<input id="search_keyword_text_field" type="search" class="tf_keyword" name="q" placeholder="통합 검색" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" title="검색어 입력">
+                    <input name="w" type="hidden" value="tot">
+                    <input name="DA" type="hidden" value="S43">
+					<!-- 검색어 삭제 버튼 상태에 따라 display:none/block 처리 -->
+					<button type="button" class="btn_del" style=" display:block "><span class="ico_popcorn">검색어 삭제</span></button>
+					<button type="submit" class="btn_search"><span class="ico_popcorn">검색</span></button>
+					<button type="button" id="search_close_btn" class="btn_back">닫기</button>
+					</fieldset>
+				</form>
+
+				<!-- // 검색창  -->
+				<div class="d_sgt">
+				<!-- 제안 검색어 숨김시 hide 클래스 제공 -->
+					<script type="text/template" id="suggest_list_template">
+						<li>
+							<%
+								var tiaraClass = '#gnb #search #suggest';
+								var titleName = (title && title.replace(keyword, '<span class="emph_keyword">' + keyword + '</span>')) || '';
+								var imgAlt = title || '';
+								var titleEnName = '';
+							%>
+							<a href="<%=href%>" class="link_sgt <%=tiaraClass%> @<%=index%>">
+								<span class="thumb_sgt thumb_noimage bg_noimage">
+									<span class="box_current">현재 선택 검색어</span>
+									<img src="<%=photoConvert(photoUrl || '', 100, 144, 'C')%>" class="img_sgt" alt="<%=imgAlt%>" onload="noImageOnLoad($(this))">
+								</span>
+								<strong class="tit_g">
+									<span class="vertical_m">
+										<span class="tit_name"><%=titleName%></span>
+										<span class="tit_sname"><%=(year == 'null') ? '' : year%></span>
+									</span>
+								</strong>
+							</a>
+						</li>
+					</script>
+					<div class="search_suggest hide" id="suggest_list">
+						<strong id="movie_suggest_title" class="tit_suggest">영화</strong>
+						<ul id="movie_suggest_list" class="list_popular">
+						</ul>
+						<strong id="person_suggest_title" class="tit_suggest">영화인</strong>
+						<ul id="person_suggest_list" class="list_popular">
+						</ul>
+					</div>
+					<!--// 제안 검색어 -->
+					<!-- 인기 검색어 숨김시 hide 클래스 제공 -->
+					<div class="search_popular">
+						<span class="txt_check">전날조회수 기준</span>
+						<div id="search_popular_movie" class="search_section"><!-- on클래스 추가시 활성화 -->
+							<strong class="tit_sgt tit_hotmovie">
+								<a href="#none" class="link_g" id="search_popular_movie_btn">인기 영화</a>
+							</strong>
+
+							<script type="text/template" id="popular-movie-template">
+								<li>
+									<% if (id) { %>
+									<a href="/moviedb/main?movieId=<%=id%>" class="link_sgt #ranking #movie @<%=idx%>">
+									<% } else { %>
+									<span class="link_sgt">
+									<% } %>
+										<span class="num_rank"><%=rank%></span>
+										<strong class="tit_g">
+											<span class="vertical_m">
+												<span class="tit_name"><%=title%></span>
+											</span>
+										</strong>
+										<span class="rank_update rank_<%=upDown%> "><!-- 상승 일 경우 rank_up 클래스 추가 // 하락 일 경우 rank_down // 동일할 경우 rank_same -->
+											<span class="ico_popcorn">
+												<% if (upDown == 'up') { %> 상승 <% } %>
+												<% if (upDown == 'down') { %> 하락 <% } %>
+												<% if (upDown == 'same') { %> 변동없음 <% } %>
+											</span>
+											<span class="num_g"><% if (absRankChange > 0) { %> <%=absRankChange%> <%}%></span>
+										</span>
+									<% if (id) { %>
+									</a>
+									<% } else { %>
+									</span>
+									<% } %>
+								</li>
+							</script>
+							<ul id="popular-movie-list" class="list_popular list_hotmovie">
+							</ul>
+						</div>
+						<div id="search_popular_person" class="search_section on"><!-- on클래스 추가시 활성화 -->
+							<strong class="tit_sgt tit_hotperson">
+								<a href="#none" class="link_g" id="search_popular_person_btn">인기 영화인</a>
+							</strong>
+							<script type="text/template" id="popular-person-template">
+								<li>
+									<a href="/person/main?personId=<%=id%>" class="link_sgt #ranking #person @<%=rank%>">
+										<span class="num_rank"><%=rank%></span>
+										<span class="thumb_sgt thumb_noimage bg_noimage">
+											<span class="box_current">현재 선택 검색어</span>
+											<img src="<%=(image) ? ('//img1.daumcdn.net/thumb/S42x60/?fname=' + photoFullNameConverter(image)) : ''%>" class="img_sgt" alt="<%=name%>" onload="noImageOnLoad($(this))">
+										</span>
+										<strong class="tit_g">
+											<span class="vertical_m">
+												<span class="tit_name"><%=nameKo%></span>
+												<span class="tit_sname"><%=nameEn%></span>
+											</span>
+										</strong>
+										<span class="rank_update rank_<%=upDown%>"><!-- 상승 일 경우 rank_up 클래스 추가 // 하락 일 경우 rank_down // 동일할 경우 rank_same -->
+											<span class="ico_popcorn">
+												<% if (upDown == 'up') { %> 상승 <% } %>
+												<% if (upDown == 'down') { %> 하락 <% } %>
+												<% if (upDown == 'same') { %> 변동없음 <% } %>
+											</span>
+											<span class="num_g"><% if (absRankGap > 0) { %> <%=absRankGap%> <%}%></span>
+										</span>
+									</a>
+								</li>
+							</script>
+							<ul id="popular-person-list" class="list_popular">
+							</ul>
+						</div>
+					</div>
+					<!--//  인기 검색어 -->
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			var minidaum_options = {
+									enableLogoutRetun: true
+							}
+		</script>
+		<!-- 내부 검색 들어가는 자리 -->
+
+		<!-- Tiara 설정 코드 -->
+		<script type="text/javascript">
+			var isMobileScreenMode = $(window).width() <= limitWidthOfMobile;
+			var _tiq = 'undefined' !== typeof _tiq ? _tiq : [];
+			var __TiaraObject = __TiaraObject || {};
+			if ('undefined' === typeof __TiaraObject.startTime) {
+				__TiaraObject.startTime = new Date();
+			}
+
+			if (isMobileScreenMode == true) {
+				_tiq.push(['__setParam', 'svcdomain', 'm.movie.daum.net']);
+			} else {
+				_tiq.push(['__setParam', 'svcdomain', 'movie.daum.net']);
+			}
+
+            var tiaraPageName = "";
+
+			var splitPath = location.pathname.split('/');
+			_tiq.push(['__setSection', splitPath[1] || 'movie' ]);
+            if (tiaraPageName != "") {
+                _tiq.push(['__setPageName', tiaraPageName ]);
+            } else {
+                _tiq.push(['__setPageName', splitPath[2] || 'default' ]);
+            }
+			_tiq.push(['__setConfig', {enablePageshow: true, enableButton:true, enableHash: true}]);
+			_tiq.push(['__trackPageview']);
+			_tiq.push(['__clickOn']);
+		</script>
+		<script>
+			$(document).ready(function() {
+				setSuitMyInfo();
+				resize.executeWhenWindowResize(setSuitMyInfo);
+
+				$("#daumUserLogin, #daumUserLoginMobile").click(function() {
+					location.href = $("#daumMinidaum").find("a").attr("href");
+					movietools.tiara.send(splitPath[1] || "movie", "sidemenu login");
+				});
+			});
+
+			function setSuitMyInfo() {
+				var hrefstr = "";
+				if($(window).width() < limitWidthOfMobile) {
+					hrefstr = "https://member.daum.net/m/home.daum";
+				} else {
+					hrefstr = "https://member.daum.net/home.daum";
+				}
+				$("div.detail_profile").find("a.link_profile.link_edit").attr("href", hrefstr);
+			}
+			
+			function openMenu() {
+				$("#dkmHead").addClass("mside_on");
+				$("#dkHead").addClass("gnb_on");
+				if ($(window).width() < limitWidthOfMobile) {
+					$("body").addClass("vfixed_on");
+					$("body").css("overflow", "hidden");
+					$("body").css("height", $(window).height() + "px");
+					$("html").css("overflow", "hidden");
+					if ($("#dkmHead").hasClass("head_vtype")) {
+						$(".bnr_top.bnr_adam").css("top", ($("#dkmHead").height() - $(".bnr_top.bnr_adam").height()) + "px");
+						$("#dkWrap").css("top", "-" + $(".bnr_top.bnr_adam").height() + "px");
+					} else {
+						$(".bnr_top.bnr_adam").css("top", "-" + $(".bnr_top.bnr_adam").height() + "px");
+						$("#dkWrap").css("top", "-" + $(".bnr_top.bnr_adam").height() + "px");
+					}
+				}
+				movietools.tiara.send(splitPath[1] || "movie", "gnb menu");
+			}
+
+			function closeMenu() {
+				$("#dkmHead").removeClass("mside_on");
+				$("#dkHead").removeClass("gnb_on");
+				$("body").removeClass("vfixed_on");
+				$("body").css("overflow", "");
+				$("body").css("height", "");
+				$("html").css("overflow", "");
+				$(".bnr_top.bnr_adam").css("top", "");
+				$("#dkWrap").css("top", "");
+
+				movietools.tiara.send(splitPath[1] || "movie", "sidemenu close");
+			}
+
+					</script>
+	
+			</div>
+	<!-- 2016-11-09 모바일용 헤더 추가 시작  /  2016-12-14 #dkmHead를 #dkHead 다음으로 위치변경 -->
+	<div id="dkmHead" class=" avoid_flicker"> <!-- 모바일용 사이드메뉴 오픈시 mside_on클래스 추가 -->
+		<div class="d_mhead">
+			<div class="wrap_tit">
+				<h1 class="tit_daum">
+					<a href="http://www.daum.net/" id="daumLogo" class="link_daum #gnb #logo"><img src="//i1.daumcdn.net/img-contents/movie/2016/m640/tit_daum.png" width="24" height="25" alt="Daum">
+					</a>
+					<a href="/main/new" id="daumServiceLogo" class="tit_service #gnb #title #movie">영화</a>
+				</h1>
+									<strong class="screen_out">관련 서비스</strong>
+					<a href="http://m.media.daum.net/m/entertain/" class="link_relate #gnb #title #entertain">연예</a>
+							</div>
+			<div class="wrap_util">
+									<a href="javascript:void(0)" class="link_search">
+						<span class="ico_media ico_search">통합 검색</span>
+					</a>
+								<a href="javascript:void(0)" onclick="openMenu(); return false;" class="link_sidemenu">
+					<span class="ico_media ico_sidemenu">주요 서비스 메뉴 펼치기</span>
+				</a>
+			</div>
+		</div>
+
+						<div id="dkmGnb" class="media_gnb ">
+			<h2 class="screen_out">영화 메뉴</h2>
+
+                            <div class="slide_scroll slide_gnb">
+                    <div>
+                        <ul class="list_scroll list_media">
+                            <li class="on">
+                                <a href="/main/new" class="link_gnb #gnb #mobile #home"><span class="txt_gnb">홈</span></a>
+                            </li>
+                            <li class="">
+                                <a href="/premovie/released" class="link_gnb #gnb #mobile #released"><span class="txt_gnb">영화</span></a>
+                            </li>
+                            <li class="">
+                                <a href="/boxoffice/weekly" class="link_gnb #gnb #mobile #boxoffice"><span class="txt_gnb">랭킹</span></a>
+                            </li>
+                            <li>
+                                <a href="https://ticket2.movie.daum.net/Movie/MovieMain.aspx" class="link_gnb #gnb #mobile #reservation"><span class="txt_gnb">예매</span></a>
+                            </li>
+                            <li class="">
+                                <a href="/magazine/movienews" class="link_gnb #gnb #mobile #magazine"><span class="txt_gnb">뉴스</span></a>
+                            </li>
+                            <li class="">
+                                <a href="/indie/main" class="link_gnb #gnb #mobile #indie"><span class="txt_gnb">독립영화</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+							<!--
+				<div class="slide_scroll slide_gnb" id="principalMenuSlide">
+					<div id="principalMenuTab">
+						<div class="inner_scroll">
+							<ul class="list_scroll list_media">
+								<li class="on">
+									<a href="/main/new" class="link_gnb #gnb #mobile #home">
+										<span class="txt_gnb">홈</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="/premovie/released" class="link_gnb #gnb #mobile #released"><span class="txt_gnb">현재상영작</span></a>
+								</li>
+								 <li class="">
+									<a href="/premovie/scheduled" class="link_gnb #gnb #mobile #scheduled"><span class="txt_gnb">개봉예정작</span></a>
+								</li>
+								<li class="">
+									<a href="/boxoffice/weekly" class="link_gnb #gnb #mobile #boxoffice"><span class="txt_gnb">박스오피스</span></a>
+								</li>
+								<li>
+									<a href="https://ticket2.movie.daum.net/Movie/MovieMain.aspx" class="link_gnb #gnb #mobile #reservation"><span class="txt_gnb">빠른예매</span></a>
+								</li>
+								<li class="">
+									<a href="/magazine/new" class="link_gnb #gnb #mobile #magazine"><span class="txt_gnb">매거진</span></a>
+								</li>
+								<li class="">
+									<a href="/trailer" class="link_gnb #gnb #mobile #trailer"><span class="txt_gnb">최신예고편</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				-->
+			
+												<!-- //매거진 하위메뉴 -->
+		</div>
+				<!-- 모바일용 사이드메뉴 -->
+		<div class="dimmed_trslayer"></div>
+		<div class="menu_mside #sidemenu">
+			<h2 class="screen_out">사이드메뉴</h2>
+			<div id="mside_menu" class="inner_mside" style="right:0"> <!-- 모바일용사이드메뉴 너비 260px -->
+				<div class="mside_account">
+											<a href="javascript:;" class="link_account" id="daumUserLoginMobile">
+							<span class="thumb_account"></span>
+							<strong class="tit_account">로그인해주세요</strong>
+						</a>
+									</div>
+				<ul class="list_personal">
+					<li>
+						<a href="/profile/moviePoint" class="link_personal #myrating"><span class="ico_popcorn ico_myappraise"></span>내평점</a>
+					</li>
+					<li>
+						<a href="http://ticket2.movie.daum.net/MyMovie/orderList.aspx" class="link_personal #mybooking"><span class="ico_popcorn ico_breakdown"></span>예매내역</a>
+					</li>
+				</ul>
+
+                <ul class="list_category">
+                    <li class="category_on">
+                        <!--선택시 category_on클래스 추가-->
+                        <a href="/main/new" class="link_category #home">홈<span class="ico_popcorn ico_select">선택됨</span></a>
+                    </li>
+                    <li class="">
+                        <a href="/premovie/released" class="link_category #released">영화</a>
+                    </li>
+                    <li class="">
+                        <a href="/boxoffice/weekly" class="link_category #boxoffice">랭킹</a>
+                    </li>
+                    <li>
+                        <a href="https://ticket2.movie.daum.net/Movie/MovieMain.aspx" class="link_category #reservation">예매</a>
+                    </li>
+                    <li class="">
+                        <a href="/magazine/movienews" class="link_category #magazine">뉴스</a>
+                    </li>
+                    <li class="">
+                        <a href="/indie/main" class="link_category #indie_movie">독립영화</a>
+                    </li>
+                    <li class="">
+                        <a href="/notice/list" class="link_category #notice">공지사항</a>
+                    </li>
+                </ul>
+
+				<a href="http://m.daum.net/site.daum" class="link_mtotal #sitemap">전체서비스<span class="ico_popcorn ico_arr"></span></a>
+				<button type="button" class="btn_close" onclick="closeMenu(); return false;"><span class="ico_popcorn ico_close">사이드메뉴 닫기</span></button>
+			</div>
+		</div>
+		<!-- //모바일용 사이드메뉴 -->
+	</div>
+	<!-- 2016-11-09 모바일용 헤더 추가 끝 -->
+		<hr class="hide">
+
+<div id="dkContent" class="cont_home" role="main">						
+	<div id="mArticle">
+		<h2 id="dkbody" class="screen_out">홈 본문</h2>
+
+		<div class="detail_movie">
+			<div id="rankingList" class="reserve_ranking #ranking">
+				<div id="rankMovieList" class="wrap_slide">
+					<h3 class="tit_movie">실시간 예매순위</h3>
+					<ol id="rankList" class="list_ranking"><!-- 예매순위 리스트 --></ol>
+					<a href="http://ticket2.movie.daum.net/Movie/MovieRankList.aspx" class="link_all #more">
+						<span class="ico_movie2 ico_more">모두 보기</span><!-- POPCORN-974 추가 -->
+					</a>
+				</div>
+
+				
+<div class="wrap_bnr">
+	<div class="bnr_topside">
+		<div id="EXTENSIBLE_WING_WRAP">            
+            <div id="EXTENSIBLE_WING_BANNER_WRAP">
+                <div id="EXTENSIBLE_WING_BANNER" class="RB"></div>
+                <div id="EXTENSIBLE_WING_ICON"></div>
+            </div>
+        </div>
+	</div>
+	<div id="pcBnrImage" class="bnr_bottom"></div>
+</div>
+
+<script type="text/javascript" src="//t1.daumcdn.net/movie/cssjs/1553500805/common/new_utils.js"></script>
+<script type="text/javascript">
+var is_not_show_admin_banner_list = ["/moviedb/main", "/tv/main", "/person/main", "/filmfest/main", "/magazine/news/article"];
+var this_request_uri = "/main/new";
+
+	var is_preview_banner = false;
+
+
+$(document).ready(function() {
+	        var isPc = false;
+		if(isPc) { // PC 크기에서만 로딩하기
+		document.domain = 'daum.net';
+        var iframeHTML  = '<ins class="daum_ddn_area" style="display:block" data-ad-frame-id = "AMS_250exp" data-ad-frame-name = "AMS_250exp" data-ad-unit = "03L13" data-ad-type = "D" data-ad-width = "250" data-ad-height = "250"></ins>'
+						+ '<script async type="text/javascript" src="//t1.daumcdn.net/adfit/static/ad.min.js"><\/script>';
+		$("#EXTENSIBLE_WING_WRAP").append(iframeHTML);
+	} else {
+		$("#EXTENSIBLE_WING_WRAP").append('<a href="https://story.kakao.com/ch/moviekakao"><img src="//t1.daumcdn.net/movie/c90e7313496df0d7d4a5bf65d8d5289c9d964cd8" width="250" height="250"></a>');
+	}
+	
+	$.ajax({
+		url: "/api/snippet/banner.json?&"
+	}).done(function(data) {
+		var divBnr = $('#siBnrImage');
+		var today = new Date();
+		// GNB 영역의 사이드 배너 삽입
+		if(divBnr) {
+			var bnr = data.side, startAt = new Date(bnr.bnrStartAt), endAt = new Date(bnr.bnrEndAt);
+			if(today > startAt && today < endAt || today > startAt && !bnr.bnrEndAt) {
+				var a = document.createElement("a"), img = document.createElement("img");
+				a.appendChild(img);
+				a.className = 'link_gnbbnr #banner'; a.href = bnr.pcLanding;
+				img.className = 'thumb_bnr'; img.src = removeUrlScheme(bnr.siBnrImage), img.alt = bnr.bnrImageAlt;
+				divBnr.append(a);
+			}
+		}
+		// 354 배너 페이지에 따라 노출 제어
+		if (is_not_show_admin_banner_list.indexOf(this_request_uri) < 0) {
+			divBnr = $('#pcBnrImage');
+			if(divBnr) {
+				if(data.common.length && data.common.length > 0) {
+					var bnr = _.sample(_.filter(data.common, function(cbnr) {
+						if(!cbnr.bnrStartAt)
+							return false;
+						var sDate = new Date(cbnr.bnrStartAt), eDate = new Date(cbnr.bnrEndAt);
+						return (today > sDate && today < eDate) || (today > sDate && !cbnr.bnrEndAt)
+					}));
+				} else {
+					var bnr = data.common;
+				}
+				if(!bnr)
+					return 1;
+				var startAt = new Date(bnr.bnrStartAt), endAt = new Date(bnr.bnrEndAt);
+				if(is_preview_banner || ((today > startAt && today < endAt) || (today > startAt && !bnr.bnrEndAt))) {
+					// PC 배너
+					a = document.createElement("a"), img = document.createElement("img");
+					a.appendChild(img);
+					a.className = 'link_bnr bnr_354 #banner #pc'; a.href = bnr.pcLanding;
+					img.width = 250; img.height = 292; img.src = removeUrlScheme(bnr.pcBnrImage); img.alt = bnr.bnrImageAlt
+					divBnr.append(a);
+					
+					// 모바일 하단 배너
+					if(location.pathname == '/main/new') {
+						a = document.createElement("a"), img = document.createElement("img");
+						a.appendChild(img);
+						a.className = 'link_bnr #banner #mobile'; a.style.background = bnr.moBnrBg, a.href = bnr.moLanding;
+						img.width = 320; img.className = 'img_bnr', img.src = removeUrlScheme(bnr.moBnrImage); img.alt = bnr.bnrImageAlt
+						document.getElementById('mBottomBnr').appendChild(a);
+					}
+				}
+			}
+		} else {
+			$("#pcBnrImage").hide();
+		}
+	});
+});
+
+</script>			</div><!-- //실시간예매랭킹 -->
+
+			<div id="mBottomBnr" class="bottom_bnr"></div>
+
+			<div class="home_trailer hide_f #trailer">
+				<h3 class="screen_out">Hot Trailer</h3>
+				<div id="trailerView" class="wrap_slide">
+                    <strong class="tit_popcorn tit_trailer avoid_flicker">인기 예고편</strong>
+					<div id="trailerSlider" class="slide_view wh100"></div>
+					<div id="trailerSlidePageNav" class="page_tab avoid_flicker">
+					</div>
+				</div>
+			</div> <!-- //예고편 -->
+			
+			<div class="home_weekly hide_f #weeklybest">
+				<h3 class="tit_movie">인기 영상</h3>
+				<div class="weekly_vod">
+					<ul id="weeklyVodList" class="list_video"></ul>
+				</div>
+				<a href="/trailer" class="link_all">
+					<span class="ico_movie2 ico_more">모두 보기</span>
+				</a>
+			</div>
+					
+		</div>
+	</div>
+	<script type="text/template" id="rank-tmpl-list">
+<li>
+<div class="info_ranking">
+	<div class="inner_ranking">
+		<span class="num_ranking2 rank_<%- index+1 %>"><%- index+1 %>위</span>
+		<a href="/moviedb/main?movieId=<%= movieId %>" class="link_poster #title">
+			<img src="//img1.daumcdn.net/thumb/C186x268/?fname=<%- encodeURIComponent(cover) %>" width="70" height="100" class="thumb_poster @<%= index %>" alt="<%- title %> 포스터">
+		</a>
+		<div class="detail_ranking">
+			<a href="/moviedb/main?movieId=<%= movieId %>" class="link_ranking #title @<%= index + 1 %>"><strong class="tit_ranking"><%- title %></strong></a>
+			<div class="raking_grade">
+				<span class="bg_star star_grade"><em class="bg_star inner_star" style="width:<%= ratingStartStylePercentage(pointAvg) %>%">평점</em></span> <!-- 116px이 100%, % 계산에서 width값에 적용-->
+				<em class="emph_grade"><%- pointAvg %></em><span class="txt_grade">/10</span>
+			</div>
+			<dl class="raking_movie">
+				<dt class="screen_out">상영상태</dt>
+                <% if (releaseDate) { %>
+					<dd class="raking_screen"><%= releaseDate %> 개봉</dd>
+                <% } %>
+				<dt class="tit_rakingtype">예매율</dt>
+				<dd class="ranking_advance"><%- reserveRank %>%</dd>
+			</dl>
+		</div>
+		<a href="/reservation?movieId=<%= movieId %>" class="link_reserve #btn @<%= index + 1 %>">예매하기<span class="ico_popcorn"></span></a>
+	</div>
+</div>
+</li>
+</script>
+
+<script type="text/template" id="rank-trailer-tmpl">
+<div class="inner_view">
+	<span class="tag_hot">인기 예고편</span><!-- 2018-01-25 추가 -->
+	<span class="thumb_slide" style="background-image:url(//img1.daumcdn.net/thumb/<%= window.ua_result.platform == 'pc' ? 'R1024x0/?fname=' + encodeURIComponent(stillCut) : 'R640x0/?fname='+ encodeURIComponent(stillCut) %>);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//img1.daumcdn.net/thumb/<%= window.ua_result.platform == 'pc' ? 'R1024x0/?fname=' + encodeURIComponent(stillCut) : 'R640x0/?fname='+ encodeURIComponent(stillCut) %>', sizingMethod='scale');
+	"></span>
+	<div id="vclipDetail<%= vclipId %>" class="info_trailer <%= index == 0 ? 'detail_on' : '' %>">
+		<a href="/moviedb/video?id=<%= movieId %>&vclipId=<%= vclipId %>" class="link_trailer #click @<%= index2 + 1 %>">
+            <span class="btn_popcorn">예고편 보기</span>
+            <strong class="tit_dmovie"><%- movieTitle %></strong>
+		</a>
+	</div>
+</div>
+</script>
+
+<script type="text/template" id="main-slide-page-nav-tmpl">
+    <button type="button" class="ico_page <% if(isOn) { print('on') } %>"><span class="inner_page"><%- index %></span></button>
+</script>
+
+<script type="text/template" id="weekly-vod-tmpl">
+<li>
+	<a href="/moviedb/video?id=<%= movieId %>&vclipId=<%= vclipId %>" class="link_video @<%= index + 1 %>">
+		<span class="video_thumb thumb_noimage bg_noimage2">
+			<span class="num_ranking2 rank_<%- index+1 %>"><%- index+1 %>위</span>
+			<img src="//img1.daumcdn.net/thumb/C320x180/?fname=<%- encodeURIComponent(thumbnail) %>" class="thumb_video" alt="비디오 스틸컷" onload="noImageOnLoad($(this))">
+			<span class="video_play">
+				<span class="screen_out">재생시간</span>
+				<span class="num_playtime"><%= duration.replace(':', '<span class="txt_time">:</span>') %></span>
+			</span>
+		</span>
+		<span class="info_video">
+			<strong class="tit_video">
+				<span class="tit_g"><%- movieTitle %></span>
+			</strong>
+			<span class="desc_video"><%- subTitle %></span>
+			<span class="video_count">
+				<% if (playCount) { %>
+					<span class="ico_movie2 ico_play">재생수</span><%- playCount %>
+				<% } %>
+			</span>
+		</span>
+	</a>
+</li>
+</script>	<script src="//t1.daumcdn.net/movie/cssjs/1553500805/common/new_utils.js"></script>
+    <script src="//t1.daumcdn.net/movie/cssjs/1553500805/clamp/clamp.min.js"></script>
+	<script type="text/javascript" src="//t1.daumcdn.net/movie/cssjs/1553500805/home/rx_home.js"></script>
+
+		<!-- 2017-02-22 추가 -->
+	<div id="cEtc" class="notice_comm" >
+		<div class="inner_notice">
+			<div class="cont_notice">
+				<h2 class="tit_notice" style="display: none">공지</h2>
+			</div>
+		</div>
+	</div>
+    <!-- 2017-12-15 미니다음 수정 -->
+    <div class="section_wing">
+        <div id="mediaRealtimeIssueSection" class="hc_news_mobile_aside_hottrends" style="display: none">
+            <div class="d_isu" role="complementary">
+                <div class="head_issue">
+                    <h2 class="screen_out">이슈검색어</h2>
+                    <div class="roll_issue"></div>
+                    <ul id="mediaRealtimeIssueMenu" class="tab_issue tab_issue4">
+                        <li class="on">
+                            <a class="link_tab" href="#none" idx="0">실시간이슈</a>
+                        </li>
+                        <li>
+                            <a class="link_tab" href="#none" idx="1">뉴스</a>
+                        </li>
+                        <li>
+                            <a class="link_tab" href="#none" idx="2">연예</a>
+                        </li>
+                        <li>
+                            <a class="link_tab" href="#none" idx="3">스포츠</a>
+                        </li>
+                    </ul>
+                </div>
+                <strong class="screen_out cur_tit">실시간이슈</strong>
+                <div id="mediaRealtimeIssueList" class="slide_area">
+                </div>
+                <!--div class="paging_issue">
+                    <button class="btn_page btn_prev">
+                        <span class="ico_comm2 ico_prev">이전페이지</span>
+                    </button>
+                    <span class="paging_dots"><span class="num_page">1</span>
+                        <span class="num_page">2</span>
+                        <span class="screen_out">현재페이지</span><em class="num_page">3</em>
+                        <span class="num_page">4</span></span>
+                    <button class="btn_page btn_next" type="button">
+                        <span class="ico_comm2 ico_next">다음페이지</span>
+                    </button>
+                </div-->
+            </div>
+        </div>
+        <script type="text/template" id="footer-realtime-issue-tmpl">
+            <ul class="list_issue">
+                <% _.each(words, function(word) { %>
+                    <li>
+                        <a class="link_issue" href="https://m.search.daum.net/search?w=tot&q=<%- word.utf8Keyword %>" tabindex="-1">
+                            <em class="num_issue txt_num<%- word.rank %>"><%- word.rank %></em>
+                            <span class="screen_out"><%- word.rank %>위</span>
+                            <span class="txt_issue"><%- word.keyword %></span>
+                        </a>
+                    </li>
+                <% }); %>
+            </ul>
+        </script>
+        <div id="mediaDirectLinkSection" class="direct_link hc_news_mobile_aside_directLink" style="display: none">
+            <div class="d_isu">
+                <ul id="mediaDirectLinkMenu" class="tab_issue">
+                    <li class="on">
+                        <a class="link_tab" href="#none" idx="0">영화</a>
+                    </li>
+                    <li>
+                        <a class="link_tab" href="#none" idx="1">연예</a>
+                    </li>
+                </ul>
+                <strong class="screen_out">주요메뉴 바로가기 링크</strong>
+                <div id="mediaDirectLinkList">
+                </div>
+            </div>
+        </div>
+        <script type="text/template" id="footer-direct-link-tmpl">
+            <ul class="list_link">
+                <% _.each(links, function(link) { %>
+                    <li>
+                        <a class="link_menu" href="<%- link.link %>" tabindex="-1"><%- link.title %></a>
+                    </li>
+                <% }); %>
+            </ul>
+        </script>
+    </div>
+    <!-- //2017-12-15 미니다음 수정 -->
+</div>
+	<hr class="hide">
+	<!-- 2017-02-22 PC footer 마크업 추가-->
+	<div id="dkFoot" class="d_foot" role="contentinfo" >
+		<div class="inner_foot">
+			<script type="text/template" id="genreBundleTemplate">
+				<div class="item_bundle">
+					<% for(var i = 0; i < genres.length; i++) { %>
+                    	<span class="txt_item">
+							<a href="/search/main?returnUrl=<%=encodeURIComponent(location.href)%>&searchText=<%=encodeURIComponent('{장르} ' + genres[i].genreName)%>"
+												  class="link_txt #footer #genre @<%=(startIndex+1+i)%>"><%=genres[i].genreName%></a>
+						</span>
+					<% } %>
+				</div>
+			</script>
+			<div class="direct_link">
+				<h2 class="tit_direct" style="display: none">장르별</h2>
+				<div class="direct_bundle direct_bundle1">
+
+				</div>
+			</div>
+			<h2 class="screen_out">서비스 이용정보</h2>
+			<div class="footer_link #footer #etc">
+				<a href="https://cs.daum.net/redbell/harm/policyArticle.html" class="link_info @1">게시판 운영원칙</a> <span class="txt_dot"> ・ </span>
+				<a href="http://policy.daum.net/info/info" class="link_info @2">서비스 약관/정책</a> <span class="txt_dot"> ・ </span>
+				<a href="https://business.kakao.com/" class="link_info @3">비즈니스</a> <span class="txt_dot"> ・ </span>
+				<a href="https://cs.daum.net/redbell/top.html" class="link_info @4">권리침해신고</a> <span class="txt_dot"> ・ </span>
+				<a href="http://cs.daum.net/faq/32.html" class="link_info @5">다음영화 고객센터</a>
+			</div>
+			<div class="info_copyright">
+				<strong class="info_warn">위 내용에 대한 저작권 및 법적 책임은 자료제공사 또는 글쓴이에 있으며,<br> Kakao의 입장과 다를 수 있습니다.</strong>
+				<small class="txt_copyright">Copyright © <strong class="txt_kakao"><a href="http://www.kakaocorp.com/" class="link_kakao #footer #kakao">Kakao Corp.</a></strong> All rights reserved.</small>
+			</div>
+		</div>
+	</div>
+	<div id="dkmFoot" class="d_foot #footer" role="contentinfo" ><!-- 2017-02-22 PC,M footer 마크업 분리 -->
+        <!-- 2017-12-15 footer 수정 -->
+        <ul class="list_foot">
+            <li>
+                <a class="btn_foot #footer #daum" href="http://m.daum.net/">Daum</a>
+            </li>
+            <li id="daumMinidaum" class="#footer #account">
+            </li>
+			<!-- 영화 PC화면 제공 불가능 -->
+            <!--li>
+                <a class="btn_foot" href="#">PC화면</a>
+            </li-->
+            <li>
+                <a class="btn_foot #footer #site" href="http://m.daum.net/site.daum">전체보기</a>
+            </li>
+        </ul>
+        <script async src="//go.daum.net/jsa_minidaum_mobile.daum" charset="utf-8" type="text/javascript"></script>
+        <small class="copr_info">
+		<span class="info_policy">
+			<a class="link_policy #footer #edit" href="http://m.media.daum.net/m/media/info/edit">편집원칙</a><span class="txt_dot"> ・ </span>기사배열책임자 : 임선영<span class="txt_dot"> ・ </span>청소년보호책임자 : 이병선 </span>
+            <a class="link_daumcorp #footer #kakao" href="http://m.kakaocorp.com/">ⓒ Kakao Corp.</a>
+        </small>
+        <!-- //2017-12-15 footer 수정 -->
+	</div>
+	<div id="socialShareMoreContainer"></div>
+	<!-- 2017-02-22 미니다음 추가 -->
+	<div id="wrapMinidaum"></div>
+	<script src="//go.daum.net/jsa_minidaum_pc.daum" charset="utf-8" type="text/javascript"></script>
+	<!-- //2017-02-22 미니다음 추가 -->
+</div>
+
+
+<div class="bnr_top bnr_adam">
+	<!--
+	<div id="daumAd"></div>
+	-->
+	<ins id="daumAd"
+	     class="daum_ddn_area"
+	     style="display:block;width:100%"
+	     data-ad-type="M"
+	     data-ad-unit="0Qb72"
+	     data-ad-width="320"
+	     data-ad-height="50"></ins>
+	<div id="adScript"></div>
+	<!--
+	<script type="text/javascript" charset="utf-8" src="//t1.daumcdn.net/adfit/static/ad.min.js"></script>
+	-->
+</div> <!-- 2016-03-07 임시 모바일 아담 배너 -->
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		var slotid = "";
+		var filler, da;
+		var addMobileAdScript = function() {
+			if (!$("#adScript").is(':empty')) {
+				return;
+			}
+			slotid = "0Qb72";
+			var adStript = $("<script/>", {
+				type: "text/javascript",
+				charset: "utf-8",
+				src: "//t1.daumcdn.net/adfit/static/ad.min.js"
+			});
+			$("#adScript").html(adStript);
+		}
+		if($(window).width() < limitWidthOfMobile) {
+           	addMobileAdScript();
+        } else {
+			resize.executeWhenWindowResize(function() {
+                if($(window).width() < limitWidthOfMobile) {
+					addMobileAdScript();
+                }
+            });
+		}
+
+				$('.dimmed_trslayer').on('touchmove click', function() {
+			if ($("#dkmHead").hasClass("mside_on")) {
+				closeMenu();
+			}
+		});
+	});
+	
+</script>
+
+
+<div id="notiPopupLayer" class="wrap_layer #notice" style="top:100px"></div>
+
+<script type="text/template" id="image-poplayer-tmpl">
+<div id="<%= id %>" class="movie_layer" style="margin-bottom:70px" data-layer-link="<%= encodeURIComponent(link) %>">
+	<div class="inner_notice_layer inner_notice_image">
+		<div class="layer_head">
+			<strong class="screen_out">공지사항 레이어</strong>
+		</div>
+		<div class="layer_body" tabindex="<%= tabIndex %>">
+			<a href="<%= link %>" class="link_detail #click">
+				<strong class="ir_pm"><%- text %></strong>
+				<img src="<%= image %>" class="img_notice" alt="<%- text %>">
+			</a>
+		</div>
+		<div class="layer_foot">
+			<span class="area_check"><!-- 체크시 'on'클래스 추가 -->
+				<input type="checkbox" id="hiddenCheck<%= id %>" class="inp_check">
+				<label for="hiddenCheck" class="lab_check" tabindex="<%= tabIndex + 1 %>">
+					<span class="ico_popcorn" data-layer-id="<%= id %>"></span>
+					1일간 보지 않기
+				</label>
+			</span>
+			<button type="button" class="btn_close ico_popcorn #close" data-layer-id="<%= id %>" tabindex="<%= tabIndex + 2 %>">닫기</button>
+		</div>
+	</div>
+</div>
+</script>
+
+<script type="text/template" id="text-poplayer-tmpl">
+<div id="<%= id %>" class="movie_layer" style="margin-bottom:70px" data-layer-link="<%= encodeURIComponent(link) %>"><!-- 임시 위치값  -->
+	<div class="inner_notice_layer">
+		<div class="layer_head">
+			<strong class="screen_out">공지사항 레이어</strong>
+		</div>
+		<div class="layer_body" tabindex="<%= tabIndex %>">
+			<p class="txt_infomovie"><%- text %><span class="txt_date"><%- txtDate %></span></p>
+			<a href="<%= link %>" class="link_notice #click">자세히 보기</a>
+		</div>
+		<div class="layer_foot">
+			<span class="area_check"><!-- 체크시 'on'클래스 추가 -->
+				<input type="checkbox" id="hiddenCheck" class="inp_check">
+				<label for="hiddenCheck" class="lab_check" tabindex="<%= tabIndex + 1 %>">
+					<span class="ico_popcorn" data-layer-id="<%= id %>"></span>
+					1일간 보지 않기
+				</label>
+			</span>
+			<button type="button" class="btn_close ico_popcorn #close" data-layer-id="<%= id %>" tabindex="<%= tabIndex + 2 %>">닫기</button>
+		</div>
+	</div>
+</div>
+</script>
+
+<div class="dimmed" style="display:none"></div>
+<script src="//t1.daumcdn.net/movie/cssjs/1553500805/cookie/jquery.cookie.js"></script>
+<script type="text/javascript">
+var MoviePopLayerController = {
+	queryVal : function(key) {
+		var val = location.search.split(key + "=") || [];
+		return val && val.length > 1 ? val[1].split("&")[0] : "";
+	},
+	isPopupTargetPage : function(targets) {
+		var pages = JSON.parse(targets), section, target;
+		for(var i = 0; i < pages.length; i++) {
+			section = pages[i].section;
+			target = pages[i].target;
+			if(section == 'home' && location.pathname == '/main/new') {
+				return true;
+			} else if(section == 'magazine' && location.pathname == '/magazine/new') {
+				return true;
+			} else if(section == 'movie' && location.pathname == '/moviedb/main' && target == MoviePopLayerController.queryVal('movieId')) {
+				return true;
+			} else if(section == 'person' && location.pathname == '/person/main' && target == MoviePopLayerController.queryVal('personId')) {
+				return true;
+			} else if(section == 'tv' && location.pathname == '/tv/main' && target == MoviePopLayerController.queryVal('tvProgramId')) {
+				return true;
+			} else {
+				continue;
+			}
+		}
+		return false;
+	}
+}
+
+	var is_preview_pop = false;
+
+$.ajax({
+  url: "/api/snippet/layer.json?&"
+  //cache: false
+  
+}).done(function(result) {
+	var image_tmpl = _.template($('#image-poplayer-tmpl').html());
+	var text_tmpl = _.template($('#text-poplayer-tmpl').html());
+        
+	if(result.data) {
+		var pops = result.data;
+		if(pops && pops.length && pops.length > 0) {
+			var notiLayer = $('#notiPopupLayer');
+			for(var i = 0; i < pops.length; i++) {
+				pops[i].tabIndex = i * 3 + 1;
+				var pop = pops[i];
+				if(!pop.link) 
+					continue;
+				if($.cookie('popcorn_' + encodeURIComponent(pop.link))) { 
+					continue;
+				} else {
+					if(MoviePopLayerController.isPopupTargetPage(pop.popPages)) {
+						pop.id = 'popLayerId' + i;
+						var today = new Date(), startAt = new Date(pop.startAt), endAt = new Date(pop.endAt);
+						//if(today > endAt || today < startAt) continue;
+						//if(today > startAt && today < endAt || today > startAt && !pop.endAt) {
+						if(is_preview_pop || (today > startAt && today < endAt)) {
+							if(pop.image && pop.image != '') 
+								notiLayer.append(image_tmpl(pops[i]));
+							else if(pop.text && pop.text != '') 
+								notiLayer.append(text_tmpl(pops[i]));
+							else
+								;
+						}
+					}
+				}
+			}
+			if(notiLayer.children().length > 0) {
+				$('.dimmed').css('display', 'block');
+				if(location.href.indexOf('#dkWrap') < 0) location.href = location.href + '#dkWrap';
+				else location.href = location.href;
+			}
+			/* 마크업 변경 가능성 있음으로 주석 처리
+			notiLayer.find('.btn_close').on('click', function(ev) {
+				$('#'+ev.target.getAttribute('data-layer-id')).remove();
+				if(notiLayer.children().length < 1) 
+					$('.dimmed').css('display', 'none');
+			});
+			*/
+			notiLayer.find('.btn_close.ico_popcorn').on('click', function(ev) {
+				$('#'+ev.target.getAttribute('data-layer-id')).remove();
+				if(notiLayer.children().length < 1) 
+					$('.dimmed').css('display', 'none');
+				//movietools.tiara.send('movie', 'home layer img', {cno: '1-1', img:'http://img1.daumcdn.net/thumb/C186x268/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F697db6e5c1a3fa165d807c381498c80fcca0ab66'});
+				//movietools.tiara.sendEventLog(['button', 'newsbox', 'prev_next', 'prev']);
+				
+			});
+			notiLayer.find('.lab_check').on('click', function(ev) {
+				var $pop = $('#'+ev.target.getAttribute('data-layer-id'));
+				$pop.remove();
+				if(notiLayer.children().length < 1) 
+					$('.dimmed').css('display', 'none');
+				$.cookie('popcorn_' + $pop.attr('data-layer-link'), true, { expires: 1, path: '/', domain: location.hostname });
+			});
+			
+		}
+	}
+});
+</script>
+
+<script src="//t1.daumcdn.net/movie/cssjs/1553500805/rx.all.compat.js"></script>
+
+<script type="text/javascript">
+    var deviceMode = 'unknown';
+</script>
+<script src="//t1.daumcdn.net/movie/cssjs/1553500805/footer/scroll_common.js"></script>
+<script src="//t1.daumcdn.net/movie/cssjs/1553500805/footer/search_common_for_footer.js"></script>
+
+    <script src="//s1.daumcdn.net/svc/attach/U03/cssjs/socialshare/socialshare_nocss-1.9.4.min.js"></script>
+
+<script>
+    var SOCIALSHARE_PORTAL =  (function() {
+        var KAKAO_APP_KEY = '53e566aa17534bc816eb1b5d8f7415ee'; //카카오링크 다음앱 배포버전 key
+        var DEFAULT_IMG = 'http://t1.daumcdn.net/movie/common/og_default.png';
+
+        var nativeSocialShare = null;
+        var socialShareOpt = {};
+        var kakaoLinkData = {};
+
+        return {
+            create: function(hEl, mEl, isNarrow, isLayer, imgUrl, title, desc, link, popupPositionFunc) {
+                imgUrl = this.getImgUrl(imgUrl);
+
+                title = title || $('meta[property="og:title"]').attr('content') || '다음영화 공유';
+                desc = desc || $('meta[property="og:description"]').attr('content') || '';
+                link = link || this.getLocationHref() || 'http://movie.daum.net';
+
+                kakaoLinkData = {
+                    shareType : 'sendCustom',
+                    shareData : {
+                        templateId: 6928,
+                        installTalk: true,
+                        templateArgs: {
+                            '${title}': title,
+                            '${description}': desc,
+                            '${imageUrl}': imgUrl,
+                            '${webUrl}': link,
+                            '${mobileWebUrl}': link,
+                            '${EncodingUrl}': encodeURIComponent(link)
+                        }
+                    }
+                };
+
+                socialShareOpt = {
+                    isNarrow: isNarrow,
+                    isLayer: isLayer,
+                    moreViewContainer: mEl,
+                    link: link,
+                    prefix: title,
+                    service_name: '다음영화',
+                    kakaoAPI: {
+                        appkey: KAKAO_APP_KEY,
+                        kakaoLinkData : kakaoLinkData
+                    }
+                };
+                if (popupPositionFunc) {
+                    socialShareOpt.popupPositonFunction = popupPositionFunc;
+                }
+
+                nativeSocialShare = new socialshareRenewal.Main(hEl, socialShareOpt);
+            },
+            updateLinkWithLocationHref: function(){
+                this.updateLink(this.getLocationHref());
+            },
+            getLocationHref: function(){
+                // 개발서버의 경우 실서버 기준으로 url을 수정해줌
+                // 이는 외부 공유시 SNS(eg. 톡, 스토리)에서 해당 url접근이 가능해야 테스트를 할 수 있기 때문
+                return window.location.href.replace(window.location.origin, 'http://movie.daum.net');
+            },
+            updateLink: function(link) {
+                if (nativeSocialShare) {
+                    kakaoLinkData.shareData.templateArgs['${webUrl}'] = link;
+                    kakaoLinkData.shareData.templateArgs['${mobileWebUrl}'] = link;
+                    kakaoLinkData.shareData.templateArgs['${EncodingUrl}'] = encodeURIComponent(link);
+
+                    socialShareOpt.link = link;
+                    nativeSocialShare.updateContext(socialShareOpt);
+                }
+            },
+            updateImgUrl: function(imgUrl) {
+                kakaoLinkData.shareData.templateArgs['${imageUrl}'] = this.getImgUrl(imgUrl);
+            },
+            getImgUrl: function(originImgUrl) {
+                var thumbPrefix = 'http://img1.daumcdn.net/thumb/S400x209/?fname=';
+                var imgUrl = originImgUrl || $('meta[property="og:image"]').attr('content') || DEFAULT_IMG;
+
+                if(imgUrl.indexOf('//img1.daumcdn.net/thumb/') == -1) {
+                    imgUrl = thumbPrefix + encodeURIComponent(imgUrl);
+                } else {
+                    var splitUrl = imgUrl.split('fname=');
+                    if (splitUrl.length == 2) {
+                        imgUrl = thumbPrefix + splitUrl[1];
+                    }
+                }
+
+                return imgUrl;
+            }
+        };
+    })();
+</script>
+
+	<script type="text/javascript" src="//t1.daumcdn.net/movie/cssjs/1553500805/iscroll5/iscroll.js"></script>
+<script type="text/javascript">
+$.ajax("/api/snippet/gnb.json").done(function(response) {
+    var data = response.data;
+    if (data) {
+		var templateEmt = $("#gnbCustomBtnTemplate");
+		if (!templateEmt || templateEmt.length == 0) {
+			return;
+		}
+		var template = _.template(templateEmt.html());
+		templateEmt.before(template(data));
+		templateEmt.remove();
+	}
+});
+
+
+
+	$(document).ready(function() {
+	});
+
+	// on이 되어 있는 element로 스크롤하여 이동한다
+	function scrollToOnElement(iscroll, targetUl) {
+		var listEmts = $("#principalMenuTab li");
+		var targetOn = listEmts.siblings(".on")[0];
+		var slideWidth = $("#principalMenuSlide").width();
+
+        iscroll.scrollToElement(targetOn, 0);
+		if (iscroll.x + targetUl.width() > slideWidth) {
+			var index = listEmts.index(targetOn);
+			var onSpace = 0;
+			if (index > 0) {
+				onSpace = listEmts.eq(index - 1).outerWidth(true) / 2;
+			}
+			iscroll.scrollBy(onSpace, 0);
+		}
+	}
+
+	// 메뉴 탭 크기 조정
+	function menuTabSize(targetUl) {
+		var tabMenuSize = 0;
+		targetUl.find("li").each(function() {
+			tabMenuSize += $(this).outerWidth(true);
+		});
+		targetUl.css("width", tabMenuSize + "px");
+	}
+
+var MOVIE_FOOT_VIEWABLE = {
+	sendFootViewEventLog: function() {
+		if($('#dkFoot, #dkmFoot').visible(true, false, 'vertical')) {
+			var paths = location.pathname.split('/');
+	    	_tiq.push(['__trackEvent', 'foot', paths[1], paths[2]]);
+	    	$(window).unbind('scroll', MOVIE_FOOT_VIEWABLE.sendFootViewEventLog);
+	    }
+    }
+}
+$(window).bind('scroll', MOVIE_FOOT_VIEWABLE.sendFootViewEventLog);
+
+	var bottomRankingArea = $("#bottom_ranking_area");
+	if (bottomRankingArea && bottomRankingArea.length > 0) {
+		function onOffBottomRankingCheckTitle(movieSection, personSection) {
+			movieSection = movieSection || $("#bottom_ranking_movie_section");
+			personSection = personSection || $("#bottom_ranking_person_section");
+
+			if (personSection.hasClass("on")) {
+				bottomRankingArea.find(".movie_rank_chk").hide();
+				bottomRankingArea.find(".person_rank_chk").show();
+			}
+			if (movieSection.hasClass("on")) {
+				bottomRankingArea.find(".movie_rank_chk").show();
+				bottomRankingArea.find(".person_rank_chk").hide();
+			}
+		}
+
+		function onClickBottomRankingTab(movieOn, personOn) {
+			var movieSection = $("#bottom_ranking_movie_section");
+			var personSection = $("#bottom_ranking_person_section");
+			movieSection.removeClass("on");
+			personSection.removeClass("on");
+
+			movieOn && movieSection.addClass("on");
+			personOn && personSection.addClass("on");
+
+			onOffBottomRankingCheckTitle(movieSection, personSection);
+			
+			movietools.tiara.send(splitPath[1] || 'movie', "ranking tab " + (movieOn ? "movie" : "") + (personOn ? "person" : ""));
+		}
+	}
+	$(document).ready(function() {
+		$(".gnb_comm li:not('.on') .link_gnb")
+            .mouseenter(function() {
+                $(this).find(".inner_bar").width(0).animate({
+                    width : $(this).width()
+                }, 300);
+            }).mouseleave(function() {
+                $(this).find(".inner_bar").animate({
+                    width : 0
+                }, 300);
+            });
+		            SCROLL_COMMON.readyScroll(true);
+       	
+		if (bottomRankingArea && bottomRankingArea.length > 0) {
+            var movieSource = Rx.Observable.defer(function() { return Rx.Observable.fromPromise(
+					$.ajax({url: "/data/movie/movie_info/ticket_rank_no_mid.json?pageNo=1&pageSize=10"}));})
+					.map(function (result) {
+						var data = result ? result.data : null;
+						if (data && data.length > 0) {
+							var template = _.template($("#popular-movie-template").html());
+							var listElement = $("#bottom_ranking_popular_ticket_movies");
+							for (var index = 0; index < data.length; index++) {
+								var item = data[index];
+								listElement.append(template({
+									id: item.movieId,
+									title: item.titleKo,
+									rank: item.rank.ranking,
+									upDown: (item.rank.diff == "UP" || item.rank.diff == "DOWN") ? item.rank.diff.toLowerCase() : "same",
+									absRankChange: item.rank.absDiffRanking,
+									idx: index + 1
+								}));
+							}
+							return true;
+						}
+						return false;
+					})["catch"](Rx.Observable.just(false));
+			var personSource = Rx.Observable.defer(function() { return Rx.Observable.fromPromise(
+					$.ajax({url: "/data/ranking/person.json?dateKey=3&limit=10"}));})
+					.map(function (result) {
+						var list = result ? result.list : null;
+						if (list && list.length > 0) {
+							var template = _.template($("#popular-person-template").html());
+							var listElement = $("#bottom_ranking_popular_people");
+							for (var i = 0; i < list.length; i++) {
+								var item = list[i];
+								item["upDown"] = "same";
+								if (item.rankChange > 0) {
+									item["upDown"] = "up";
+								} else if (item.rankChange < 0) {
+									item["upDown"] = "down";
+								}
+								item["absRankGap"] = Math.abs(item.rankChange);
+								listElement.append(template(item));
+							}
+							return true;
+						}
+						return false;
+					})["catch"](Rx.Observable.just(false));
+			Rx.Observable.zip(movieSource, personSource, function(movieSuccess, personSuccess) {
+				return {
+					movieSuccess: movieSuccess,
+					personSuccess: personSuccess
+				};
+            }).subscribe(function onNext(allSuccesses) {
+				var movieSuccess = allSuccesses.movieSuccess;
+                var personSuccess = allSuccesses.personSuccess;
+
+				var movieSection = $("#bottom_ranking_movie_section");
+                var personSection = $("#bottom_ranking_person_section");
+
+				if (movieSuccess && personSuccess) {
+                    bottomRankingArea.show();
+					onOffBottomRankingCheckTitle(movieSection, personSection, bottomRankingArea);
+                    return;
+				}
+				if (!movieSuccess && !personSuccess) {
+					return;
+				}
+
+				if (!movieSuccess) {
+					movieSection.hide();
+                    movieSection.removeClass("on")
+					personSection.find(".tit_hotperson").addClass("first_sgt");
+                    personSection.find(".tit_hotperson").removeClass("second_sgt");
+					personSection.addClass("on");
+				}
+				if (!personSuccess) {
+					personSection.hide();
+                    personSection.removeClass("on")
+					movieSection.addClass("on");
+				}
+				onOffBottomRankingCheckTitle(movieSection, personSection, bottomRankingArea);
+				bottomRankingArea.show();
+			});
+        }
+
+				setSuggestConfigureAll();
+	});
+
+	    	$("#search_layer form input[name='returnUrl']").val(location.href);
+		$("#dkHead .wrap_searchbar form input[name='returnUrl']").val(location.href);
+	
+	var requestURI = "/main/new";
+	var noticeRecentData = {pageNo: 1, pageSize: 1};
+	if (requestURI.startsWith("/indie")) {
+        noticeRecentData["notiType"] = "ind";
+	}
+
+	$.ajax({
+		url: '/data/movie/notice/recent.json',
+		data: noticeRecentData,
+		success: function(result) {
+			if (result && result.data && result.data.length > 0) {
+				var noticeLink = "/notice/detail?type=all&id=" + result.data[0].id;
+				var noticeTitle = result.data[0].title;
+			}
+
+			var noticeLinkElement = document.createElement('a');
+			noticeLinkElement.setAttribute('class', 'link_notice #footer #notice');
+			noticeLinkElement.setAttribute('href', noticeLink);
+			noticeLinkElement.innerHTML = noticeTitle;
+
+			$("#cEtc .inner_notice .cont_notice .tit_notice").removeAttr('style');
+			$("#cEtc .inner_notice .cont_notice").append(noticeLinkElement);
+		}
+	});
+
+	$.ajax({
+		url: "/data/movie/code/genre.json",
+		success: function(result) {
+			var data = result ? result.data : null;
+			if (data && data.length > 0) {
+				var validGenres = ['가족', '공포', '드라마', '로맨스/멜로', '뮤지컬', '미스터리',
+						'범죄', '스릴러', '시대극', '애니메이션', '액션', '어드벤처', '전쟁', '코미디', '판타지', 'SF'];
+				var result = _.filter(data, function(genre) {return _.contains(validGenres, genre.genreName);})
+							.sort(function(a, b){return validGenres.indexOf(a.genreName) - validGenres.indexOf(b.genreName);});
+
+				var template = _.template($("#genreBundleTemplate").html());
+				var rowNum = 4;
+				$("#dkFoot .inner_foot .direct_link .tit_direct").show();
+				for (var index = 0; index < result.length; index+=rowNum) {
+					$("#dkFoot .inner_foot .direct_link .direct_bundle").append(template({
+						genres: result.slice(index, Math.min(index + rowNum, result.length)),
+						startIndex: index
+					}));
+				}
+			}
+		}
+	});
+
+            function createRealtimeIssue() {
+            $.ajax({
+                url: "/api/totalSearch/realtimeIssue.json",
+                success: function(result) {
+                    var data = result ? result.data : null;
+                    if (!data && data.length == 0) {
+                        return;
+                    }
+
+                    var items = [];
+                    for (var i=0; i<data.length; i++) {
+                        var word = data[i].realtime.word;
+                        var words = [];
+                        words.push(word.splice(0, word.length/2));
+                        words.push(word);
+
+                        items.push({
+                            data : { words: words, index:i},
+                            toHTML : function() {
+                                var template = _.template($('#footer-realtime-issue-tmpl').html());
+                                return template({words : this.data.words[0]}) + template({words : this.data.words[1]});
+                            }
+                        });
+                    }
+
+                    $('#mediaRealtimeIssueSection').css('display', 'block');
+                    var ds = new slide.InfiniteDataSource(items);
+                    var sl = new slide.Slide($('#mediaRealtimeIssueList').get(0), ds, {
+                        panelsToShow  : 1,
+                        panelsToSlide : 1,
+                        duration:800,
+                        disableOverflow:true
+                    });
+
+                    var setMenu = function(index) {
+                        $('#mediaRealtimeIssueMenu').children('.on').removeClass('on');
+                        $('#mediaRealtimeIssueMenu').children().eq(index).addClass('on');
+					}
+
+                    var changeSlide = function(event){
+                        ds.queryCurrent().then(function(current){
+                            setMenu(current.data.index);
+                        });
+                    };
+                    sl.on("prev", changeSlide);
+                    sl.on("next", changeSlide);
+
+                    $('#mediaRealtimeIssueMenu a').on('click', function(){
+                        var page = $(this).attr('idx')*1;
+                        ds.setIndex(page);
+                        sl.refresh();
+                        setMenu(page);
+					})
+                }
+            });
+        }
+
+        function createMediaDirectLink() {
+            var data = [
+                [
+                    {'title' : '영화 홈', 'link' : '/main/new'},
+                    {'title' : '현재상영', 'link' : '/premovie/released'},
+                    {'title' : '개봉예정', 'link' : '/premovie/scheduled'},
+                    {'title' : '박스오피스', 'link' : '/boxoffice/weekly'},
+                    {'title' : '빠른예매', 'link' : 'https://ticket2.movie.daum.net/Movie/MovieMain.aspx'},
+                    {'title' : '예고편', 'link' : '/trailer'},
+                    {'title' : '독립영화', 'link' : '/indie/main'},
+                    {'title' : '뉴스', 'link' : '/magazine/movienews'},
+                    {'title' : '매거진', 'link' : '/magazine/new'}
+                ],
+                [
+                    {'title' : '연예 홈', 'link' : 'http://m.media.daum.net/m/entertain'},
+                    {'title' : '최신 뉴스', 'link' : 'http://m.media.daum.net/m/entertain/news'},
+                    {'title' : '연재', 'link' : 'http://m.media.daum.net/m/entertain/news/series'},
+                    {'title' : '스타톡', 'link' : 'http://m.media.daum.net/m/entertain/star'},
+                    {'title' : '팬매거진', 'link' : 'http://m.media.daum.net/m/entertain/fan'},
+                    {'title' : 'TV', 'link' : 'http://m.media.daum.net/m/entertain/tv'},
+                    {'title' : '뮤직', 'link' : 'http://m.media.daum.net/m/entertain/music'},
+                    {'title' : '포토', 'link' : 'http://m.media.daum.net/m/entertain/photo'},
+                    {'title' : '투표', 'link' : 'http://m.media.daum.net/m/entertain/poll'}
+                ]
+            ]
+            var items = [];
+            for (var i=0; i<data.length; i++) {
+                items.push({
+                    data : {links : data[i], index:i},
+                    toHTML : function() {
+                        var template = _.template($('#footer-direct-link-tmpl').html());
+                        return template(this.data);
+                    }
+                });
+            }
+
+            $('#mediaDirectLinkSection').css('display', 'block');
+            var ds = new slide.InfiniteDataSource(items);
+            var sl = new slide.Slide($('#mediaDirectLinkList').get(0), ds, {
+                panelsToShow  : 1,
+                panelsToSlide : 1,
+                duration:800,
+                disableOverflow:true
+            });
+
+            var setMenu = function(index) {
+                $('#mediaDirectLinkMenu').children('.on').removeClass('on');
+                $('#mediaDirectLinkMenu').children().eq(index).addClass('on');
+            }
+
+            var changeSlide = function(event){
+                ds.queryCurrent().then(function(current){
+                    setMenu(current.data.index);
+                });
+            };
+            sl.on("prev", changeSlide);
+            sl.on("next", changeSlide);
+
+            $('#mediaDirectLinkMenu a').on('click', function(){
+                var page = $(this).attr('idx')*1;
+                ds.setIndex(page);
+                sl.refresh();
+                setMenu(page);
+            })
+        }
+
+        createRealtimeIssue();
+        createMediaDirectLink();
+	
+	</script>
+<script src="//t1.daumcdn.net/movie/cssjs/1553500805/common/gnb_check.js" type="text/javascript"></script>
+<script async src="//t1.daumcdn.net/movie/cssjs/1553500805/common/tiara.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>
